@@ -1,0 +1,10 @@
+/**index.wxss**/
+page{
+  background: white;
+}
+.dot{
+  width:10rpx;
+  height: 10rpx;
+  background-color:#bbbbbb;
+  border-radius: 50%;
+}

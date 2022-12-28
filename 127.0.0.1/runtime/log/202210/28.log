@@ -1,0 +1,48 @@
+---------------------------------------------------------------
+[ 2022-10-28T17:05:50+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.157444s] [吞吐率：6.35req/s] [内存消耗：2,587.21kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ','[D:\wwwroot\116.30150.214\application\api\controller\College.php:54]
+---------------------------------------------------------------
+[ 2022-10-28T17:05:52+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.154809s] [吞吐率：6.46req/s] [内存消耗：2,587.22kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ','[D:\wwwroot\116.30150.214\application\api\controller\College.php:54]
+---------------------------------------------------------------
+[ 2022-10-28T17:45:33+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.207739s] [吞吐率：4.81req/s] [内存消耗：3,898.81kb] [文件加载：151]
+[ error ] [0]不支持的数据表达式:三[D:\wwwroot\116.30150.214\thinkphp\library\think\db\builder\Mysql.php:113]
+---------------------------------------------------------------
+[ 2022-10-28T17:52:47+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.145928s] [吞吐率：6.85req/s] [内存消耗：2,587.65kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[D:\wwwroot\116.30150.214\application\api\controller\College.php:22]
+---------------------------------------------------------------
+[ 2022-10-28T17:52:53+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.144288s] [吞吐率：6.93req/s] [内存消耗：2,587.62kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[D:\wwwroot\116.30150.214\application\api\controller\College.php:22]
+---------------------------------------------------------------
+[ 2022-10-28T17:53:30+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.144521s] [吞吐率：6.92req/s] [内存消耗：2,587.62kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[D:\wwwroot\116.30150.214\application\api\controller\College.php:22]
+---------------------------------------------------------------
+[ 2022-10-28T17:54:01+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.168140s] [吞吐率：5.95req/s] [内存消耗：2,587.62kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[D:\wwwroot\116.30150.214\application\api\controller\College.php:21]
+---------------------------------------------------------------
+[ 2022-10-28T17:54:01+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.163958s] [吞吐率：6.10req/s] [内存消耗：2,587.62kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[D:\wwwroot\116.30150.214\application\api\controller\College.php:21]
+---------------------------------------------------------------
+[ 2022-10-28T17:54:45+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.166511s] [吞吐率：6.01req/s] [内存消耗：2,587.62kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[D:\wwwroot\116.30150.214\application\api\controller\College.php:21]
+---------------------------------------------------------------
+[ 2022-10-28T17:54:45+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.164866s] [吞吐率：6.07req/s] [内存消耗：2,587.62kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ',', expecting ']'[D:\wwwroot\116.30150.214\application\api\controller\College.php:21]
+---------------------------------------------------------------
+[ 2022-10-28T18:06:09+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.230122s] [吞吐率：4.35req/s] [内存消耗：3,907.19kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-28T18:09:42+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.157743s] [吞吐率：6.34req/s] [内存消耗：2,587.61kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ','[D:\wwwroot\116.30150.214\application\api\controller\College.php:21]

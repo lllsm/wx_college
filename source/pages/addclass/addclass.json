@@ -1,0 +1,8 @@
+{
+"navigationBarTitleText": "创建班级",
+  "usingComponents": {
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-transition": "@vant/weapp/transition/index"
+  }
+}

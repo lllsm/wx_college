@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view style='margin-top:160rpx;' class='text-center' >
+  <image src='{{uploadpath}}inst/{{instinfo.logo}}' style='width:400rpx;' mode='widthFix'></image>
+</view>
+
+<view class='padding-40'>
+  <view class='border-bottom'></view>
+</view>
+<view class='padding-40' style='padding-top:0rpx;'>
+  <view class='h5 txt-bold'>登录后该小程序将获得以下权限：</view>
+  <view class='margin-top-20 flex-row flex-center'>
+    <view class='txt-gray h5 '>•  获得你的公开信息（昵称、头像等）</view>
+  </view>
+  <view class='margin-top'>
+    <button type='primary' class='h5 margin-top' open-type="getUserInfo" bindgetuserinfo="getUserInfo" >授权并登录</button>
+  </view>
+</view>

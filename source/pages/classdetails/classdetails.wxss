@@ -1,0 +1,70 @@
+/* pages/classdetails/classdetails.wxss */
+
+Page {
+  /* background: #F6F6F6; */
+  background: linear-gradient(90deg,#FFA8A8, #FFE985, #FAB2FF);
+}
+.toubu{
+
+}
+.box-bg{
+  margin-top: -40rpx;
+  border-top-left-radius:40rpx;
+  border-top-right-radius:40rpx;
+}
+.image_class{
+ margin-left: 30rpx;
+ background-color: #FFF;
+ padding: 5rpx;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 155rpx;
+ border-radius: 20rpx;
+}
+.img_class{
+  /* border-radius: 20rpx; */
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 20rpx;
+}
+.search{
+
+  background: #F3F4F5;
+  padding-left: 20rpx;
+  border-radius: 50rpx;
+}
+.input_search{
+  /* width: 100%; */
+  height: 80rpx;
+}
+.class_ewm{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.under2 {
+  position: fixed;
+  z-index: 2;
+  bottom: 20%;
+  left: 0;
+}
+.text_msg{
+  padding: 30rpx;
+  border-radius: 30rpx;
+  width: 91%;
+}
+.img_list{
+  position: relative;
+}
+.close_img{
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 5rpx;
+  right: 25rpx;
+  z-index: 10;
+}
+.van-button--plain.van-button--primary{
+   background: linear-gradient(90deg,#FFA8A8, #FFE985, #FAB2FF);
+  color:#55524f;
+}

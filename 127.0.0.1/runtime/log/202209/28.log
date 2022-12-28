@@ -1,0 +1,4 @@
+---------------------------------------------------------------
+[ 2022-09-28T16:29:46+08:00 ] 127.0.0.1 GET 127.0.0.1/index/user/index.html
+[运行时间：0.200723s] [吞吐率：4.98req/s] [内存消耗：3,528.65kb] [文件加载：143]
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:295]

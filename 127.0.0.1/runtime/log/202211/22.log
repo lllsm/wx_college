@@ -1,0 +1,164 @@
+---------------------------------------------------------------
+[ 2022-11-22T13:38:07+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/message/index
+[运行时间：0.195757s] [吞吐率：5.11req/s] [内存消耗：4,314.69kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T13:38:08+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/message/index
+[运行时间：0.195794s] [吞吐率：5.11req/s] [内存消耗：4,314.70kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T13:38:15+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/message/index
+[运行时间：0.203492s] [吞吐率：4.91req/s] [内存消耗：4,314.70kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T13:39:52+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/message/index
+[运行时间：0.328743s] [吞吐率：3.04req/s] [内存消耗：4,314.70kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:01:51+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.216346s] [吞吐率：4.62req/s] [内存消耗：4,320.66kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:01:54+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.232519s] [吞吐率：4.30req/s] [内存消耗：4,320.66kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:03:36+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.208178s] [吞吐率：4.80req/s] [内存消耗：4,320.66kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:03:48+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.218995s] [吞吐率：4.57req/s] [内存消耗：4,320.66kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:03:49+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.200891s] [吞吐率：4.98req/s] [内存消耗：4,320.66kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:03:50+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.203983s] [吞吐率：4.90req/s] [内存消耗：4,320.66kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:06:22+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/message/index
+[运行时间：0.216555s] [吞吐率：4.62req/s] [内存消耗：4,317.15kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:06:23+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/message/index
+[运行时间：0.209415s] [吞吐率：4.78req/s] [内存消耗：4,317.15kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-22T16:29:34+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.278492s] [吞吐率：3.59req/s] [内存消耗：2,587.05kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'input' (T_STRING)[D:\wwwroot\116.30150.214\application\api\controller\College.php:81]
+---------------------------------------------------------------
+[ 2022-11-22T16:29:35+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.144431s] [吞吐率：6.92req/s] [内存消耗：2,587.05kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'input' (T_STRING)[D:\wwwroot\116.30150.214\application\api\controller\College.php:81]
+---------------------------------------------------------------
+[ 2022-11-22T16:30:32+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.327194s] [吞吐率：3.06req/s] [内存消耗：3,874.64kb] [文件加载：150]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:28]
+---------------------------------------------------------------
+[ 2022-11-22T16:30:33+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.205088s] [吞吐率：4.88req/s] [内存消耗：3,874.64kb] [文件加载：150]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:28]
+---------------------------------------------------------------
+[ 2022-11-22T16:33:44+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.502742s] [吞吐率：1.99req/s] [内存消耗：3,874.65kb] [文件加载：150]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:28]
+---------------------------------------------------------------
+[ 2022-11-22T16:33:45+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.274096s] [吞吐率：3.65req/s] [内存消耗：3,874.65kb] [文件加载：150]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:28]
+---------------------------------------------------------------
+[ 2022-11-22T16:36:38+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.239430s] [吞吐率：4.18req/s] [内存消耗：3,814.05kb] [文件加载：149]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:28]
+---------------------------------------------------------------
+[ 2022-11-22T16:36:38+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.232867s] [吞吐率：4.29req/s] [内存消耗：3,874.65kb] [文件加载：150]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:28]
+---------------------------------------------------------------
+[ 2022-11-22T16:58:21+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.230956s] [吞吐率：4.33req/s] [内存消耗：3,814.13kb] [文件加载：149]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T16:58:22+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.246264s] [吞吐率：4.06req/s] [内存消耗：3,874.72kb] [文件加载：150]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T16:59:01+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.233053s] [吞吐率：4.29req/s] [内存消耗：3,814.09kb] [文件加载：149]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T16:59:02+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.231366s] [吞吐率：4.32req/s] [内存消耗：3,874.68kb] [文件加载：150]
+[ error ] [8]Undefined property: app\api\controller\College::$uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T16:59:16+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.254467s] [吞吐率：3.93req/s] [内存消耗：3,814.15kb] [文件加载：149]
+[ error ] [4096]Object of class app\api\controller\College could not be converted to string[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T16:59:16+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.252745s] [吞吐率：3.96req/s] [内存消耗：3,874.74kb] [文件加载：150]
+[ error ] [4096]Object of class app\api\controller\College could not be converted to string[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T16:59:39+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.246874s] [吞吐率：4.05req/s] [内存消耗：3,814.15kb] [文件加载：149]
+[ error ] [4096]Object of class app\api\controller\College could not be converted to string[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T16:59:39+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.237388s] [吞吐率：4.21req/s] [内存消耗：3,874.74kb] [文件加载：150]
+[ error ] [4096]Object of class app\api\controller\College could not be converted to string[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T17:01:58+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.255532s] [吞吐率：3.91req/s] [内存消耗：3,898.08kb] [文件加载：152]
+[ error ] [8]Undefined property: app\api\controller\College::$uuid[D:\wwwroot\116.30150.214\application\api\controller\College.php:38]
+---------------------------------------------------------------
+[ 2022-11-22T17:01:58+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.249627s] [吞吐率：4.01req/s] [内存消耗：3,999.79kb] [文件加载：153]
+[ error ] [8]Undefined property: app\api\controller\College::$uuid[D:\wwwroot\116.30150.214\application\api\controller\College.php:38]
+---------------------------------------------------------------
+[ 2022-11-22T17:03:02+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.229733s] [吞吐率：4.35req/s] [内存消耗：3,814.18kb] [文件加载：149]
+[ error ] [4096]Object of class app\api\controller\College could not be converted to string[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T17:03:02+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.251797s] [吞吐率：3.97req/s] [内存消耗：3,874.77kb] [文件加载：150]
+[ error ] [4096]Object of class app\api\controller\College could not be converted to string[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-22T17:14:12+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.181819s] [吞吐率：5.50req/s] [内存消耗：2,652.79kb] [文件加载：133]
+[ error ] [64]Constant expression contains invalid operations[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-11-22T17:14:12+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.180027s] [吞吐率：5.55req/s] [内存消耗：2,652.79kb] [文件加载：133]
+[ error ] [64]Constant expression contains invalid operations[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-11-22T17:50:04+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.175220s] [吞吐率：5.71req/s] [内存消耗：2,652.41kb] [文件加载：133]
+[ error ] [64]Constant expression contains invalid operations[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-11-22T17:50:30+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.176295s] [吞吐率：5.67req/s] [内存消耗：2,587.15kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'uid' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-11-22T17:50:57+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.179747s] [吞吐率：5.56req/s] [内存消耗：2,652.41kb] [文件加载：133]
+[ error ] [64]Constant expression contains invalid operations[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-11-22T17:52:41+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.172435s] [吞吐率：5.80req/s] [内存消耗：2,587.15kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'string' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-11-22T17:59:01+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.173778s] [吞吐率：5.75req/s] [内存消耗：2,587.09kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected '$keyword' (T_VARIABLE)[D:\wwwroot\116.30150.214\application\api\controller\College.php:17]
+---------------------------------------------------------------
+[ 2022-11-22T17:59:20+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.396181s] [吞吐率：2.52req/s] [内存消耗：3,874.44kb] [文件加载：150]
+[ error ] [8]未定义变量: uid[D:\wwwroot\116.30150.214\application\api\controller\College.php:20]
+---------------------------------------------------------------
+[ 2022-11-22T18:12:11+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.181512s] [吞吐率：5.51req/s] [内存消耗：2,587.02kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ','[D:\wwwroot\116.30150.214\application\api\controller\College.php:35]

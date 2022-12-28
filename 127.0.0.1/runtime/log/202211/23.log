@@ -1,0 +1,136 @@
+---------------------------------------------------------------
+[ 2022-11-23T11:50:36+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist
+[运行时间：0.162218s] [吞吐率：6.16req/s] [内存消耗：3,068.98kb] [文件加载：140]
+[ error ] [8]未定义变量: list[D:\wwwroot\127.0.0.1\application\api\controller\College.php:99]
+---------------------------------------------------------------
+[ 2022-11-23T12:07:21+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%27%20OR%20%271%27=%271
+[运行时间：0.158806s] [吞吐率：6.30req/s] [内存消耗：3,070.92kb] [文件加载：140]
+[ error ] [8]未定义变量: username[D:\wwwroot\127.0.0.1\application\api\controller\College.php:92]
+---------------------------------------------------------------
+[ 2022-11-23T12:07:41+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%27%20OR%20%271%27=%271
+[运行时间：0.174186s] [吞吐率：5.74req/s] [内存消耗：3,292.91kb] [文件加载：144]
+[ error ] [10502]Error occurred  when binding parameters '1'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:522]
+---------------------------------------------------------------
+[ 2022-11-23T12:08:17+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E7%9C%BC
+[运行时间：0.180213s] [吞吐率：5.55req/s] [内存消耗：3,292.63kb] [文件加载：144]
+[ error ] [10502]Error occurred  when binding parameters '1'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:522]
+---------------------------------------------------------------
+[ 2022-11-23T12:09:08+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E7%9C%BC
+[运行时间：0.171444s] [吞吐率：5.83req/s] [内存消耗：3,292.89kb] [文件加载：144]
+[ error ] [10502]Error occurred  when binding parameters '1'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:522]
+---------------------------------------------------------------
+[ 2022-11-23T12:13:54+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E7%9C%BC
+[运行时间：0.170352s] [吞吐率：5.87req/s] [内存消耗：3,292.89kb] [文件加载：144]
+[ error ] [10502]Error occurred  when binding parameters '1'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:522]
+---------------------------------------------------------------
+[ 2022-11-23T12:17:58+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E7%9C%BC
+[运行时间：0.170149s] [吞吐率：5.88req/s] [内存消耗：3,292.78kb] [文件加载：144]
+[ error ] [10502]Error occurred  when binding parameters '1'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:522]
+---------------------------------------------------------------
+[ 2022-11-23T12:18:52+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E7%9C%BC
+[运行时间：0.177778s] [吞吐率：5.62req/s] [内存消耗：3,292.75kb] [文件加载：144]
+[ error ] [10502]Error occurred  when binding parameters '1'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:522]
+---------------------------------------------------------------
+[ 2022-11-23T12:47:53+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.243662s] [吞吐率：4.10req/s] [内存消耗：3,847.23kb] [文件加载：146]
+[ error ] [0]致命错误: Call to a member function find() on array[D:\wwwroot\127.0.0.1\application\api\controller\College.php:104]
+---------------------------------------------------------------
+[ 2022-11-23T12:49:42+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.185026s] [吞吐率：5.40req/s] [内存消耗：3,847.27kb] [文件加载：146]
+[ error ] [0]致命错误: Call to a member function find() on integer[D:\wwwroot\127.0.0.1\application\api\controller\College.php:104]
+---------------------------------------------------------------
+[ 2022-11-23T12:58:31+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.194605s] [吞吐率：5.14req/s] [内存消耗：3,861.34kb] [文件加载：148]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user' in 'field list'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T12:59:08+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.189917s] [吞吐率：5.27req/s] [内存消耗：3,861.34kb] [文件加载：148]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user' in 'field list'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T12:59:20+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.177046s] [吞吐率：5.65req/s] [内存消耗：3,850.05kb] [文件加载：147]
+[ error ] [8]未定义数组索引: id,username,nickname[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Query.php:511]
+---------------------------------------------------------------
+[ 2022-11-23T13:06:20+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.141425s] [吞吐率：7.07req/s] [内存消耗：2,617.00kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ''username'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')'[D:\wwwroot\127.0.0.1\application\api\controller\College.php:104]
+---------------------------------------------------------------
+[ 2022-11-23T13:06:35+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.187577s] [吞吐率：5.33req/s] [内存消耗：3,861.95kb] [文件加载：148]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T13:08:28+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/msglist?keyword=%E5%93%A6
+[运行时间：0.519119s] [吞吐率：1.93req/s] [内存消耗：3,862.02kb] [文件加载：148]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column '' in 'field list'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T14:04:22+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.212126s] [吞吐率：4.71req/s] [内存消耗：4,317.70kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T14:04:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.228016s] [吞吐率：4.39req/s] [内存消耗：4,317.70kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T14:06:04+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.290309s] [吞吐率：3.44req/s] [内存消耗：4,317.70kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T14:08:00+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.212008s] [吞吐率：4.72req/s] [内存消耗：4,317.70kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T14:46:10+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/msglist
+[运行时间：0.342838s] [吞吐率：2.92req/s] [内存消耗：4,026.01kb] [文件加载：155]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'collegeclass_id' in 'where clause'[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-11-23T23:23:23+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=17d43ecf-2997-46bc-ac0d-f824384572c7&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.189583s] [吞吐率：0.46req/s] [内存消耗：3,973.52kb] [文件加载：152]
+[ error ] [8]未定义变量: ress[D:\wwwroot\127.0.0.1\application\api\controller\College.php:165]
+---------------------------------------------------------------
+[ 2022-11-23T23:23:33+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=17d43ecf-2997-46bc-ac0d-f824384572c7&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.067332s] [吞吐率：0.48req/s] [内存消耗：3,973.77kb] [文件加载：152]
+[ error ] [8]未定义变量: ress[D:\wwwroot\127.0.0.1\application\api\controller\College.php:165]
+---------------------------------------------------------------
+[ 2022-11-23T23:24:16+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=17d43ecf-2997-46bc-ac0d-f824384572c7&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：1.996437s] [吞吐率：0.50req/s] [内存消耗：3,973.77kb] [文件加载：152]
+[ error ] [8]未定义变量: ress[D:\wwwroot\127.0.0.1\application\api\controller\College.php:165]
+---------------------------------------------------------------
+[ 2022-11-23T23:24:49+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=17d43ecf-2997-46bc-ac0d-f824384572c7&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：3.136655s] [吞吐率：0.32req/s] [内存消耗：3,973.72kb] [文件加载：152]
+[ error ] [8]未定义变量: ress[D:\wwwroot\127.0.0.1\application\api\controller\College.php:165]
+---------------------------------------------------------------
+[ 2022-11-23T23:35:44+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=17d43ecf-2997-46bc-ac0d-f824384572c7&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.079538s] [吞吐率：0.48req/s] [内存消耗：3,973.84kb] [文件加载：152]
+[ error ] [2]Invalid argument supplied for foreach()[D:\wwwroot\127.0.0.1\application\api\controller\College.php:130]
+---------------------------------------------------------------
+[ 2022-11-23T23:35:51+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=17d43ecf-2997-46bc-ac0d-f824384572c7&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.004224s] [吞吐率：0.50req/s] [内存消耗：3,973.84kb] [文件加载：152]
+[ error ] [2]Invalid argument supplied for foreach()[D:\wwwroot\127.0.0.1\application\api\controller\College.php:130]
+---------------------------------------------------------------
+[ 2022-11-23T23:50:28+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=8beadfe3-3783-4c76-a82f-7ba1c01313d1&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.216478s] [吞吐率：0.45req/s] [内存消耗：3,922.07kb] [文件加载：150]
+[ error ] [2]json_last_error() expects exactly 0 parameters, 1 given[D:\wwwroot\127.0.0.1\application\api\controller\College.php:118]
+---------------------------------------------------------------
+[ 2022-11-23T23:51:25+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=8beadfe3-3783-4c76-a82f-7ba1c01313d1&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.266594s] [吞吐率：0.44req/s] [内存消耗：3,922.32kb] [文件加载：150]
+[ error ] [2]json_last_error() expects exactly 0 parameters, 1 given[D:\wwwroot\127.0.0.1\application\api\controller\College.php:120]
+---------------------------------------------------------------
+[ 2022-11-23T23:53:05+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=8beadfe3-3783-4c76-a82f-7ba1c01313d1&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：1.870343s] [吞吐率：0.53req/s] [内存消耗：3,922.32kb] [文件加载：150]
+[ error ] [2]json_last_error() expects exactly 0 parameters, 1 given[D:\wwwroot\127.0.0.1\application\api\controller\College.php:120]
+---------------------------------------------------------------
+[ 2022-11-23T23:53:30+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=8beadfe3-3783-4c76-a82f-7ba1c01313d1&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.004257s] [吞吐率：0.50req/s] [内存消耗：3,973.84kb] [文件加载：152]
+[ error ] [2]Invalid argument supplied for foreach()[D:\wwwroot\127.0.0.1\application\api\controller\College.php:131]
+---------------------------------------------------------------
+[ 2022-11-23T23:55:02+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=8beadfe3-3783-4c76-a82f-7ba1c01313d1&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：1.971285s] [吞吐率：0.51req/s] [内存消耗：3,973.89kb] [文件加载：152]
+[ error ] [2]Invalid argument supplied for foreach()[D:\wwwroot\127.0.0.1\application\api\controller\College.php:132]
+---------------------------------------------------------------
+[ 2022-11-23T23:55:51+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=8beadfe3-3783-4c76-a82f-7ba1c01313d1&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.130193s] [吞吐率：0.47req/s] [内存消耗：3,973.89kb] [文件加载：152]
+[ error ] [2]Invalid argument supplied for foreach()[D:\wwwroot\127.0.0.1\application\api\controller\College.php:132]
+---------------------------------------------------------------
+[ 2022-11-23T23:55:56+08:00 ] 127.0.0.1 GET 127.0.0.1/api/College/addmsg?token=8beadfe3-3783-4c76-a82f-7ba1c01313d1&collegeclass_id=1&text_msg=88888&imagelist=%20[{%22img%22:%22/uploads/20221123/a458d9ccd9d60ce9f2176b9cb78038c3.jpg%22},{%22img%22:%22/uploads/20221123/6542156492720249eb1cfba0ca64d803.png%22}]
+[运行时间：2.706358s] [吞吐率：0.37req/s] [内存消耗：3,973.89kb] [文件加载：152]
+[ error ] [2]Invalid argument supplied for foreach()[D:\wwwroot\127.0.0.1\application\api\controller\College.php:132]

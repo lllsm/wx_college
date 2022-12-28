@@ -1,0 +1,26 @@
+<!--pages/classimg/classimg.wxml-->
+<view class="flex-liangbian flex-row">
+  <image class="" mode="aspectFit" src="../../images/icons/add.png" bindtap="addmsg" class="icon-50 under2"></image>
+</view>
+<van-popup lock-scroll="true" show="{{ isadd }}" round closeable position="bottom" close-icon="close" custom-style="height: 70%" bind:close="onClose">
+  <view class="margin-top-100 margin-left-30 margin-right-30">
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="flex-row flex-wrap flex-center">
+      <view wx:for="{{imagelist}}" class="img_list margin-bottom-20"  data-url="{{item.img}}" bindtap="previewImage" wx:for-index="idx">
+        <van-image class="margin-right-20" show-menu-by-longpress fit="cover" id="{{idx}}" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{item.img}}" />
+        <image src="../../images/icons/close.png" class="close_img" catchtap="deleteimg" id="{{idx}}"></image>
+      </view>
+      <image mode="aspectFit" src="../../images/icons/addimg2.png" bindtap="uploadimg" id='-1' id="{{idx}}" class="icon-50 uploadicon"></image>
+    </view>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="clear-button margin-left-20 margin-right-20" style="position: fixed; bottom: 40rpx; width: 87%;">
+      <button class="border-none clear-button radius-40 button_mian" bindtap="img_submit">确 认</button>
+  </view>
+  </view>
+</van-popup>
+
+<view class="picture">
+  <view wx:for="{{classimglist}}" class="item" bindtap="previewImage" wx:for-index="idx" >
+        <image mode='widthFix' id="{{idx}}" src="{{uploadpath}}{{item}}" />
+  </view>
+</view>

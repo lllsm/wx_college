@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2022-11-26T01:05:07+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/delclassimg
+[运行时间：2.107126s] [吞吐率：0.47req/s] [内存消耗：3,960.41kb] [文件加载：152]
+[ error ] [8]未定义变量: data[D:\wwwroot\127.0.0.1\application\api\controller\College.php:319]
+---------------------------------------------------------------
+[ 2022-11-26T15:11:15+08:00 ] 127.0.0.1 POST 127.0.0.1/api/Wxuser/decrypteddata
+[运行时间：2.740077s] [吞吐率：0.36req/s] [内存消耗：3,877.16kb] [文件加载：149]
+[ error ] [0]致命错误: Class 'app\api\controller\logger_mgr' not found[D:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:131]
+---------------------------------------------------------------
+[ 2022-11-26T15:12:16+08:00 ] 127.0.0.1 POST 127.0.0.1/api/Wxuser/decrypteddata
+[运行时间：2.344781s] [吞吐率：0.43req/s] [内存消耗：3,878.50kb] [文件加载：150]
+[ error ] [8]Use of undefined constant USER_ROOT - assumed 'USER_ROOT'[D:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:142]
+---------------------------------------------------------------
+[ 2022-11-26T15:13:52+08:00 ] 127.0.0.1 POST 127.0.0.1/api/Wxuser/decrypteddata
+[运行时间：2.236286s] [吞吐率：0.45req/s] [内存消耗：3,883.55kb] [文件加载：151]
+[ error ] [8192]Methods with the same name as their class will not be constructors in a future version of PHP; WXBizDataCrypt has a deprecated constructor[D:\wwwroot\127.0.0.1\public\common\wxBizDataCrypt.php:13]
+---------------------------------------------------------------
+[ 2022-11-26T15:17:20+08:00 ] 127.0.0.1 POST 127.0.0.1/api/Wxuser/decrypteddata
+[运行时间：2.157767s] [吞吐率：0.46req/s] [内存消耗：3,882.79kb] [文件加载：151]
+[ error ] [2]include_once(errorCode.php): failed to open stream: No such file or directory[D:\wwwroot\127.0.0.1\public\common\wxBizDataCrypt.php:10]
+---------------------------------------------------------------
+[ 2022-11-26T15:18:15+08:00 ] 127.0.0.1 POST 127.0.0.1/api/Wxuser/decrypteddata
+[运行时间：2.503866s] [吞吐率：0.40req/s] [内存消耗：3,883.39kb] [文件加载：151]
+[ error ] [8192]Methods with the same name as their class will not be constructors in a future version of PHP; WXBizDataCrypt has a deprecated constructor[D:\wwwroot\127.0.0.1\public\common\wxBizDataCrypt.php:13]
+---------------------------------------------------------------
+[ 2022-11-26T16:14:52+08:00 ] 127.0.0.1 POST 127.0.0.1/api/Wxuser/getuserinfo
+[运行时间：20.383996s] [吞吐率：0.05req/s] [内存消耗：3,825.66kb] [文件加载：149]
+[ error ] [2]file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������ [D:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]

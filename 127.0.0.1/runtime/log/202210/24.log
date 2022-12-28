@@ -1,0 +1,356 @@
+---------------------------------------------------------------
+[ 2022-10-24T14:34:36+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/command/command/action/command
+[运行时间：422.411664s] [吞吐率：0.00req/s] [内存消耗：3,111.14kb] [文件加载：140]
+[ error ] [1]Maximum execution time of 300 seconds exceeded[D:\wwwroot\116.30150.214\thinkphp\library\think\Session.php:107]
+---------------------------------------------------------------
+[ 2022-10-24T14:34:36+08:00 ] 127.0.0.1 GET 127.0.0.1/root.php/command?ref=addtabs
+[运行时间：372.753813s] [吞吐率：0.00req/s] [内存消耗：3,110.20kb] [文件加载：140]
+[ error ] [1]Maximum execution time of 300 seconds exceeded[D:\wwwroot\116.30150.214\thinkphp\library\think\Session.php:107]
+---------------------------------------------------------------
+[ 2022-10-24T14:38:56+08:00 ] 127.0.0.1 GET 127.0.0.1/root.php/
+[运行时间：424.138190s] [吞吐率：0.00req/s] [内存消耗：3,069.30kb] [文件加载：140]
+[ error ] [1]Maximum execution time of 300 seconds exceeded[D:\wwwroot\116.30150.214\thinkphp\library\think\Session.php:107]
+---------------------------------------------------------------
+[ 2022-10-24T16:16:47+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/command/command/action/execute
+[运行时间：0.280670s] [吞吐率：3.56req/s] [内存消耗：4,642.24kb] [文件加载：164]
+[ error ] [0]语法解析错误: syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING)[D:\wwwroot\116.30150.214\application\admin\command\FastAdmin635649ef29d24.php:24]
+---------------------------------------------------------------
+[ 2022-10-24T16:17:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/command/command/action/execute
+[运行时间：0.246432s] [吞吐率：4.06req/s] [内存消耗：4,642.24kb] [文件加载：164]
+[ error ] [0]语法解析错误: syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING)[D:\wwwroot\116.30150.214\application\admin\command\FastAdmin63564a1ea64c0.php:24]
+---------------------------------------------------------------
+[ 2022-10-24T16:17:49+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/command/execute/ids/35
+[运行时间：0.238822s] [吞吐率：4.19req/s] [内存消耗：4,641.84kb] [文件加载：164]
+[ error ] [0]语法解析错误: syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING)[D:\wwwroot\116.30150.214\application\admin\command\FastAdmin63564a2dba16c.php:24]
+---------------------------------------------------------------
+[ 2022-10-24T16:18:37+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/command/command/action/execute
+[运行时间：0.234071s] [吞吐率：4.27req/s] [内存消耗：4,642.24kb] [文件加载：164]
+[ error ] [0]语法解析错误: syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING)[D:\wwwroot\116.30150.214\application\admin\command\FastAdmin63564a5ddfad8.php:24]
+---------------------------------------------------------------
+[ 2022-10-24T16:18:47+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/command/command/action/execute
+[运行时间：0.224009s] [吞吐率：4.46req/s] [内存消耗：4,642.24kb] [文件加载：164]
+[ error ] [0]语法解析错误: syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING)[D:\wwwroot\116.30150.214\application\admin\command\FastAdmin63564a670676c.php:24]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:41+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.201894s] [吞吐率：4.95req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:42+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.212243s] [吞吐率：4.71req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:42+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.200904s] [吞吐率：4.98req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:43+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.199323s] [吞吐率：5.02req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:43+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.204819s] [吞吐率：4.88req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.264210s] [吞吐率：3.78req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:49+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.199948s] [吞吐率：5.00req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:24:57+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.204075s] [吞吐率：4.90req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:25:33+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.192033s] [吞吐率：5.21req/s] [内存消耗：4,305.91kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:25:45+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.209722s] [吞吐率：4.77req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:25:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.212420s] [吞吐率：4.71req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:08+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.205601s] [吞吐率：4.86req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:09+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.214750s] [吞吐率：4.66req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:09+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.211901s] [吞吐率：4.72req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:09+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.196859s] [吞吐率：5.08req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:10+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.210970s] [吞吐率：4.74req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:10+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.215650s] [吞吐率：4.64req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:10+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.204191s] [吞吐率：4.90req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:10+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.220776s] [吞吐率：4.53req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:11+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.243566s] [吞吐率：4.11req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:11+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.202479s] [吞吐率：4.94req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:13+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.215569s] [吞吐率：4.64req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:14+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.248189s] [吞吐率：4.03req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:16+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.215085s] [吞吐率：4.65req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:26:25+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.248039s] [吞吐率：4.03req/s] [内存消耗：4,306.38kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:44+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.213345s] [吞吐率：4.69req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:45+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.209775s] [吞吐率：4.77req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:45+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.216421s] [吞吐率：4.62req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.224123s] [吞吐率：4.46req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.218454s] [吞吐率：4.58req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.225932s] [吞吐率：4.43req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.211252s] [吞吐率：4.73req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.222707s] [吞吐率：4.49req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:47+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.217185s] [吞吐率：4.60req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:47+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.219700s] [吞吐率：4.55req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:47+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.366810s] [吞吐率：2.73req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:47+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.252570s] [吞吐率：3.96req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:48+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.195407s] [吞吐率：5.12req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:27:50+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.217785s] [吞吐率：4.59req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:10+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.208000s] [吞吐率：4.81req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:11+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.295491s] [吞吐率：3.38req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:11+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.202050s] [吞吐率：4.95req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:12+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.223666s] [吞吐率：4.47req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:12+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.223130s] [吞吐率：4.48req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:12+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.219144s] [吞吐率：4.56req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:12+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.222630s] [吞吐率：4.49req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:28:12+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.201776s] [吞吐率：4.96req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:31+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.204348s] [吞吐率：4.89req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:33+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.197311s] [吞吐率：5.07req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:33+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.204876s] [吞吐率：4.88req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.206637s] [吞吐率：4.84req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.209843s] [吞吐率：4.77req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.205980s] [吞吐率：4.85req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.218072s] [吞吐率：4.59req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:35+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.234224s] [吞吐率：4.27req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:35+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.233155s] [吞吐率：4.29req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:35+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.205967s] [吞吐率：4.86req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:35+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.201621s] [吞吐率：4.96req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:31:57+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.204658s] [吞吐率：4.89req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:33:22+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.245259s] [吞吐率：4.08req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:33:25+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.204877s] [吞吐率：4.88req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:38:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.230325s] [吞吐率：4.34req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:38:46+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.205134s] [吞吐率：4.87req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:38:54+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.367128s] [吞吐率：2.72req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:38:54+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.208299s] [吞吐率：4.80req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:01+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.235287s] [吞吐率：4.25req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:01+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.215518s] [吞吐率：4.64req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:32+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.211726s] [吞吐率：4.72req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:33+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.210714s] [吞吐率：4.75req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.379881s] [吞吐率：2.63req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.234314s] [吞吐率：4.27req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.213530s] [吞吐率：4.68req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:39:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.208394s] [吞吐率：4.80req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:40:56+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.244902s] [吞吐率：4.08req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:57:31+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.206422s] [吞吐率：4.84req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T17:57:48+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.201727s] [吞吐率：4.96req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T18:00:21+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.217352s] [吞吐率：4.60req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T18:00:58+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.385274s] [吞吐率：2.60req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T18:01:02+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.217787s] [吞吐率：4.59req/s] [内存消耗：4,306.28kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T18:03:23+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.208288s] [吞吐率：4.80req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-10-24T18:03:24+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/collegeclass/index
+[运行时间：0.206919s] [吞吐率：4.83req/s] [内存消耗：4,305.80kb] [文件加载：154]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Connection.php:385]

@@ -1,0 +1,29 @@
+/* pages/addclass/addclass.wxss */
+Page{
+  background: #F1F5FA;
+}
+.img_box{
+  border: 1rpx solid #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120rpx;  
+  border-radius: 20rpx;
+  position: absolute;
+  top:10rpx;
+  left: 310rpx;
+}
+.addimg{
+  width: 100rpx;
+  height: 100rpx;
+  padding: 5rpx;
+}
+.inp{
+  width: 490rpx;
+}
+.pla_st{
+  font-size: 28rpx;
+}
+.btn_add{
+  border-radius: 20rpx;
+}

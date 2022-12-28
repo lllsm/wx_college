@@ -1,0 +1,135 @@
+<view class="fixtop">
+  <view class="flex-row flex-center padding-left-30 padding-bottom-30 padding-right-30  padding-top-30 xs">
+    <view class=" h5 txt-white flex-1 margin-right-20" bindtap="showinfo" style="white-space:nowrap;overflow:hidden;text-overflow: ellipsis">{{kapianxilieinfo.name}}</view>
+    <view class="banbe">
+      <picker bindchange="bindPickerChange" value="{{banbenindex}}" range-key='name' range="{{banbenlist}}">
+        <view class="banbe">
+          {{banbenlist[banbenindex].name || banben_name}}
+        </view>
+      </picker>
+    </view>
+    <view class="danshu margin-right-20 margin-left-20">
+      <picker bindchange="bindPickerdanshu" value="{{danshuindex}}" range-key='name' range="{{danshulist}}">
+        <view class="danshu">
+          <view class="textdanshu">
+            {{danshulist[danshuindex].name || danshu_name}}
+          </view>
+        </view>
+      </picker>
+
+    </view>
+    <image src="{{uploadpath}}resource/{{isshow?res.topicon:res.bottomiconnew}}" class="icon-32" bindtap="showinfo"></image>
+  </view>
+
+
+
+
+  <view wx:if='{{isshow}}' class="xz">
+    <view class="flex-row flex-center margin-top-20 ">
+      <view class="flex-1"></view>
+      <view class="flex-row flex-center searchbox">
+        <image src="{{uploadpath}}resource/{{res.searchicon}}" class="icon-10 padding-left-30 padding-right-10">
+        </image>
+        <input type="text" class="h6 flex-1" bindinput="keywordFn" bindconfirm="getmianka" value="{{keyword}}" placeholder="输入名称，编号或者关键词" />
+        <view class="searchbtn" bindtap="getmianka" id='0000'>搜索</view>
+      </view>
+      <view class="flex-1"></view>
+      <view class="resetbtn" catchtap="reset">重置</view>
+      <view class="flex-1"></view>
+    </view>
+    <view class="margin-30 ">
+      <view class="">
+
+        <view class="">
+
+          <checkbox-group bindchange="checkboxChange" class="flex-row flex-wrap">
+            <view class=" h6 txt-33 {{index==-1 ? 'checkbox checked':' checkbox'}}" bindtap="switchtype" data-index="{{id}}" id="-1">全部</view>
+            <label wx:for='{{zhongleilist}}' wx:key='l' data-index="{{index}}" bindtap="switchtype" class="flex-row flex-wrap hh h6 txt-33 {{item.checked ? 'checkbox checked':' checkbox'}}">
+              <checkbox value="{{item.id}}" checked="{{item.checked}}" />
+              {{item.name}}
+            </label>
+            <view class=" h6 txt-33 {{yishouji ? 'checkbox checked':' checkbox'}}" data-index="{{id}}" bindtap="switchtype" id="-2">
+              已收集
+            </view>
+            <view class=" h6 txt-33 {{weshouji ? 'checkbox checked':' checkbox'}}" data-index="{{id}}" bindtap="switchtype" id="-3">
+              未收集
+            </view>
+          </checkbox-group>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+
+  <view class="cardbox" wx:if="{{isloading}}">
+    <view class="flex-row flex-center">
+      <view class="h6 margin-right-10">
+        已收集({{totalgather||0}}/{{kapiantotal||0}})</view>
+      <progress percent="{{proportion}}" class="flex-1" show-info stroke-width="10" border-radius='12' color="#FFED4F" backgroundColor='#A9A9A8' font-size="12" />
+    </view>
+  </view>
+</view>
+
+
+<view class="margin-30 bg-white flex-row flex-wrap padding-20 " wx:if="{{isloading}}">
+  <view wx:for="{{xiilefengmianka}}" wx:key='k' wx:for-index='idx' class="margin-bottom-20 {{((idx+1)%4==0)?'':'margin-right-11'}}" bindtap="bindimg" id='{{idx}}'>
+
+    <image class="card {{item.dlstatus=='A'?'card-act':''}}" lazy-load="true" mode="aspectFit" src="{{uploadpath}}kapian/{{item.tupian}}"></image>
+    <view class="text-center h6" style="color:#282728;max-width: 150rpx;">{{item.kapianbianhao}}</view>
+    <view class="text-center h6" style="color:#282728;max-width: 150rpx;">{{item.name}}</view>
+  </view>
+</view>
+
+
+<view class="mask" wx:if='{{imgidx>=0}}'></view>
+<view class="flex-row flex-center pomid" wx:if='{{imgidx>=0}}'>
+  <view class="flex-1"></view>
+  <view>
+    <view class="flex-row flex-center guanbi">
+      <view class="flex-1"></view>
+      <image src="{{uploadpath}}resource/{{res.closeicon}}" class="closeicon" bindtap="closeimg"></image>
+    </view>
+    <view class="flex-row flex-column">
+
+
+      <view class="kapianxiangqi" wx:if="{{iscarddetails}}">
+        <scroll-view scroll-y="true" class='picker_scroll' scroll-top="">
+          <view class="">
+            <text class="h6 txt-33 margin-bottom-30">{{xiilefengmianka[imgidx].carddetails}}</text>
+          </view>
+        </scroll-view>
+      </view>
+      <!-- <scroll-view class="scroll_live" scroll-x="true" scroll-y="false" upper-threshold="50" lower-threshold="50" scroll-top="0" scroll-left="0" scroll-into-view="" scroll-with-animation="false" enable-back-to-top="false" bindscrolltoupper="" bindscrolltolower="">
+        {{item.name}}
+      </scroll-view> 
+      <text class="h6 txt-33"></text>{{xiilefengmianka[imgidx].carddetails}}</text>
+      -->
+
+      <image wx:else mode="widthFix" src="{{uploadpath}}kapian/{{xiilefengmianka[imgidx].tupian}}" class="r_bianhao_tupian {{xiilefengmianka[imgidx].dlstatus=='A'?'r_bianhao_tupian-act':''}}">
+      </image>
+      <view class="" wx:if="{{xiilefengmianka[imgidx].carddetails == ''}}">
+        <view class="dianliang" bindtap="dianliang" wx:if='{{xiilefengmianka[imgidx].dlstatus!="A"}}'>已收集</view>
+        <view class="qxdianliang" wx:else bindtap="quxiaodl">未收集</view>
+      </view>
+
+      <view class="flex-center flex-row" wx:if="{{xiilefengmianka[imgidx].carddetails != ''}}">
+
+        <view wx:if="{{iscarddetails}}" class="fanhui" bindtap="chakan">返回</view>
+        <view wx:else class="carddetails" bindtap="chakan">卡片详情</view>
+
+
+        <view class="" wx:if="{{!iscarddetails}}">
+          <view class="dianliang_x margin-left-50" bindtap="dianliang" wx:if='{{xiilefengmianka[imgidx].dlstatus!="A"}}'>已收集</view>
+          <view class="qxdianliang_x margin-left-50" wx:else bindtap="quxiaodl">未收集</view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <view class="flex-1"></view>
+</view>
+
+<view wx:if="{{!isloading}}" class="loading">
+  <image mode="aspectFit" src="{{uploadpath}}resource/{{res.isloading}}" class="loadingimg"></image>
+</view>

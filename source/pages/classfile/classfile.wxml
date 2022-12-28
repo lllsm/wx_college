@@ -1,0 +1,38 @@
+<!--pages/classfile/classfile.wxml-->
+<view  style="padding-bottom: 200rpx;">
+<view>
+  <van-notice-bar
+  left-icon="volume-o"
+  text="微信小程序目前支持预览格式有：pdf,doc,docx,ppt,pptx,xls,xlsx,请确认后上传~"
+/>
+</view>
+  <view class="" wx:for="{{filelist}}" wx:key="index" bindtap="downLoadfile" data-file="{{item}}">
+  <view class="padding-30 border-box2 bg-white margin-top-20 margin-left-30 margin-right-30 flex-row flex-center">
+    <image class="img_class" src="../../images/icons/file.png" />
+    <view class="flex-column" style="width:100%">
+
+      <view class="flex-row flex-liangbian" style="width: 100%;">
+        <view class="txt-bold type-text-1 h5" style="color:#161616">{{item.file_name||"[未命名]"}}</view>
+        <view class="h5 margin-right-20">点击下载</view>
+      </view>
+
+      <view class="flex-liangbian margin-top-10">
+        <view class="h6 type-text-1">{{item.user.nickname}}</view>
+        <view class="margin-right-20 text-1 h6 flex-row flex-shrink">{{item.pass_time}}</view>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+</view>
+
+  <view class="bottom_btn border-box2 flex-row flex-center padding-left-30 flex-shrink flex-xiandeng">
+    <view class="search">
+      <input class="input_search" bindconfirm="bin_key" placeholder-style="color:#ffeac6" placeholder="搜索你想要的内容" />
+    </view>
+    <image bindtap="search" class="img_class2 flex-shrink" src="../../images/icons/query.png" />
+    <image bindtap="choosefile" class="img_class2 flex-shrink" src="../../images/icons/upload.png" />
+  </view>
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />

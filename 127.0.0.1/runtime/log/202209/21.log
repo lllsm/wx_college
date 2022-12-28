@@ -1,0 +1,8 @@
+---------------------------------------------------------------
+[ 2022-09-21T00:14:58+08:00 ] 127.0.0.1 POST www.lsm.com/api/Wxuser/login
+[运行时间：0.346509s] [吞吐率：2.89req/s] [内存消耗：4,196.27kb] [文件加载：149]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'openid' in 'where clause'[D:\phpstudy\WWW\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2022-09-21T00:17:50+08:00 ] 127.0.0.1 POST www.lsm.com/api/Wxuser/updateuser
+[运行时间：0.796128s] [吞吐率：1.26req/s] [内存消耗：4,312.12kb] [文件加载：150]
+[ error ] [0]数据表字段不存在:[avatarUrl][D:\phpstudy\WWW\thinkphp\library\think\db\Builder.php:115]

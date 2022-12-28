@@ -1,0 +1,118 @@
+<!--pages/classdetails/classdetails.wxml-->
+<view>
+  <!-- <view class="" style="z-index: -1;">
+    <swiper class=" " indicator-color="rgba(255, 255, 255, 0.6 )" indicator-active-color="rgba(255, 255, 255, 1)"
+    indicator-dots='true'  current="{{index}}" circular='true'>
+    <swiper-item wx:for="{{classdetails.img}}" tt:key="k">
+      <image src='{{uploadpath}}{{item.class_image}}' mode="aspectFit" style="width:100%;height:100%;"></image>
+    </swiper-item>
+  </swiper>
+  </view> -->
+  <view class="margin-top-30 flex-row toubu">
+    <view class="image_class flex-shrink">
+      <van-image class="" fit="cover" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{classdetails.college_image}}" />
+    </view>
+    <view class="margin-left-20 margin-top-10 flex-liangbian" style="width: 100vw;">
+      <view>
+        <view class="txt-bold type-text-1" style="color:#161616">{{classdetails.class_name}}</view>
+        <view class="margin-top-20 type-text-1 h5">{{classdetails.college_name}}</view>
+      </view>
+      <image bindtap="class_ewmbin" class="margin-right-20 margin-top-10" style="width: 80rpx; height: 80rpx; border-radius: 20rpx;" src="../../images/icons/ewm.png" />
+    </view>
+  </view>
+  <view class="box-bg bg-white">
+    <view class="border-box2 margin-top-80 margin-left-20 margin-right-20 margin-bottom-20">
+      <view class="margin-left-30 margin-top-30">主要功能</view>
+      <view class="margin-left-20 margin-top-20 flex-row flex-xiandeng margin-bottom-30">
+
+        <view class="flex-column margin-left-20">
+          <image class="img_class" src="../../images/icons/xc.png" bindtap="navtoPage" data-page="classimg" data-param='collegeclass_id={{options.id}}' />
+          <view class="h6">班级相册</view>
+        </view>
+
+        <view class="flex-column margin-left-20" bindtap="navtoPage" data-page="classfile" data-param='collegeclass_id={{options.id}}'>
+          <image class="img_class" src="../../images/icons/wj.png" />
+          <view class="h6">班级文件</view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="border-box2 margin-top-40 margin-left-20 margin-right-20 margin-bottom-20">
+      <view class="margin-left-30 margin-top-30">班级留言</view>
+      <view class="margin-left-20 margin-top-20 margin-bottom-30">
+        <view class="search margin-right-20">
+          <input class="input_search" bindconfirm="search" placeholder="搜索你想要的内容" />
+        </view>
+
+        <view class="flex-column">
+          <view class="flex-row margin-top-30" wx:for="{{msglist}}" wx:key="index">
+            <view class="flex-shrink">
+              <van-image class="" fit="cover" radius="20rpx" alt="heightFix" width="100rpx" height="100rpx" src="{{uploadpath}}{{item.user.avatar}}" />
+            </view>
+
+            <view class="margin-left-20" style="width:100%">
+              <view class="flex-row flex-liangbian">
+                <view>{{item.user.nickname}}</view>
+                <view class="margin-right-20 text-1 h6">{{item.refreshtime_text}}</view>
+              </view>
+              <view class="border-box2 margin-top-20 margin-right-20 padding-20" style="background-color: #F3F4F5;">
+                <view>{{item.msg_t}}</view>
+                <van-divider wx:if="{{item.img.length>0}}" hairline dashed customStyle="border-color: #999;"></van-divider>
+
+                <view class="flex-row flex-wrap">
+                  <view wx:for="{{item.img}}" wx:for-item="img" data-url="{{img.msg_image}}" bindtap="previewImage">
+                    <van-image class="margin-right-20" show-menu-by-longpress fit="cover" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{img.msg_image}}" />
+                  </view>
+                </view>
+                <van-divider wx:if="{{item.img.length>0}}" hairline customStyle="border-color: #999;"></van-divider>
+              </view>
+            </view>
+          </view>
+          <view style="width: 200prx; height: 200rpx;" wx:if="{{msglist.length==0}}">
+            <van-empty description="暂无数据" />
+          </view>
+        </view>
+
+
+
+
+
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view>
+  <image mode="aspectFit" src="../../images/icons/add.png" bindtap="addmsg" class="icon-60 under2" style="z-index:1;"></image>
+</view>
+
+<!-- 二维码弹出 -->
+<van-dialog use-slot title="长按识别扫码进群" show="{{ isclass_ewm }}" bind:getuserinfo="getUserInfo">
+  <view class="class_ewm flex-centers">
+    <image mode='aspectFit' show-menu-by-longpress src="{{uploadpath}}{{classdetails.class_ewm}}" />
+  </view>
+</van-dialog>
+
+<!-- 添加留言弹出 -->
+
+<van-popup lock-scroll="true" show="{{ isadd }}" round closeable position="bottom" close-icon="close" custom-style="height: 70%" bind:close="onClose" bind:close="closeadd">
+  <view class="margin-top-100 margin-left-30 margin-right-30">
+    <textarea value='{{text_msg}}' bindinput="bintext" class="text_msg" placeholder="请输入留言内容！" style="background: #F3F4F5"></textarea>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="flex-row flex-wrap flex-center">
+      <view wx:for="{{imagelist}}" class="img_list margin-bottom-20" data-url="{{item.img}}" bindtap="previewImage" wx:for-index="idx">
+        <van-image class="margin-right-20" show-menu-by-longpress fit="cover" id="{{idx}}" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{item.img}}" />
+        <image src="../../images/icons/close.png" class="close_img" catchtap="deleteimg" id="{{idx}}"></image>
+      </view>
+      <image mode="aspectFit" src="../../images/icons/addimg2.png" bindtap="uploadimg" id='-1' id="{{idx}}" class="icon-50 uploadicon"></image>
+    </view>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="clear-button margin-left-20 margin-right-20" style="position: fixed; bottom: 40rpx; width: 87%;">
+      <button class="border-none clear-button radius-40 button_mian" bindtap="msg_submit">确 认</button>
+    </view>
+  </view>
+</van-popup>
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />

@@ -1,0 +1,40 @@
+---------------------------------------------------------------
+[ 2022-10-27T14:52:15+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.161000s] [吞吐率：6.21req/s] [内存消耗：2,585.05kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ','[D:\wwwroot\116.30150.214\application\api\controller\College.php:74]
+---------------------------------------------------------------
+[ 2022-10-27T14:52:39+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.171142s] [吞吐率：5.84req/s] [内存消耗：2,584.73kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected ','[D:\wwwroot\116.30150.214\application\api\controller\College.php:74]
+---------------------------------------------------------------
+[ 2022-10-27T14:53:24+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.179257s] [吞吐率：5.58req/s] [内存消耗：2,647.20kb] [文件加载：133]
+[ error ] [64]Constant expression contains invalid operations[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-10-27T14:54:44+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.160030s] [吞吐率：6.25req/s] [内存消耗：2,647.20kb] [文件加载：133]
+[ error ] [64]Constant expression contains invalid operations[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-10-27T14:55:59+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.164665s] [吞吐率：6.07req/s] [内存消耗：2,584.80kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'admin' (T_STRING), expecting ',' or ';'[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-10-27T14:56:50+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.160085s] [吞吐率：6.25req/s] [内存消耗：2,585.13kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'admin' (T_STRING), expecting ',' or ';'[D:\wwwroot\116.30150.214\application\api\controller\College.php:13]
+---------------------------------------------------------------
+[ 2022-10-27T14:58:29+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.173830s] [吞吐率：5.75req/s] [内存消耗：3,030.87kb] [文件加载：140]
+[ error ] [8]Use of undefined constant uid - assumed 'uid'[D:\wwwroot\116.30150.214\application\api\controller\College.php:17]
+---------------------------------------------------------------
+[ 2022-10-27T16:36:36+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/delclass
+[运行时间：0.212184s] [吞吐率：4.71req/s] [内存消耗：3,707.60kb] [文件加载：145]
+[ error ] [0]method not exist:think\db\Query->destroy[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2022-10-27T16:38:30+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/delclass
+[运行时间：0.204827s] [吞吐率：4.88req/s] [内存消耗：3,707.73kb] [文件加载：145]
+[ error ] [0]method not exist:think\db\Query->destroy[D:\wwwroot\116.30150.214\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2022-10-27T16:42:34+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.171219s] [吞吐率：5.84req/s] [内存消耗：3,032.07kb] [文件加载：140]
+[ error ] [8]Use of undefined constant uid - assumed 'uid'[D:\wwwroot\116.30150.214\application\api\controller\College.php:17]

@@ -1,0 +1,32 @@
+---------------------------------------------------------------
+[ 2022-11-16T16:27:51+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.186182s] [吞吐率：5.37req/s] [内存消耗：2,587.05kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF)[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-16T16:27:51+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.163075s] [吞吐率：6.13req/s] [内存消耗：2,587.05kb] [文件加载：132]
+[ error ] [0]语法解析错误: syntax error, unexpected 'if' (T_IF)[D:\wwwroot\116.30150.214\application\api\controller\College.php:18]
+---------------------------------------------------------------
+[ 2022-11-16T16:55:26+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.324165s] [吞吐率：3.08req/s] [内存消耗：3,873.21kb] [文件加载：150]
+[ error ] [8]Use of undefined constant checkstate - assumed 'checkstate'[D:\wwwroot\116.30150.214\application\api\controller\College.php:23]
+---------------------------------------------------------------
+[ 2022-11-16T16:57:23+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.557148s] [吞吐率：1.79req/s] [内存消耗：3,873.23kb] [文件加载：150]
+[ error ] [8]Use of undefined constant checkstate - assumed 'checkstate'[D:\wwwroot\116.30150.214\application\api\controller\College.php:23]
+---------------------------------------------------------------
+[ 2022-11-16T16:58:35+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.197145s] [吞吐率：5.07req/s] [内存消耗：3,866.52kb] [文件加载：150]
+[ error ] [8]未定义数组下标: 0[D:\wwwroot\116.30150.214\application\api\controller\College.php:38]
+---------------------------------------------------------------
+[ 2022-11-16T17:01:03+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.208335s] [吞吐率：4.80req/s] [内存消耗：3,866.52kb] [文件加载：150]
+[ error ] [8]未定义数组下标: 0[D:\wwwroot\116.30150.214\application\api\controller\College.php:38]
+---------------------------------------------------------------
+[ 2022-11-16T17:02:02+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.201193s] [吞吐率：4.97req/s] [内存消耗：3,865.80kb] [文件加载：150]
+[ error ] [8]未定义数组下标: 0[D:\wwwroot\116.30150.214\application\api\controller\College.php:34]
+---------------------------------------------------------------
+[ 2022-11-16T17:02:28+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/collegeclass
+[运行时间：0.203447s] [吞吐率：4.92req/s] [内存消耗：3,865.97kb] [文件加载：150]
+[ error ] [8]未定义数组下标: 0[D:\wwwroot\116.30150.214\application\api\controller\College.php:34]

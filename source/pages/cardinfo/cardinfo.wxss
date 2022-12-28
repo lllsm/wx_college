@@ -1,0 +1,402 @@
+/* pages/my/my.wxss */
+
+Page {
+  background: #F6F6F6;
+}
+.sc{
+  width: 100%;
+  height: 100vh;
+}
+.fixtop {
+  width: 100vw;
+
+  background: #7C6DFE;
+  /* background: #7C6DFE; */
+}
+
+.xz {
+  background: #FFFFFF;
+}
+
+.xz {
+  background: #FFFFFF;
+  margin-bottom: -30rpx;
+}
+
+.margin-top-30 {
+  margin-top: 30rpx;
+}
+
+.searchbox {
+  width: 550rpx;
+  height: 60rpx;
+  background: #F6F6F6;
+  border-radius: 30rpx;
+}
+
+.scroll_live {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding-bottom: 20rpx;
+}
+
+.searchbtn {
+  width: 120rpx;
+  height: 60rpx;
+  background: #7C6DFE;
+  border-radius: 0rpx 30rpx 30rpx 0rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #FFED4F;
+  font-weight: 400;
+}
+
+.resetbtn {
+  width: 120rpx;
+  height: 60rpx;
+
+  background: #7C6DFE;
+  border-radius: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #FFED4F;
+  font-size: 24rpx;
+}
+
+.label {
+  min-width: 100rpx;
+  padding: 18rpx 0;
+  border-radius: 8rpx;
+  border: 2rpx solid #DDDDDD;
+  margin-right: 10rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
+  color: #999999;
+}
+
+.label-act {
+  border-color: transparent;
+  background: #7C6DFE;
+  color: #FFFFFF;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30rpx;
+}
+
+.margin-right-11 {
+  margin-right: 11rpx;
+}
+
+.card {
+  width: 150rpx;
+  height: 210rpx;
+  border: 2rpx solid #FFFFFF;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+  filter: grayscale(1);
+}
+
+.card-act {
+  filter: grayscale(0);
+}
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.pomid {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 101;
+  overflow: hidden;
+}
+
+.closeicon {
+  width: 52rpx;
+  height: 52rpx;
+  margin-left: 72rpx;
+}
+
+.guanbi {
+  margin-left: 458rpx;
+}
+
+.r_bianhao_tupian {
+  /* width: 450rpx;
+    height: 630rpx; */
+  /* background: #212121; */
+  border: 2rpx solid #FFFFFF;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+  margin-bottom: 60rpx;
+  filter: grayscale(1);
+  /* animation: fanzhuan 0.5s; */
+}
+
+
+.r_bianhao_tupian-act {
+  filter: grayscale(0);
+}
+
+.dianliang {
+  width: 450rpx;
+  height: 68rpx;
+  background: #FFED4F;
+  border-radius: 34rpx;
+  color: #333333;
+  font-weight: 500;
+  line-height: 68rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.dianliang_x {
+  width: 200rpx;
+  height: 68rpx;
+  background: #FFED4F;
+  border-radius: 34rpx;
+  color: #333333;
+  font-weight: 500;
+  line-height: 68rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.carddetails {
+  width: 200rpx;
+  height: 68rpx;
+  background: #FFFFFF;
+  border-radius: 34rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333333;
+  line-height: 68rpx;
+  text-align: center;
+}
+
+.qxdianliang {
+  width: 450rpx;
+  height: 68rpx;
+  background: #F6F6F6;
+  border-radius: 34rpx;
+  color: #999999;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 68rpx;
+  text-align: center;
+}
+
+.qxdianliang_x {
+  width: 200rpx;
+  height: 68rpx;
+  background: #F6F6F6;
+  border-radius: 34rpx;
+  color: #999999;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 68rpx;
+  text-align: center;
+}
+
+.fanhui {
+  width: 450rpx;
+  height: 68rpx;
+  border: 2rpx solid #FFFFFF;
+  border-radius: 34rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 68rpx;
+  text-align: center;
+}
+
+.kapianxiangqi {
+  width: 450rpx;
+  height: 630rpx;
+  background: #FFFFFF;
+  border: 2px solid #7C6DFE;
+  border-radius: 8rpx;
+  padding: 33rpx;
+  margin-bottom: 60rpx;
+  /* animation: fanzhuan 0.5s; */
+}
+
+
+.animt {
+  animation: fanzhuan 1s;
+}
+
+@keyframes fanzhuan {
+  0% {
+    transform: perspective(150px) rotateY(0deg);
+  }
+
+  50% {
+    transform: perspective(150px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(150px) rotateY(179.9deg);
+  }
+}
+
+
+.toubu {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.cardbox {
+  /* width: 100%; */
+  padding: 33rpx 30rpx 32rpx 30rpx;
+  background: #FFFFFF;
+  /* opacity: 0.5; */
+  border-radius: 0rpx 0rpx 8rpx 8rpx;
+  /* margin-top: -118rpx; */
+  z-index: 2;
+  border-top: 1rpx solid #EEEEEE;
+}
+
+.margin-bottom-15 {
+  margin-bottom: 15rpx;
+}
+
+/* .card-h {
+    width: 100%;
+    white-space: nowrap;
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+  }
+  
+  .card-item {
+    display: inline-block;
+    margin-right: 10rpx;
+  }
+  
+  .card {
+    width: 110rpx;
+    height: 154rpx;
+    border: 2rpx solid #FFFFFF;
+    border-radius: 8rpx;
+    filter: grayscale(1);
+  }
+  
+  .card-act-11 {
+    filter: grayscale(0);
+  } */
+
+.banbe {
+  width: 160rpx;
+  height: 48rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textdanshu{
+  width: 160rpx;
+  height: 48rpx;
+  white-space:nowrap;
+  overflow:hidden;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 48rpx;
+  text-align: center;
+}
+.danshu {
+  width: 160rpx;
+  height: 48rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.checkbox {
+  text-align: center;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #999999;
+  width: 100rpx;
+  height: 60rpx;
+  background: #FFFFFF;
+  border: 2rpx solid #DDDDDD;
+  border-radius: 8rpx;
+  line-height: 62rpx;
+
+  display: inline-block;
+  margin: 0 10rpx 20rpx 0;
+  /* position: relative; */
+
+  flex-shrink: 0;
+}
+
+.checked {
+  width: 100rpx;
+  height: 60rpx;
+  background: #7C6DFE;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 62rpx;
+  flex-shrink: 0;
+}
+
+.checkbox checkbox {
+  display: none
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50%;
+}
+
+.loadingimg {
+  width: 400rpx;
+  height: 300rpx;
+}
+
+.Forbidden_scroll {
+  overflow: hidden;
+}
