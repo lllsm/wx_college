@@ -14,11 +14,26 @@ class Content extends AppBase {
       headimg:"",
       ewmimg:"",
     });
+    if(this.options.id){
+      var collegeapi = new CollegeApi();
+      collegeapi.classdetails({id:this.Base.options.id},(classdetails)=>{
+        this.Base.setMyData({
+          classdetails:classdetails.data,
+          headimg:classdetails.data.college_image,
+          ewmimg:classdetails.data.class_ewm,
+          checked :classdetails.data.is_pas_switch==1? true :false,
+          class_name:classdetails.data.class_name,
+          college_name:classdetails.data.college_name,
+          class_intro:classdetails.data.class_intro,
+          college_intro:classdetails.data.college_intro,
+          class_key:classdetails.data.class_pas
+        })
+      })
+    }
   }
   onMyShow() {
     var that = this;
 
-    
 
   }
   mymember(e) {

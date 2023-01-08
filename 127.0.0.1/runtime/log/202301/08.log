@@ -1,0 +1,8 @@
+---------------------------------------------------------------
+[ 2023-01-08T15:42:18+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/index/login
+[运行时间：0.393673s] [吞吐率：2.54req/s] [内存消耗：4,095.13kb] [文件加载：151]
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'rootst'@'localhost' (using password: YES)[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2023-01-08T15:42:34+08:00 ] 127.0.0.1 POST 127.0.0.1/root.php/index/login
+[运行时间：0.236177s] [吞吐率：4.23req/s] [内存消耗：4,095.13kb] [文件加载：151]
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'rootst'@'localhost' (using password: YES)[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:295]

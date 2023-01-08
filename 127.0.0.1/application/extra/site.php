@@ -2,7 +2,7 @@
 
 return array (
   'name' => '眼睛睁大大',
-  'beian' => '',
+  'beian' => '粤ICP备2023001078号-1',
   'cdnurl' => '',
   'version' => '1.0.2',
   'timezone' => 'Asia/Shanghai',

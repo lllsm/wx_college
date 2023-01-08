@@ -1,0 +1,181 @@
+1.后台拿的数据进行数值比较运算先转类型转数值类型parseInt(),parseFloat(),Number()
+
+小乌龟清除认证信息。清除微信数据
+
+ctrl+u    view-source
+
+
+分页   
+
+        $pageIndex=$request['pageIndex'];
+        $pageSize=$request['pageSize'];
+        if($pageIndex!=1)
+         {
+            $start=($pageIndex-1)*$pageSize;
+            $request["limit"]="$start,$pageSize";
+         }
+
+select * from testTavble where   name ='test'   limit 0,100;
+
+
+sql   时间处理    杭州-全栈 15:52:45
+
+时间范围查询
+select * from testTable where EstimatedTime between '2019-07-20' and '2019-07-21';
+时间查询
+select * from testTable where date_format(EstimatedTime,'%Y-%m-%d')='2019-07-20';
+
+sql 清空表
+
+truncate table  testTable
+
+sql 删除表数据
+
+delete from  testTable where  name='test'
+
+
+
+sql  联表查询
+
+distinct  去重数据
+
+select  distinct a.*  ,b.*   from  testTable   a  inner join  tb_test  b on   a.id=b.id 
+				inner join  tb_test2  c   on  b.id=c.id
+				inner join  tb_test3  d   on  c.id=d.id
+				where  a.name='' and  (b.name or c.name)  status = 'A'
+
+.....左右连
+
+
+
+sql 插入数据
+
+insert into tb_goodsorders (id,name,time,status,seq)
+select ifnull (max(id),0)+1,'name','time,'A','0' from tb_goodsorders;
+
+
+
+sql  批量插入数据
+
+insert into  tb_test  (id,name,time,status,seq)  values ( max(id)+1,'name','time','A','0' ),(max(id)+1,'name','time','A','0')
+
+sql  更新数据记录
+
+update tb_test  set time=now(),name='test' where status='A';
+
+sql 计数
+
+select  count(*) from  tb_test 
+
+
+sum求和  avg平均数   max最值  min最值
+
+
+sql 排序
+
+select * from tb_test where status='A'  order by  time
+
+desc 降序排列   asc升序
+
+
+sql 求和
+
+select SUM(loans_amount_sum) loans_amount_sum from tb_loan_amount_table where id in(1288,1300,1312,1276,1291,1303,1315,1279,1289) and status='A'
+
+
+sql    两时间的天数做查询
+
+ select * from `tb_test` where DateDiff(end_date,start_date)=1  and  status='B' 
+
+sql  分组 
+
+select * from `tb_test`  where  status='A'   group by  name
+
+
+sql    TIMESTAMPDIFF 函数     语法  unit,datetime_expr1,datetime_expr2
+
+unit 参数 值
+
+SECOND：秒
+
+MINUTE：分钟
+
+HOUR：小时
+
+DAY：天
+
+WEEK：星期
+
+MONTH：月
+
+QUARTER：季度
+
+YEAR：年
+
+select   timestampdiff(MINUTE,now(),activity_start_time),id    from  tb_text
+
+
+
+sql   字符串替换函数 
+
+update  tb_activity set summary=replace(summary,'/alucard263096/tsinghua','')
+
+
+sql   in操作符
+
+select  * from  tb_test   where  name  in ('张三','王五')；
+
+
+
+mysql    添加索引
+
+1.添加 primary key (主键索引)
+
+alter  table `tb_test`  add primary key (`列名`)
+
+2.添加 unique(唯一索引)
+
+alter table `tb_test` add unique(`列名`)
+
+3.添加普通索引（普通索引）
+
+alter table `tb_test` add index index_name(`列名`)
+
+4.添加fulltext(全文索引)
+
+alter table `tb_test` add fulltext(`列名`)
+
+5.添加多列索引
+
+alter table `tb_test` add index index_name(`列名`,`列名`,`列名`)
+
+
+
+
+所有的参数值类型及限制条件如下微信通知
+
+参数类别	参数说明	参数值限制	说明
+thing.DATA	事物	20个以内字符	可汉字、数字、字母或符号组合
+number.DATA	数字	32位以内数字	只能数字，可带小数
+letter.DATA	字母	32位以内字母	只能字母
+symbol.DATA	符号	5位以内符号	只能符号
+character_string.DATA	字符串	32位以内数字、字母或符号	可数字、字母或符号组合
+time.DATA	时间	24小时制时间格式（支持+年月日），支持填时间段，两个时间点之间用“~”符号连接	例如：15:01，或：2019年10月1日 15:01
+date.DATA	日期	年月日格式（支持+24小时制时间），支持填时间段，两个时间点之间用“~”符号连接	例如：2019年10月1日，或：2019年10月1日 15:01
+amount.DATA	金额	1个币种符号+10位以内纯数字，可带小数，结尾可带“元”	可带小数
+phone_number.DATA	电话	17位以内，数字、符号	电话号码，例：+86-0766-66888866
+car_number.DATA	车牌	8位以内，第一位与最后一位可为汉字，其余为字母或数字	车牌号码：粤A8Z888挂
+name.DATA	姓名	10个以内纯汉字或20个以内纯字母或符号	中文名10个汉字内；纯英文名20个字母内；中文和字母混合按中文名算，10个字内
+phrase.DATA	汉字	5个以内汉字	5个以内纯汉字，例如：配送中
+
+
+
+
+
+
+
+
+
+
+
+

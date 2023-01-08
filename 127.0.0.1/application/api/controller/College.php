@@ -118,9 +118,10 @@ class College extends Api{
             $keyword = input('keyword');
             $isd = input('isd');
 			$checkstate = input('checkstate');
+            $type = input('type');
             // $keyword = htmlspecialchars($keyword, ENT_QUOTES); //防sql注入
 
-            // echo($keyword);
+            // echo($type);
 
             if($keyword){
                 if($isd="all"){
@@ -138,6 +139,7 @@ class College extends Api{
                         where (a.msg_t LIKE ?) OR (b.wxnickName LIKE ?) AND a.collegeclass_id=? AND checkstate=? AND state = '1' AND a.user_id = $this->uid ",['%'.$keyword.'%','%'.$keyword.'%',$class_id,$checkstate]); 
                     }
                 }
+
             }else{
                 if($isd="all"){
                     $where = [
@@ -159,6 +161,25 @@ class College extends Api{
                     }
                 }
                 $list = model('admin/Message')->where($where)->select();
+
+
+                if($type=='my'){
+                    // $list=Db::query("select b.*,a.class_name from tb_collegeclass a 
+                    // INNER JOIN tb_message b ON a.id = b.collegeclass_id
+                    // WHERE  b.checkstate=? AND b.state = '1' AND b.user_id = $this->uid ",[$checkstate]); 
+
+                    if($checkstate=='all'){
+                        $list=Db::query("select b.*,a.class_name from tb_collegeclass a 
+                        INNER JOIN tb_message b ON a.id = b.collegeclass_id
+                        WHERE  b.state = '1' AND b.user_id = $this->uid "); 
+                    }else{
+                        $list=Db::query("select b.*,a.class_name from tb_collegeclass a 
+                        INNER JOIN tb_message b ON a.id = b.collegeclass_id
+                        WHERE  b.checkstate=? AND b.state = '1' AND b.user_id = $this->uid ",[$checkstate]); 
+                    }
+                }
+
+
             }
             for($i=0;$i<count($list);$i++){
                 $id=$list[$i]['user_id']+0;
@@ -310,6 +331,7 @@ class College extends Api{
                 if($isd == "all"){
                     $where = [
                         // "user_id"=>$this->uid,
+                        "collegeclass_id"=>$class_id,
                         "checkstate"=>$checkstate
                     ];
                 }else{
@@ -409,6 +431,7 @@ class College extends Api{
     public function classimglist(){
         $class_id =  input('id');
         $isd = input('isd');
+        $type = input('type');
         // $keyword = input('keyword');
         $checkstate = input('checkstate');
         if($isd=="all"){
@@ -432,7 +455,20 @@ class College extends Api{
             }
 
         }
+
         $list = model('admin/Classimg')->where($where)->select();
+        if($type=='my'){
+            // echo(111);
+            if($checkstate=='all'){
+                $list=Db::query("select b.*,a.class_name from tb_collegeclass a 
+                INNER JOIN tb_classimg b ON a.id = b.collegeclass_id
+                WHERE  b.state = '1' AND b.user_id = $this->uid "); 
+            }else{
+                $list=Db::query("select b.*,a.class_name from tb_collegeclass a 
+                INNER JOIN tb_classimg b ON a.id = b.collegeclass_id
+                WHERE  b.checkstate=? AND b.state = '1' AND b.user_id = $this->uid ",[$checkstate]); 
+            }
+        }
         $this->success('success',$list);
 
     }

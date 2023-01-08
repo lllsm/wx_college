@@ -1,0 +1,919 @@
+---------------------------------------------------------------
+[ 2023-01-05T12:19:01+08:00 ] 113.89.149.53 POST college.cllsm.top/root.php/index/login
+[运行时间：0.151671s] [吞吐率：6.59req/s] [内存消耗：4,376.23kb] [文件加载：150]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'root'[C:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2023-01-05T12:19:17+08:00 ] 113.89.149.53 POST college.cllsm.top/root.php/index/login
+[运行时间：0.143281s] [吞吐率：6.98req/s] [内存消耗：4,317.25kb] [文件加载：151]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'root'[C:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2023-01-05T12:19:25+08:00 ] 183.40.39.19 GET college.cllsm.top/index/user/index.html
+[运行时间：0.128215s] [吞吐率：7.80req/s] [内存消耗：3,721.73kb] [文件加载：142]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'root'[C:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2023-01-05T12:19:33+08:00 ] 113.89.149.53 POST college.cllsm.top/root.php/index/login
+[运行时间：0.145646s] [吞吐率：6.87req/s] [内存消耗：4,376.23kb] [文件加载：150]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'root'[C:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2023-01-05T12:20:25+08:00 ] 180.163.28.114 GET college.cllsm.top/index/user/index.html
+[运行时间：0.128280s] [吞吐率：7.80req/s] [内存消耗：3,714.30kb] [文件加载：142]
+[ error ] [1049]SQLSTATE[HY000] [1049] Unknown database 'root'[C:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2023-01-05T12:52:22+08:00 ] 113.89.149.53 POST college.cllsm.top/api/College/addclassimg
+[运行时间：0.198128s] [吞吐率：5.05req/s] [内存消耗：4,205.06kb] [文件加载：152]
+[ error ] [10501]SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'class_images' at row 1[C:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:55+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.278102s] [吞吐率：3.60req/s] [内存消耗：4,109.62kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C' union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:56+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.254204s] [吞吐率：3.93req/s] [内存消耗：4,109.62kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C' union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:56+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.253398s] [吞吐率：3.95req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C' union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:56+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.254232s] [吞吐率：3.93req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C' union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:57+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.247251s] [吞吐率：4.04req/s] [内存消耗：4,109.43kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:58+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.257506s] [吞吐率：3.88req/s] [内存消耗：4,109.43kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:58+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.250308s] [吞吐率：4.00req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:58+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.264255s] [吞吐率：3.78req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:59+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.259135s] [吞吐率：3.86req/s] [内存消耗：4,109.10kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=' union select 1--): failed to open stream: HTTP request failed! union select 1-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:59+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.283152s] [吞吐率：3.53req/s] [内存消耗：4,109.16kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=' union select 1,2--): failed to open stream: HTTP request failed! union select 1,2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:59+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.258321s] [吞吐率：3.87req/s] [内存消耗：4,109.18kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=' union select md5(3141592657),2--): failed to open stream: HTTP request failed! union select md5(3141592657),2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:42:59+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.262115s] [吞吐率：3.82req/s] [内存消耗：4,109.18kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=' union select 1,md5(3141592657)--): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:00+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.257182s] [吞吐率：3.89req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]' union select 1--): failed to open stream: HTTP request failed! union select 1-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:00+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.247011s] [吞吐率：4.05req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]' union select 1,2--): failed to open stream: HTTP request failed! union select 1,2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:00+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.272462s] [吞吐率：3.67req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]' union select md5(3141592657),2--): failed to open stream: HTTP request failed! union select md5(3141592657),2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:01+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.268645s] [吞吐率：3.72req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]' union select 1,md5(3141592657)--): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:02+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.249962s] [吞吐率：4.00req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode' union select 1-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:02+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.272133s] [吞吐率：3.67req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode' union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:02+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.255748s] [吞吐率：3.91req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode' union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:03+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.255839s] [吞吐率：3.91req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode' union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:03+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.273705s] [吞吐率：3.65req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;' union select 1-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:03+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.272395s] [吞吐率：3.67req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;' union select 1,2-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:04+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.250048s] [吞吐率：4.00req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;' union select md5(3141592657),2-- &amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:04+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.275418s] [吞吐率：3.63req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;' union select 1,md5(3141592657)-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:05+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.277004s] [吞吐率：3.61req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true' union select 1-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:06+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.249955s] [吞吐率：4.00req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true' union select 1,2-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:06+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.246412s] [吞吐率：4.06req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true' union select md5(3141592657),2-- &amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:06+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.250700s] [吞吐率：3.99req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true' union select 1,md5(3141592657)-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:22+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.261877s] [吞吐率：3.82req/s] [内存消耗：4,109.62kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot; union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:22+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.247955s] [吞吐率：4.03req/s] [内存消耗：4,109.62kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot; union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:23+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.329021s] [吞吐率：3.04req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot; union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:23+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.276685s] [吞吐率：3.61req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot; union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:23+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.244606s] [吞吐率：4.09req/s] [内存消耗：4,109.55kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot; union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:24+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.239014s] [吞吐率：4.18req/s] [内存消耗：4,109.55kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot; union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:24+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.229593s] [吞吐率：4.36req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot; union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:24+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.230798s] [吞吐率：4.33req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot; union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)--&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:24+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.252615s] [吞吐率：3.96req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot; union select 1--): failed to open stream: HTTP request failed! union select 1-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:25+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.338472s] [吞吐率：2.95req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot; union select 1,2--): failed to open stream: HTTP request failed! union select 1,2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:25+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.259113s] [吞吐率：3.86req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot; union select md5(3141592657),2--): failed to open stream: HTTP request failed! union select md5(3141592657),2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:25+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.278026s] [吞吐率：3.60req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot; union select 1,md5(3141592657)--): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:26+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.256237s] [吞吐率：3.90req/s] [内存消耗：4,109.16kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot; union select 1--): failed to open stream: HTTP request failed! union select 1-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:26+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.262849s] [吞吐率：3.80req/s] [内存消耗：4,109.16kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot; union select 1,2--): failed to open stream: HTTP request failed! union select 1,2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:26+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.241567s] [吞吐率：4.14req/s] [内存消耗：4,109.18kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot; union select md5(3141592657),2--): failed to open stream: HTTP request failed! union select md5(3141592657),2-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:27+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.268279s] [吞吐率：3.73req/s] [内存消耗：4,109.18kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot; union select 1,md5(3141592657)--): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:27+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.284262s] [吞吐率：3.52req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot; union select 1-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:27+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.263724s] [吞吐率：3.79req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot; union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:28+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.252731s] [吞吐率：3.96req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot; union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:28+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.250802s] [吞吐率：3.99req/s] [内存消耗：4,109.65kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot; union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:28+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.261532s] [吞吐率：3.82req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot; union select 1-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:29+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.271887s] [吞吐率：3.68req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot; union select 1,2-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:29+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.291287s] [吞吐率：3.43req/s] [内存消耗：4,109.52kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot; union select md5(3141592657),2-- &amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:29+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.271665s] [吞吐率：3.68req/s] [内存消耗：4,109.52kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot; union select 1,md5(3141592657)-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:30+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.282351s] [吞吐率：3.54req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot; union select 1-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:30+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.282005s] [吞吐率：3.55req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot; union select 1,2-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:30+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.255328s] [吞吐率：3.92req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot; union select md5(3141592657),2-- &amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:31+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.271866s] [吞吐率：3.68req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot; union select 1,md5(3141592657)-- &amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:31+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.307879s] [吞吐率：3.25req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(3)))vadt) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))vadt) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:31+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.276498s] [吞吐率：3.62req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(3)))qljn) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))qljn) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:32+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.275734s] [吞吐率：3.63req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(3)))dyyb) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))dyyb) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:32+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.273543s] [吞吐率：3.66req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(3)))bkkt) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))bkkt) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:32+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.258664s] [吞吐率：3.87req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(4)))piyz) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))piyz) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:33+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.259861s] [吞吐率：3.85req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(4)))xlyh) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))xlyh) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:33+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.261942s] [吞吐率：3.82req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(3)))ejos) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))ejos) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:33+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.265461s] [吞吐率：3.77req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(4)))pswm) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))pswm) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:34+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.284582s] [吞吐率：3.51req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(4)))fste) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))fste) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:34+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.280744s] [吞吐率：3.56req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(2)))wjux) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))wjux) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:34+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.259652s] [吞吐率：3.85req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(4)))firc) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))firc) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:35+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.274774s] [吞吐率：3.64req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(2)))cbcp) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))cbcp) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:35+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.264220s] [吞吐率：3.78req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(2)))pdgk) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))pdgk) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:35+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.284327s] [吞吐率：3.52req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(4)))ixru) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))ixru) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:36+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.286155s] [吞吐率：3.49req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(4)))tsog) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))tsog) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:36+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.280008s] [吞吐率：3.57req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(4)))dddf) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))dddf) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:36+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.282223s] [吞吐率：3.54req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(4)))gpcv) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))gpcv) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:37+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.279078s] [吞吐率：3.58req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(2)))vyyo) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))vyyo) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:37+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.261241s] [吞吐率：3.83req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(4)))abgd) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))abgd) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:37+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.288969s] [吞吐率：3.46req/s] [内存消耗：4,109.68kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(3)))nuyg) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))nuyg) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:38+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.280819s] [吞吐率：3.56req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C')) OR (SELECT*FROM(SELECT(SLEEP(4)))wrst) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))wrst) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:38+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.284352s] [吞吐率：3.52req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=')) OR (SELECT*FROM(SELECT(SLEEP(2)))qenw) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))qenw) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:38+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.281643s] [吞吐率：3.55req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]')) OR (SELECT*FROM(SELECT(SLEEP(3)))xtia) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))xtia) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:39+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.282012s] [吞吐率：3.55req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=')) OR (SELECT*FROM(SELECT(SLEEP(4)))jzdg) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))jzdg) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:39+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.256027s] [吞吐率：3.91req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode')) OR (SELECT*FROM(SELECT(SLEEP(4)))fvkj) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))fvkj) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:39+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.256266s] [吞吐率：3.90req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;')) OR (SELECT*FROM(SELECT(SLEEP(3)))kaxg) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))kaxg) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:39+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.277767s] [吞吐率：3.60req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true')) OR (SELECT*FROM(SELECT(SLEEP(4)))rdlk) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))rdlk) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:40+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.323840s] [吞吐率：3.09req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;')) OR (SELECT*FROM(SELECT(SLEEP(4)))cqkp) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))cqkp) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:40+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.266724s] [吞吐率：3.75req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C' OR (SELECT*FROM(SELECT(SLEEP(3)))apan) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))apan) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:41+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.249841s] [吞吐率：4.00req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(4)))pswm) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))pswm) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:41+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.246938s] [吞吐率：4.05req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot;)) OR (SELECT*FROM(SELECT(SLEEP(3)))aiyc) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))aiyc) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:41+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.249729s] [吞吐率：4.00req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]' OR (SELECT*FROM(SELECT(SLEEP(4)))wgmx) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))wgmx) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:42+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.270441s] [吞吐率：3.70req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=' OR (SELECT*FROM(SELECT(SLEEP(3)))agmv) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))agmv) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:42+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.300294s] [吞吐率：3.33req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode' OR (SELECT*FROM(SELECT(SLEEP(3)))vnjp) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))vnjp) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:42+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.309428s] [吞吐率：3.23req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;' OR (SELECT*FROM(SELECT(SLEEP(4)))lwmf) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))lwmf) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:43+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.283965s] [吞吐率：3.52req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true' OR (SELECT*FROM(SELECT(SLEEP(4)))dwsr) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))dwsr) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:43+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.266284s] [吞吐率：3.76req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;' OR (SELECT*FROM(SELECT(SLEEP(2)))zztx) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))zztx) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:43+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.254296s] [吞吐率：3.93req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C') OR (SELECT*FROM(SELECT(SLEEP(4)))tnbt) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))tnbt) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:44+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.271392s] [吞吐率：3.68req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=') OR (SELECT*FROM(SELECT(SLEEP(2)))tvoo) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))tvoo) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:44+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.270177s] [吞吐率：3.70req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]') OR (SELECT*FROM(SELECT(SLEEP(3)))mfnd) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))mfnd) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:44+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.266438s] [吞吐率：3.75req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=') OR (SELECT*FROM(SELECT(SLEEP(4)))xasx) limit 1#): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))xasx) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:45+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.292497s] [吞吐率：3.42req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode') OR (SELECT*FROM(SELECT(SLEEP(4)))xepq) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))xepq) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:45+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.275933s] [吞吐率：3.62req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;') OR (SELECT*FROM(SELECT(SLEEP(3)))mohx) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))mohx) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:45+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.267005s] [吞吐率：3.75req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true') OR (SELECT*FROM(SELECT(SLEEP(3)))mexf) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))mexf) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:46+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.277837s] [吞吐率：3.60req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;') OR (SELECT*FROM(SELECT(SLEEP(4)))zdwg) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))zdwg) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:46+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.265292s] [吞吐率：3.77req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(3)))rpjq) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))rpjq) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:46+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.299521s] [吞吐率：3.34req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(2)))zpwj) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(2)))zpwj) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:47+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.272689s] [吞吐率：3.67req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(4)))fhsl) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))fhsl) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:47+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.269822s] [吞吐率：3.71req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(3)))lujf) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))lujf) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:47+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.263146s] [吞吐率：3.80req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(3)))xqbm) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))xqbm) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:47+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.275814s] [吞吐率：3.63req/s] [内存消耗：4,109.52kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(3)))vxyt) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))vxyt) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:48+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.252936s] [吞吐率：3.95req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(4)))opkm) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))opkm) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:48+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.256976s] [吞吐率：3.89req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot;)) AND (SELECT*FROM(SELECT(SLEEP(3)))xpuz) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))xpuz) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:48+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.321345s] [吞吐率：3.11req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(4)))rncx) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))rncx) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:49+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.247498s] [吞吐率：4.04req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(3)))kkdl) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))kkdl) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:49+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.258132s] [吞吐率：3.87req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(3)))npnc) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))npnc) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:49+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.270896s] [吞吐率：3.69req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(4)))frmv) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))frmv) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:50+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.272750s] [吞吐率：3.67req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(2)))zvbe) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(2)))zvbe) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:50+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.280213s] [吞吐率：3.57req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(3)))bunh) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))bunh) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:50+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.273407s] [吞吐率：3.66req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(4)))axex) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))axex) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:51+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.285959s] [吞吐率：3.50req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;' union select 1-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:51+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.261828s] [吞吐率：3.82req/s] [内存消耗：4,109.34kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;' union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:51+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.247684s] [吞吐率：4.04req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(3)))byxd) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))byxd) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:52+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.259265s] [吞吐率：3.86req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(2)))zboy) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))zboy) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:52+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.244040s] [吞吐率：4.10req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C')) AND (SELECT*FROM(SELECT(SLEEP(4)))lepb) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))lepb) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:52+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.257266s] [吞吐率：3.89req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=')) AND (SELECT*FROM(SELECT(SLEEP(3)))yqgd) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))yqgd) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:53+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.277003s] [吞吐率：3.61req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]')) AND (SELECT*FROM(SELECT(SLEEP(3)))dtpv) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))dtpv) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:53+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.241675s] [吞吐率：4.14req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=')) AND (SELECT*FROM(SELECT(SLEEP(3)))ssds) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))ssds) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:53+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.274597s] [吞吐率：3.64req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode')) AND (SELECT*FROM(SELECT(SLEEP(2)))avux) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(2)))avux) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:54+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.283468s] [吞吐率：3.53req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;')) AND (SELECT*FROM(SELECT(SLEEP(3)))pznc) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))pznc) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:54+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.250494s] [吞吐率：3.99req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true')) AND (SELECT*FROM(SELECT(SLEEP(3)))pozh) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))pozh) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:54+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.285136s] [吞吐率：3.51req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;')) AND (SELECT*FROM(SELECT(SLEEP(3)))udkr) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))udkr) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:55+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.268460s] [吞吐率：3.72req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(3)))xssd) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))xssd) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:55+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.324498s] [吞吐率：3.08req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(4)))opnl) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))opnl) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:55+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.253921s] [吞吐率：3.94req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot;) OR (SELECT*FROM(SELECT(SLEEP(3)))ntjg) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))ntjg) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:56+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.255292s] [吞吐率：3.92req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(4)))qhne) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))qhne) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:56+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.307655s] [吞吐率：3.25req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(2)))zqmz) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(2)))zqmz) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:56+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.284513s] [吞吐率：3.51req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(3)))rsgp) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))rsgp) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:57+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.262711s] [吞吐率：3.81req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(4)))thbn) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))thbn) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:57+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.278059s] [吞吐率：3.60req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(2)))cmzo) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(2)))cmzo) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:57+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.273615s] [吞吐率：3.65req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(4)))fzep) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))fzep) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:57+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.241424s] [吞吐率：4.14req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C' AND (SELECT*FROM(SELECT(SLEEP(4)))ikbp) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))ikbp) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:58+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.266901s] [吞吐率：3.75req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]' AND (SELECT*FROM(SELECT(SLEEP(4)))nqca) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))nqca) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:58+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.247602s] [吞吐率：4.04req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=' AND (SELECT*FROM(SELECT(SLEEP(3)))hzts) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))hzts) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:58+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.258549s] [吞吐率：3.87req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode' AND (SELECT*FROM(SELECT(SLEEP(3)))limz) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))limz) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:59+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.262145s] [吞吐率：3.81req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;' AND (SELECT*FROM(SELECT(SLEEP(3)))mgry) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))mgry) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:59+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.299599s] [吞吐率：3.34req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true' AND (SELECT*FROM(SELECT(SLEEP(3)))exgo) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))exgo) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:43:59+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.269746s] [吞吐率：3.71req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;' AND (SELECT*FROM(SELECT(SLEEP(4)))rrmg) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))rrmg) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:00+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.240094s] [吞吐率：4.17req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C') AND (SELECT*FROM(SELECT(SLEEP(3)))dufb) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))dufb) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:00+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.255764s] [吞吐率：3.91req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=') AND (SELECT*FROM(SELECT(SLEEP(3)))tlwv) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))tlwv) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:00+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.263303s] [吞吐率：3.80req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]') AND (SELECT*FROM(SELECT(SLEEP(3)))kvdj) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))kvdj) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:01+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.265146s] [吞吐率：3.77req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=') AND (SELECT*FROM(SELECT(SLEEP(3)))xych) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))xych) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:01+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.261623s] [吞吐率：3.82req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode') AND (SELECT*FROM(SELECT(SLEEP(3)))nxlo) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))nxlo) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:01+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.310776s] [吞吐率：3.22req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;') AND (SELECT*FROM(SELECT(SLEEP(4)))zjea) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))zjea) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:02+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.268662s] [吞吐率：3.72req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true') AND (SELECT*FROM(SELECT(SLEEP(4)))ospy) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))ospy) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:02+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.283322s] [吞吐率：3.53req/s] [内存消耗：4,109.59kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;') AND (SELECT*FROM(SELECT(SLEEP(3)))yggy) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))yggy) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:02+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.255755s] [吞吐率：3.91req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C AND (SELECT*FROM(SELECT(SLEEP(3)))zeif) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))zeif) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:03+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.239210s] [吞吐率：4.18req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;] AND (SELECT*FROM(SELECT(SLEEP(4)))vrns) limit 1#): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))vrns) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:03+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.271631s] [吞吐率：3.68req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=AND (SELECT*FROM(SELECT(SLEEP(4)))ibqj) limit 1#): failed to open stream: HTTP request failed! (SELECT*FROM(SELECT(SLEEP(4)))ibqj) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:03+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.256975s] [吞吐率：3.89req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode AND (SELECT*FROM(SELECT(SLEEP(3)))jxiv) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))jxiv) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:04+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.281768s] [吞吐率：3.55req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true AND (SELECT*FROM(SELECT(SLEEP(3)))pbim) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))pbim) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:04+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.258473s] [吞吐率：3.87req/s] [内存消耗：4,109.52kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(4)))dgfd) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))dgfd) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:08+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.252081s] [吞吐率：3.97req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' AND (SELECT*FROM(SELECT(SLEEP(3)))veoj) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))veoj) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:09+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.266803s] [吞吐率：3.75req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=AND (SELECT*FROM(SELECT(SLEEP(4)))glkw) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! (SELECT*FROM(SELECT(SLEEP(4)))glkw) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:09+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.263164s] [吞吐率：3.80req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=AND (SELECT*FROM(SELECT(SLEEP(3)))zmrw) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! (SELECT*FROM(SELECT(SLEEP(3)))zmrw) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:22+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.251425s] [吞吐率：3.98req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(3)))rlaw) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(3)))rlaw) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:23+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.266248s] [吞吐率：3.76req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot; OR (SELECT*FROM(SELECT(SLEEP(2)))hgog) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))hgog) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:23+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.332003s] [吞吐率：3.01req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;' union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:23+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.254356s] [吞吐率：3.93req/s] [内存消耗：4,109.37kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;' union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:24+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.230146s] [吞吐率：4.35req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(4)))zysx) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))zysx) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:24+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.252620s] [吞吐率：3.96req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=&amp;quot;) AND (SELECT*FROM(SELECT(SLEEP(3)))cptw) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))cptw) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:26+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.243022s] [吞吐率：4.11req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' AND (SELECT*FROM(SELECT(SLEEP(4)))efma) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))efma) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:26+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.276140s] [吞吐率：3.62req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' AND (SELECT*FROM(SELECT(SLEEP(2)))vvrs) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(2)))vvrs) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:29+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.300720s] [吞吐率：3.33req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' OR (SELECT*FROM(SELECT(SLEEP(4)))xewa) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(4)))xewa) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:33+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.315479s] [吞吐率：3.17req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=' OR (SELECT*FROM(SELECT(SLEEP(2)))kwyb) limit 1#&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! OR (SELECT*FROM(SELECT(SLEEP(2)))kwyb) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:35+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.264718s] [吞吐率：3.78req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(3)))dpcr) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))dpcr) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:36+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.259387s] [吞吐率：3.86req/s] [内存消耗：4,109.71kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;authorization_codecode&amp;quot;,&amp;quot;&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(2)))sagc) limit 1#&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(2)))sagc) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:37+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.297850s] [吞吐率：3.36req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(4)))uxdq) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(4)))uxdq) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:37+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.259308s] [吞吐率：3.86req/s] [内存消耗：4,109.40kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot; AND (SELECT*FROM(SELECT(SLEEP(3)))mlvb) limit 1#&amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! AND (SELECT*FROM(SELECT(SLEEP(3)))mlvb) limit 1 HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:39+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.262818s] [吞吐率：3.80req/s] [内存消耗：4,109.30kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot; union select 1-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:39+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.245330s] [吞吐率：4.08req/s] [内存消耗：4,109.34kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot; union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:40+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.264907s] [吞吐率：3.77req/s] [内存消耗：4,109.46kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot; union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select md5(3141592657),2-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]
+---------------------------------------------------------------
+[ 2023-01-05T14:44:40+08:00 ] 106.55.202.118 POST college.cllsm.top/api/Wxuser/getuserinfo
+[运行时间：0.244175s] [吞吐率：4.10req/s] [内存消耗：4,109.46kb] [文件加载：148]
+[ error ] [2]file_get_contents(https://api.weixin.qq.com/sns/jscode2session?appid=wxd2523f83d27e3690&amp;secret=cb7118594a88771e2e73a42996f4aedc&amp;js_code=0915o80w3CELSZ2fNL3w33JMtf45o80C&amp;grant_type=[&amp;quot;&amp;quot; union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;]): failed to open stream: HTTP request failed! union select 1,md5(3141592657)-- &amp;quot;,&amp;quot;true&amp;quot;] HTTP/1.0 200 OK
+[C:\wwwroot\127.0.0.1\application\api\controller\Wxuser.php:77]

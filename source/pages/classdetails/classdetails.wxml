@@ -17,11 +17,23 @@
         <view class="txt-bold type-text-1" style="color:#161616">{{classdetails.class_name}}</view>
         <view class="margin-top-20 type-text-1 h5">{{classdetails.college_name}}</view>
       </view>
+     <view>
       <image bindtap="class_ewmbin" class="margin-right-20 margin-top-10" style="width: 80rpx; height: 80rpx; border-radius: 20rpx;" src="../../images/icons/ewm.png" />
+      <image bindtap="navtoPage" data-page="addclass" data-param='id={{options.id}}'  class="margin-right-20 margin-top-10" style="width: 80rpx; height: 80rpx; border-radius: 20rpx;" src="../../images/icons/sz.png" />
+     </view>
     </view>
   </view>
   <view class="box-bg bg-white">
-    <view class="border-box2 margin-top-80 margin-left-20 margin-right-20 margin-bottom-20">
+
+
+    <view class="border-box2 margin-top-40 margin-left-20 margin-right-20 margin-bottom-20" style="width: 100rpx;">
+      <view class="margin-left-30 margin-top-30">主要功能</view>
+      <view></view>
+    
+    </view>
+
+
+    <view class="border-box2 margin-top-40 margin-left-20 margin-right-20 margin-bottom-20">
       <view class="margin-left-30 margin-top-30">主要功能</view>
       <view class="margin-left-20 margin-top-20 flex-row flex-xiandeng margin-bottom-30">
 
@@ -85,6 +97,7 @@
 
       </view>
     </view>
+
   </view>
 </view>
 

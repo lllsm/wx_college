@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:70:"D:\wwwroot\127.0.0.1\public/../application/admin\view\index\index.html";i:1669304756;s:60:"D:\wwwroot\127.0.0.1\application\admin\view\common\meta.html";i:1669304755;s:62:"D:\wwwroot\127.0.0.1\application\admin\view\common\header.html";i:1669304755;s:60:"D:\wwwroot\127.0.0.1\application\admin\view\common\menu.html";i:1669304755;s:63:"D:\wwwroot\127.0.0.1\application\admin\view\common\control.html";i:1669304755;s:62:"D:\wwwroot\127.0.0.1\application\admin\view\common\script.html";i:1669304755;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:70:"D:\wwwroot\127.0.0.1\public/../application/admin\view\index\index.html";i:1669304756;s:60:"D:\wwwroot\127.0.0.1\application\admin\view\common\meta.html";i:1669304754;s:62:"D:\wwwroot\127.0.0.1\application\admin\view\common\header.html";i:1669304754;s:60:"D:\wwwroot\127.0.0.1\application\admin\view\common\menu.html";i:1669304754;s:63:"D:\wwwroot\127.0.0.1\application\admin\view\common\control.html";i:1669304754;s:62:"D:\wwwroot\127.0.0.1\application\admin\view\common\script.html";i:1669304754;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>

@@ -83,6 +83,7 @@ class Wxuser extends Api
         $avatarUrl = $this->request->post("avatarUrl");
         $nickName = $this->request->post("nickName");
         $openid = $this->request->post("openid");
+        $mobile = $this->request->post("mobile");
 
         $u = model('admin/User')->where('openid', $openid)->find();
 
@@ -97,6 +98,7 @@ class Wxuser extends Api
             $u->wxnickName = $nickName;
             $u->username = $openid;
             $u->nickname = $nickName;
+            $u->mobile = $mobile;
             $u->email = $openid . '@qq.com';
             $u->save();
             // $token = $this->auth->getToken();
@@ -110,7 +112,8 @@ class Wxuser extends Api
             $this->auth->register($username, $password, '', '', [
                 "openid" => $openid,
                 "avatarUrl" => $avatarUrl,
-                "wxnickName" => $nickName
+                "wxnickName" => $nickName,
+                "mobile"=> $mobile,
             ]);
             // $this->success("注册成功！",$this->auth->token);
 
