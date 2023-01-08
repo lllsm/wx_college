@@ -21,7 +21,7 @@
         <text class="h4-5">{{item.class_intro}}</text>
       </view>
       <van-divider hairline customStyle="border-color: #999;"></van-divider>
-      <view style="width: 100%;">
+      <view style="width: 100%;" class="flex-shrink">
         <button style="width:180rpx; float:right; height: 60rpx;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" disabled="true" bindtap="class_submit">删除</button>
       </view>
     </view>
@@ -32,13 +32,15 @@
   <view class="flex-row margin-top-30" wx:for="{{msglist}}" wx:key="index">
     <view class="margin-left-20" style="width:100%">
       <view class="border-box2 margin-top-20 margin-right-20 padding-20" style="background-color: #F3F4F5;">
+        <view class="type-text-1">班级名称：{{item.class_name}}</view>
+        <van-divider  hairline dashed customStyle="border-color: #999;"></van-divider>
         <view class="flex-row flex-liangbian">
-          <view>{{item.user.nickname}}</view>
+          <view>昵称：{{item.user.nickname}}</view>
           <view class="margin-right-20 text-1 h6">{{item.refreshtime_text}}</view>
         </view>
-        <van-divider wx:if="{{item.img.length>0}}" hairline dashed customStyle="border-color: #999;"></van-divider>
+        <van-divider  hairline dashed customStyle="border-color: #999;"></van-divider>
 
-        <view>{{item.msg_t}}</view>
+        <view>留言内容：{{item.msg_t}}</view>
         <van-divider wx:if="{{item.img.length>0}}" hairline dashed customStyle="border-color: #999;"></van-divider>
 
         <view class="flex-row flex-wrap">
@@ -47,7 +49,7 @@
           </view>
         </view>
         <van-divider hairline customStyle="border-color: #999;"></van-divider>
-        <view style="width: 100%;">
+        <view style="width: 100%;" class="flex-shrink">
           <button style="width:180rpx; float:right; height: 60rpx;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="msg_submit">删除</button>
         </view>
       </view>
@@ -62,7 +64,7 @@
 
         <view class="flex-row flex-liangbian" style="width: 100%;">
           <view class="txt-bold type-text-1 h5" style="color:#161616">{{item.file_name||"[未命名]"}}</view>
-          <view class="h5 margin-right-20"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="file_submit">删除</button></view>
+          <view class="h5 margin-right-20" class="flex-shrink"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="file_submit">删除</button></view>
 
         </view>
 
@@ -82,6 +84,8 @@
   <view class="flex-row margin-top-30" wx:for="{{classimglist}}" wx:key="index">
     <view class="margin-left-20" style="width:100%">
       <view class="border-box2 margin-top-20 margin-right-20 padding-20" style="background-color: #F3F4F5;">
+      <view class="type-text-1">班级名称：{{item.class_name}}</view>
+      <van-divider wx:if="{{item.classimglist.length>0}}" hairline customStyle="border-color: #999;"></van-divider>
         <!-- <view class="flex-row flex-liangbian">
           <view>{{item.user.nickname}}</view>
           <view class="margin-right-20 text-1 h6">{{item.refreshtime_text}}</view>
@@ -95,7 +99,7 @@
         <van-divider wx:if="{{item.classimglist.length>0}}" hairline customStyle="border-color: #999;"></van-divider>
         <view class="flex-row flex-liangbian flex-center">
           <view class="margin-right-20 text-1 h6">{{item.pass_time}}</view>
-          <view class="h5 margin-right-20"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="img_submit">删除</button></view>
+          <view class="h5 margin-right-20" class="flex-shrink"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="img_submit">删除</button></view>
         </view>
       </view>
     </view>

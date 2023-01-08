@@ -4,7 +4,7 @@
     <view class="h5 text-2">头像</view>
     <view class="flex-row flex-center">
     <button class="clear-button" open-type="chooseAvatar" bindchooseavatar="bindpic">
-      <image src="{{avatarUrl || memberinfo.avatarUrl}}" bindtap="bindpic" wx:if='{{memberinfo.avatarUrl!=""}}' class="icon-60 touxiang"></image>
+      <image src="{{uploadpath}}{{avatarUrl || memberinfo.avatarUrl}}" bindtap="bindpic" wx:if='{{memberinfo.avatarUrl!=""}}' class="icon-60 touxiang"></image>
     </button>
 
       <image class="icon-60 touxiang" mode="aspectFill" bindtap="bindpic"  wx:if='{{memberinfo.avatarUrl==""}}' src='{{uploadpath}}resource/{{res.wdtouxiang}}'></image>
@@ -19,13 +19,11 @@
     </view>
   </view>
 
-  <view class="flex-row flex-center grxxitem border-box">
+  <view class="flex-row flex-center grxxitem border-box" wx:if="{{instinfo.switch==0}}">
     <view class="h5 text-2">手机号</view>
     <view class="flex-row flex-center">
-      <button class="h6 margin-top-20 clear-button" hover-class="hover" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNo" wx:if='{{memberinfo.mobile==""}}'>
-        点击授权微信
-      </button>
-        <view class='h6 margin-top-20 clear-button' wx:if='{{memberinfo.mobile!=""}}'>{{memberinfo.mobile}}</view>
+      <input value="{{mobile}}" type='number'  bindconfirm="bin_inp_mb" bindinput="bin_inp_mb"  class="h5 text-3 inp" />
+        <!-- <view class='h6 margin-top-20 clear-button' wx:if='{{memberinfo.mobile!=""}}'>{{mobile}}</view> -->
     </view>
   </view>
 

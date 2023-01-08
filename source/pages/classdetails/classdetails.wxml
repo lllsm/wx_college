@@ -35,6 +35,11 @@
           <view class="h6">班级文件</view>
         </view>
 
+        <view class="flex-column margin-left-20" bindtap="navtoPage" data-page="memberlist" data-param='collegeclass_id={{options.id}}'>
+          <image class="img_class" src="../../images/icons/member.png" />
+          <view class="h6">班级成员</view>
+        </view>
+
       </view>
     </view>
 
@@ -48,7 +53,7 @@
         <view class="flex-column">
           <view class="flex-row margin-top-30" wx:for="{{msglist}}" wx:key="index">
             <view class="flex-shrink">
-              <van-image class="" fit="cover" radius="20rpx" alt="heightFix" width="100rpx" height="100rpx" src="{{uploadpath}}{{item.user.avatar}}" />
+              <van-image class="" fit="cover" radius="20rpx" alt="heightFix" width="100rpx" height="100rpx" src="{{uploadpath}}{{item.user.avatarUrl}}" />
             </view>
 
             <view class="margin-left-20" style="width:100%">

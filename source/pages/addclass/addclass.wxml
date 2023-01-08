@@ -2,63 +2,71 @@
 
 <view class="margin-top-60">
   <form catchsubmit="formSubmit" catchreset="formReset">
-  <view class="border-box padding-30 bg-white ">
-    <view class="img_box border-box bg-white">
-      <image mode="aspectFit" src="../../images/icons/addimg.png" wx:if="{{headimg==''}}" bindtap="uploadimg" class="icon-75 addimg" style="z-index:1;"></image>
-      <image src="{{uploadpath}}{{headimg}}" wx:if="{{headimg!=''}}" mode="aspectFill" class="icon-75 addimg" bindtap="uploadimg"></image>
-    </view>
-
-
-    <view class="">
-      <view class="flex-row margin-top-30">
-        <view class="flex-shrink">班级名称：</view>
-        <input class="flex-shrink inp" name="class_name" style="text-align: right;" placeholder="请输入班级名称" placeholder-class="pla_st"/>
+    <view class="border-box padding-30 bg-white ">
+      <view class="img_box border-box bg-white">
+        <image mode="aspectFit" src="../../images/icons/addimg.png" wx:if="{{headimg==''}}" bindtap="uploadimg" class="icon-75 addimg" style="z-index:1;"></image>
+        <image src="{{uploadpath}}{{headimg}}" wx:if="{{headimg!=''}}" mode="aspectFill" class="icon-75 addimg" bindtap="uploadimg"></image>
       </view>
-      <van-divider />
 
-      <view class="flex-row margin-top-30">
-        <view class="flex-shrink">学院名称：</view>
-        <input class="flex-shrink inp" name="college_name" style="text-align: right;" placeholder="请输入班级名称" placeholder-class="pla_st"/>
-      </view>
-      <van-divider />
 
-      <view class="flex-row margin-top-30">
-        <view class="flex-shrink">班级介绍：</view>
-        <input class="flex-shrink inp" name="class_intro" style="text-align: right;" placeholder="请输入班级介绍" placeholder-class="pla_st"/>
-      </view>
-      <van-divider />
-
-      <view class="flex-row margin-top-30">
-        <view class="flex-shrink">学院介绍：</view>
-        <input class="flex-shrink inp" name="college_intro" style="text-align: right;" placeholder="请输入学院介绍" placeholder-class="pla_st"/>
-      </view>
-      <van-divider />
-
-      <view class="flex-row margin-top-30 flex-liangbian">
-        <view class="flex-shrink">是否设置班级口令：</view>
-        <van-switch checked="{{ checked }}" bind:change="onChange"   active-color="#07c160" inactive-color="#ee0a24" size="40rpx" />
-      </view>
-      <van-divider />
-    <view wx:if="{{checked}}">
-      <van-transition show="{{ checked }}" name="fade-left" custom-class="block">
+      <view class="">
         <view class="flex-row margin-top-30">
-        <view class="flex-shrink">班级口令：</view>
-        <input class="flex-shrink inp" name="class_key" style="text-align: right;" placeholder="请输入班级空口令" placeholder-class="pla_st"/>
+          <view class="flex-shrink">班级名称：</view>
+          <input class="flex-shrink inp" name="class_name" style="text-align: right;" placeholder="请输入班级名称" placeholder-class="pla_st" />
+        </view>
+        <van-divider />
+
+        <view class="flex-row margin-top-30">
+          <view class="flex-shrink">学院名称：</view>
+          <input class="flex-shrink inp" name="college_name" style="text-align: right;" placeholder="请输入班级名称" placeholder-class="pla_st" />
+        </view>
+        <van-divider />
+
+        <view class="flex-row margin-top-30">
+          <view class="flex-shrink">班级介绍：</view>
+          <input class="flex-shrink inp" name="class_intro" style="text-align: right;" placeholder="请输入班级介绍" placeholder-class="pla_st" />
+        </view>
+        <van-divider />
+
+        <view class="flex-row margin-top-30">
+          <view class="flex-shrink">学院介绍：</view>
+          <input class="flex-shrink inp" name="college_intro" style="text-align: right;" placeholder="请输入学院介绍" placeholder-class="pla_st" />
+        </view>
+        <van-divider />
+
+        <view class="flex-row margin-top-30 flex-liangbian flex-center">
+          <view class="flex-shrink">班级群二维码：</view>
+          <view class="">
+            <image mode="aspectFit" src="../../images/icons/addimg.png" wx:if="{{ewmimg==''}}" bindtap="uploadewm" class="icon-25 " style="z-index:1;"></image>
+            <image src="{{uploadpath}}{{ewmimg}}" wx:if="{{ewmimg!=''}}" mode="aspectFill" class="icon-50 " bindtap="uploadewm"></image>
+          </view>
+        </view>
+        <van-divider />
+
+        <view class="flex-row margin-top-30 flex-liangbian">
+          <view class="flex-shrink">是否设置班级口令：</view>
+          <van-switch checked="{{ checked }}" bind:change="onChange" active-color="#07c160" inactive-color="#ee0a24" size="40rpx" />
+        </view>
+        <van-divider />
+        <view wx:if="{{checked}}">
+          <van-transition show="{{ checked }}" name="fade-left" custom-class="block">
+            <view class="flex-row margin-top-30">
+              <view class="flex-shrink">班级口令：</view>
+              <input class="flex-shrink inp" name="class_key" style="text-align: right;" placeholder="请输入班级空口令" placeholder-class="pla_st" />
+            </view>
+            <van-divider />
+          </van-transition>
+        </view>
+
+
       </view>
-      <van-divider />
-      </van-transition>
-    </view>
-
 
 
     </view>
 
 
-  </view>
-
-
-  <view class="margin-left-20 margin-right-20">
+    <view class="margin-left-20 margin-right-20">
       <button class="border-none clear-button button_mian txt_mians" formType="submit">开始创建</button>
-  </view>
-</form>
+    </view>
+  </form>
 </view>

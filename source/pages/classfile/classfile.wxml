@@ -13,7 +13,7 @@
 
       <view class="flex-row flex-liangbian" style="width: 100%;">
         <view class="txt-bold type-text-1 h5" style="color:#161616">{{item.file_name||"[未命名]"}}</view>
-        <view class="h5 margin-right-20">点击下载</view>
+        <view class="h5 margin-right-20 flex-shrink">点击下载</view>
       </view>
 
       <view class="flex-liangbian margin-top-10">

@@ -90,10 +90,31 @@
           "query": "type=A",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "课程",
+          "pathName": "pages/course/course",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "添加班级",
+          "pathName": "pages/addclass/addclass",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "班级",
+          "pathName": "pages/classdetails/classdetails",
+          "query": "id=7&title=%E4%B8%89%E5%B9%B4%E5%85%AD%E7%8F%AD",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
   },
   "projectname": "source",
-  "libVersion": "2.26.0"
+  "libVersion": "2.29.1"
 }

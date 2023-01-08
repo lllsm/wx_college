@@ -1,0 +1,164 @@
+<!--pages/course/course.wxml-->
+<view class="flex-row head">
+  <view class="head-left flex-column j_c">
+    <text class="head-left-text one">第</text>
+    <text class="head-left-text two">周</text>
+    <view class="flex-center"><text class="head-curr-week ">{{currentWeek}}</text></view>
+  </view>
+  <view class="head-right  j_b">
+    <view class="week" wx:for="{{weekList}}" wx:key="list">
+      <text class="head-week {{item.isCurr && 'head-right-curr'}}">{{item.week}}</text>
+      <view class=" {{item.isCurr && 'head-right-curr'}}">{{item.isCurr?'今天':item.day}}</view>
+    </view>
+  </view>
+</view>
+<view class="container flex-row mb20">
+  <view class="container-left flex-column j_b">
+    <block wx:for="{{time}}" wx:key="list" class="course-time">
+      <view class="flex-column j_c course-time flex-center">
+        <view class="con-title">{{item.index}}</view>
+        <view>{{item.timeStart}}</view>
+        <view>{{item.timeEnd}}</view>
+      </view>
+    </block>
+  </view>
+  <!-- <view class="container-right  flex col j_c ">
+    <view class="flex-row mb10">
+      <view class="con-item flex-column j_c" wx:for="{{schedule.one}}" wx:key="list" style="background: {{item.text_color}};" catchtap="{{item.type ? 'getDetail':''}}" data-item="{{item}}">
+        <text class="con-item-subj line_ellipsis">{{item.sub}}</text>
+        <text class="line_ellipsis">{{item.tec}}</text>
+        <text class="line_ellipsis">{{item.add}}</text>
+      </view>
+    </view>
+    <view class="flex-row margin-top-20">
+      <view class="con-item flex-column j_c " wx:for="{{schedule.two}}" wx:key="list" style="background: {{item.text_color}};" catchtap="{{item.type ? 'getDetail':''}}" data-item="{{item}}">
+        <text class="con-item-subj">{{item.sub}}</text>
+        <text>{{item.tec}}</text>
+        <text>{{item.add}}</text>
+      </view>
+    </view>
+    <image src="https://s3.bmp.ovh/imgs/2022/07/27/85dabf1d5821a98b.png" class="con-icon" />
+  </view> -->
+
+  <view class="course container-right">
+        <view wx:for="{{wList}}" wx:key="index" class="kcb-item con-item flex-column j_c " style="margin-left:{{(item.isToday-1)!=7?(item.isToday-1)*90:0}}rpx;margin-top:{{(item.period-1)*150+4}}rpx;height:{{item.classNumber*150 - 8}}rpx;" catchtap="getDetail" bindlongtap="del_coures" data-item="{{item}}" wx:for-index="idx" data-index="{{idx}}">
+          <view class="smalltext" style="background-color:{{item.text_color}}">
+            <view class="smalltextName" style="color: #333;">{{item.name}}</view>
+            <view class="smalltextName" style="color: #333;">{{item.teacher}}</view>
+            <view class="smalltextAddress" style="color: #333;">{{item.address}}</view>
+          </view>
+        </view>
+   
+      
+        <!-- <view wx:for="{{wList}}" wx:key="index" class="otherCourse">
+          <view>{{item.name}}*{{item.teacher}}/{{item.time}}/{{item.address}}</view>
+        </view> -->
+      </view>
+</view>
+<!-- <view class="container flex-row mb20  margin-top-20">
+  <view class="container-left left1 ">
+    <block wx:for="{{time.two}}" wx:key="list">
+      <view class="flex-column j_c">
+        <view class="con-title">{{item.index}}</view>
+        <view class="flex-centers">{{item.timeStart}}</view>
+        <view class="flex-centers">{{item.timeEnd}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="container-right right1  flex col j_c">
+    <view class="flex-row">
+      <view class="con-item flex-column j_c " wx:for="{{schedule.three}}" wx:key="list" style="background: {{item.text_color}};" catchtap="{{item.type ? 'getDetail':''}}" data-item="{{item}}">
+        <text class="con-item-subj line_ellipsis">{{item.sub}}</text>
+        <text class="line_ellipsis">{{item.tec}}</text>
+        <text class="line_ellipsis">{{item.add}}</text>
+      </view>
+    </view>
+    <image src="https://s3.bmp.ovh/imgs/2022/07/27/85dabf1d5821a98b.png" class="con-icon" />
+  </view>
+</view> -->
+<!-- <view class="container flex-row margin-top-20">
+  <view class="container-left left1" >
+    <block wx:for="{{time.three}}" wx:key="list" >
+      <view class="flex-column j_c " >
+        <view class="con-title">{{item.index}}</view>
+        <view class="flex-centers">{{item.timeStart}}</view>
+        <view class="flex-centers">{{item.timeEnd}}</view>
+      </view>
+    </block>
+  </view>
+  <view class="container-right right1 flex col j_c">
+    <view class="flex-row">
+      <view class="con-item flex-column j_c " wx:for="{{schedule.four}}" wx:key="list" style="background: {{item.text_color}};" catchtap="{{item.type ? 'getDetail':''}}" data-item="{{item}}">
+        <text class="con-item-subj line_ellipsis">{{item.sub}}</text>
+        <text class="line_ellipsis">{{item.tec}}</text>
+        <text class="line_ellipsis">{{item.add}}</text>
+      </view>
+    </view>
+    <image src="https://s3.bmp.ovh/imgs/2022/07/27/85dabf1d5821a98b.png" class="con-icon" />
+  </view>
+</view> -->
+
+
+
+
+<!-- 详情弹框 -->
+<view class="mask" hidden="{{!isShow}}" catchtap="close"></view>
+<view class="modal flex-column j_c {{isShow ? 'show':'noShow'}}" style="background: {{current.text_color}};">
+  <view >{{current.name}}</view>
+  <view class="margin-top-20">{{current.address}}</view>
+  <view class="margin-top-20" >{{current.teacher}}</view>
+  <button class="border-none clear-button radius-40 button_mian margin-top-20" bindtap="close">关闭</button>
+</view>
+
+<!-- 悬浮 -->
+<view>
+  <image mode="aspectFit" src="../../images/icons/add.png" bindtap="addmsg" class="icon-60 under2" style="z-index:1;"></image>
+</view>
+
+<!-- 添加课程 -->
+<van-popup lock-scroll="true" show="{{ isadd }}" round closeable position="bottom" close-icon="close" custom-style="height: 70%" bind:close="onClose" bind:close="closeadd">
+  <form bindsubmit="submit">
+  <view class="margin-top-100 margin-left-30 margin-right-30">
+    <input value='{{text_name}}' name="name" bindinput="bintext" class="text_msg" placeholder="请输入课程" style="background: #F3F4F5"></input>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <input value='{{text_teacher}}' name="teacher" bindinput="bintext" class="text_msg" placeholder="请输入教师" style="background: #F3F4F5"></input>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <input value='{{text_address}}' name="address" bindinput="bintext" class="text_msg" placeholder="请输入上课地址" style="background: #F3F4F5"></input>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="flex-row flex-center">
+      <view class="margin-right-20">星期</view>
+      <van-stepper value="{{ weeknum}}" name="isToday" min="1" max="7" bind:change="bind_weeknum" />
+    </view>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="flex-row flex-center">
+      <view class="margin-right-20">开始课时</view>
+      <van-stepper value="{{ Startperiod}}" name="period" min="1" max="{{time.length}}" bind:change="bind_Startperiod" />
+    </view>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="flex-row flex-center">
+      <view class="margin-right-20">连续课时数</view>
+      <van-stepper value="{{ Endperiod }}" name="classNumber"  min="1" max="{{(time.length)-Startperiod+1}}" bind:change="bind_Endperiod" />
+    </view>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="flex-row flex-wrap flex-center">
+      <view wx:for="{{colorlist}}"  wx:key='k' class="img_list  flex-column flex-center" wx:for-index="idx" data-url="{{item.idx}}" id="{{idx}}" bindtap="bind_color">
+
+        <view class="flex-column flex-center margin-10 flex-centers">
+          <view class="circle" style="background-color: {{item.value}};"></view>
+          <view class="h6">{{item.name }}</view>
+          <image wx:if="{{ok_color==idx}}" name="color" value="{{ ok_color }}"  mode="aspectFit" src="../../images/icons/ok.png" bindtap="addmsg" class="icon-25 ok" ></image>
+          <!-- <view wx:if="{{ok_color==item.id}}" class="ok"></view> -->
+        </view>
+
+
+      </view>
+    </view>
+    <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view style="margin-top: 30rpx;"></view>
+    <view class="clear-button margin-left-20 margin-right-20" style=" width: 87%;">
+      <button class="border-none clear-button radius-40 button_mian" bindtap="msg_submit" form-type="submit">确 认</button>
+      <button class="border-none clear-button radius-40 button_mian margin-top-20 margin-bottom-20" bindtap="remove_submit">点我一键清空课程</button>
+    </view>
+  </view>
+</form>
+</van-popup>

@@ -47,7 +47,7 @@ class Content extends AppBase {
       })
     })
 
-    collegeapi.msglist({ id: this.Base.options.id, checkstate, keyword: this.Base.getMyData().keyword || "" }, (msglist) => {
+    collegeapi.msglist({ type: 'my', checkstate,}, (msglist) => {
       this.Base.setMyData({
         msglist: msglist.data
       })
@@ -57,7 +57,7 @@ class Content extends AppBase {
         filelist: filelist.data
       })
     })
-    collegeapi.classimglist({ id: 3, checkstate }, (classimglist) => {
+    collegeapi.classimglist({ type: 'my', checkstate }, (classimglist) => {
       var list = classimglist.data;
       console.log(list)
       var classimglist = [];

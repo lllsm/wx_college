@@ -6,12 +6,12 @@
 <view class="users  padding-top-20 padding-bottom-20">
   <view class="flex-row flex-center margin-top-80 margin-left-30">
     <view>
-      <view wx:if='{{memberinfo}}' bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}'>
+      <view wx:if='{{memberinfo}}' bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}&mobile={{memberinfo.mobile}}'>
         <view class="logo">
-          <van-image round width="150rpx" height="150rpx" src="{{memberinfo.avatarUrl}}" />
+          <van-image round width="150rpx" height="150rpx" src="{{uploadpath}}{{memberinfo.avatarUrl}}" />
         </view>
       </view>
-      <view wx:if='{{!memberinfo}}' bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}'>
+      <view wx:if='{{!memberinfo}}' bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}&mobile={{memberinfo.mobile}}'>
         <view class="logo"> 
           <van-image round width="150rpx" height="150rpx" round use-error-slot show-error='加载失败'>
           <text style="color: burlywood;" slot="error">加载失败</text>
@@ -21,12 +21,12 @@
     </view>
     <view class="margin-left-30 margin-top-10 " style="margin-left: 180rpx;">
       <view>
-        <view bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}' class="txt-white h4" wx:if='{{memberinfo&&memberinfo.wxnickName!=null}}'>{{memberinfo.wxnickName}}</view>
-        <view class="txt-white"  bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}' wx:if='{{!memberinfo || memberinfo.wxnickName==null}}'>点击授权</view>
+        <view bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}&mobile={{memberinfo.mobile}}' class="txt-white h4" wx:if='{{memberinfo&&memberinfo.wxnickName!=null}}'>{{memberinfo.wxnickName}}</view>
+        <view class="txt-white"  bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}&mobile={{memberinfo.mobile}}' wx:if='{{!memberinfo || memberinfo.wxnickName==null}}'>点击授权</view>
       </view>
       <view>
-        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNo" class="txt-white border-none clear-button" wx:if='{{memberinfo&&memberinfo.wxnickName!=null}}'>{{"点击授权"}}</button>
-        <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNo" class="txt-white border-none clear-button"  wx:if='{{!memberinfo || memberinfo.wxnickName==null}}'>点击授权</button>
+        <button open-type="getPhoneNumber" bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}&mobile={{memberinfo.mobile}}' class="txt-white border-none clear-button" wx:if='{{memberinfo&&memberinfo.mobile!=null}}'>{{memberinfo.mobile}}</button>
+        <button open-type="getPhoneNumber" bindtap="navtoPage" data-page='myinfo' data-param='nickName={{memberinfo.wxnickName ||"微信昵称"}}&mobile={{memberinfo.mobile}}' class="txt-white border-none clear-button"  wx:if='{{!memberinfo || memberinfo.mobile==null}}'>点击完善资料</button>
       </view>
     </view>
   </view>

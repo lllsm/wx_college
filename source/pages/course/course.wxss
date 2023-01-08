@@ -1,0 +1,283 @@
+/* pages/course/course.wxss */
+page {
+  padding: 30rpx 20rpx;
+  background-color: #f5f5f5;
+}
+
+.head {
+  margin-bottom: 20rpx;
+}
+
+.head-left {
+  border-radius: 10rpx;
+  height: 125rpx;
+  background: #fff;
+  width: 90rpx;
+  margin-right: 10rpx;
+  position: relative;
+}
+
+.head-left-text {
+  position: absolute;
+  color: #7e7a7a;
+  font-size: 22rpx;
+}
+
+.head-curr-week {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  font-style: italic;
+  margin-top: 40rpx;
+  /* 斜体 font-style:oblique;或者 font-style: italic;*/
+}
+
+.head-left-text.one {
+  right: 2px;
+  top: 2px;
+}
+
+.head-left-text.two {
+  left: 2px;
+  bottom: 2px;
+}
+
+.head-week {
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  color: #333;
+}
+
+.head-right-curr {
+  color: pink;
+}
+
+.head-icon {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  top: -10rpx;
+  left: -10rpx;
+}
+
+.head-right {
+  border-radius: 10rpx;
+  height: 125rpx;
+  background: #fff;
+  font-size: 23rpx;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+  color: #7e7a7a;
+  text-align: center;
+  width: calc(100% - 8%);
+
+}
+.week{
+  margin-top: 30rpx;
+  width: calc(100% / 7);
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+}
+
+.con-title {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 6rpx;
+  color: #333;
+  font-size: 27rpx;
+  font-style: italic;
+}
+
+.container-left {
+  border-radius: 10rpx;
+  /* height: 1600rpx; */
+  background: #fff;
+  width: 90rpx;
+  margin-right: 10rpx;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+  font-size: 24rpx;
+  color: #7e7a7a;
+}
+
+.container-right {
+  border-radius: 10rpx;
+  /* height: 1600rpx; */
+  background: #fff;
+  width: 610rpx;
+  position: relative;
+  box-sizing: border-box;
+  padding: 20rpx 10rpx;
+}
+
+.con-icon {
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  bottom: -10rpx;
+  right: -10rpx;
+}
+
+.container-left.left1,
+.container-right.right1 {
+  height: 250rpx;
+}
+
+.con-item {
+  width: 80rpx;
+  height: 150rpx;
+  border-radius: 10rpx;
+  margin-right: 7rpx;
+  flex-shrink: 0;
+  font-size: 17rpx;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 10rpx;
+  line-height: 28rpx;
+  animation: show 1.5s ease-in-out;
+}
+
+@keyframes show {
+  0% {
+    margin-left: 20rpx;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.con-item-subj {
+  font-weight: bold;
+  font-size: 19rpx;
+  margin-bottom: 5rpx;
+}
+
+.con-item:last-child {
+  margin-right: 0;
+}
+
+/* 多行文字换行 */
+.line_ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* 弹框 */
+.modal {
+  width: 550rpx;
+  height: 350rpx;
+  border-radius: 20rpx;
+  position: fixed;
+  z-index: 1111;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  color: #7e7a7a;
+  font-size: 27rpx;
+  line-height: 40rpx;
+}
+
+.modal.noShow {
+  top: -0%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.modal.show {
+  top: 50%;
+  transition: all 1s;
+  opacity: 1;
+}
+
+
+.course{
+  width: 92%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.course .kcb-item {
+  width: calc(92% / 7);
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.course .kcb-item .smalltext {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0 4rpx;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 8rpx;
+  padding: 2rpx 4rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.course .kcb-item .smalltext .smalltextName{
+  flex: 1 0 auto;
+}
+
+.course .kcb-item .smalltext .smalltextAddress{
+  border-top:
+   1px solid #fff;
+  flex: 0 0 auto;
+}
+.course-time{
+  text-align: center;
+  height: 150rpx;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 0;
+  flex-direction: column;
+}
+.under2 {
+  position: fixed;
+  z-index: 2;
+  bottom: 20%;
+  right:0;
+}
+.circle{
+  border-radius: 50%;
+  width: 50rpx;
+  height: 50rpx;
+  position: relative;
+}
+.img_list{
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  /* text-align: center; */
+  position: relative;
+
+}
+.text_msg{
+  padding-left: 30rpx;
+  border-radius: 30rpx;
+  width: 91%;
+  font-size: 25rpx;
+}
+.ok{
+  z-index: 999999;
+  position: relative;
+  top:-85rpx;
+  width: 50rpx;
+  height: 50rpx;
+}

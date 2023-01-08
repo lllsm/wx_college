@@ -115,10 +115,6 @@ class Content extends AppBase {
 
 
   }
-  onUnload() {
-
-
-  }
   onPullDownRefresh(){
     this.Base.setMyData({
       pageIndex:1,
@@ -462,6 +458,4 @@ body.closeimg = content.closeimg;
 body.chakan = content.chakan;
 body.dianliang = content.dianliang;
 body.quxiaodl = content.quxiaodl;
-
-
 Page(body)

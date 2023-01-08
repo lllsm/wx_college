@@ -1,16 +1,16 @@
 export class ApiConfig {
 
   static GetApiUrl() {
-    // return "http://43.226.152.182/api/";
-    return "http://127.0.0.1/api/";
+    return "https://college.cllsm.top/api/";
+    // return "http://127.0.0.1/api/";
   }
   static GetUploadPath() {
-    // return "http://43.226.152.182";
+    return "https://college.cllsm.top";
     return "http://127.0.0.1";
   }
   static GetFileUploadAPI() {
-    // return "http://43.226.152.182/api/common/upload";
-    return "http://127.0.0.1/api/common/upload";
+    return "https://college.cllsm.top/api/common/upload";
+    // return "http://127.0.0.1/api/common/upload";
   }
 
   static GetHeader() {

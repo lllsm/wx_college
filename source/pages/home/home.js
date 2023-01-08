@@ -21,6 +21,7 @@ class Content extends AppBase {
       margintop: top,
       funcrowheight: height
     })
+
   }
   onMyShow() {
     var that = this;
@@ -68,10 +69,30 @@ class Content extends AppBase {
   btn_details(e){
     console.log(e.currentTarget.dataset.item);
     let item = e.currentTarget.dataset.item;
-    if(item.is_pas_switch==1){
+    var that =  this;
+    console.log(that.Base.getMyData().memberinfo);
+    let memberinfo = that.Base.getMyData().memberinfo;
+    if(memberinfo.nickname==memberinfo.username || memberinfo.nickname == "微信昵称"){
+      wx.showModal({
+        title: '提示',
+        content: '请先修改系统默认昵称',
+        success (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '/pages/myinfo/myinfo?mobile='+memberinfo.mobile+'&nickName='+memberinfo.nickname,
+             })
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+    }else if(item.is_pas_switch==1){
       this.Base.setMyData({ show: true,class_key: item.class_pas,class_id:item.id,class_name:item.class_name})
     }else{
       console.log(item.class_name)
+      wx.navigateTo({
+        url: '/pages/classdetails/classdetails?id='+item.id+'&title='+item.class_name,
+       })
     }
   }
   bin_key(e){
@@ -89,6 +110,30 @@ class Content extends AppBase {
       this.Base.toast("口令错误");
     }
   }
+  to_addclass(){
+    var that =  this;
+    console.log(that.Base.getMyData().memberinfo);
+    let memberinfo = that.Base.getMyData().memberinfo;
+    if(memberinfo.nickname==memberinfo.username || memberinfo.nickname == "微信昵称"){
+      wx.showModal({
+        title: '提示',
+        content: '请先修改系统默认昵称',
+        success (res) {
+          if (res.confirm) {
+            wx.navigateTo({
+              url: '/pages/myinfo/myinfo?mobile='+memberinfo.mobile+'&nickName='+memberinfo.nickname,
+             })
+          } else if (res.cancel) {
+            console.log('用户点击取消')
+          }
+        }
+      })
+    }else{
+      wx.navigateTo({
+        url: '/pages/addclass/addclass',
+       })
+    }
+  }
 }
 
 
@@ -101,4 +146,5 @@ body.showPopup = content.showPopup;
 body.onClose = content.onClose;
 body.btn_details = content.btn_details;
 body.bin_key = content.bin_key;
+body.to_addclass = content.to_addclass;
 Page(body)

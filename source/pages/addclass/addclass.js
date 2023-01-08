@@ -11,7 +11,8 @@ class Content extends AppBase {
     this.Base.setMyData({
       flag:false,
       checked:false,
-      headimg:""
+      headimg:"",
+      ewmimg:"",
     });
   }
   onMyShow() {
@@ -98,6 +99,7 @@ class Content extends AppBase {
       college_intro:class_list.college_intro||'',
       class_pas:class_list.class_key||'',
       college_image:this.Base.getMyData().headimg,
+      class_ewm:this.Base.getMyData().ewmimg,
       user_id:this.Base.getMyData().memberinfo.id,
       is_pas_switch
     },(addclass)=>{
@@ -120,9 +122,15 @@ class Content extends AppBase {
      }); 
    }, undefined);
  }
+ uploadewm(){
+  var that =this;
+  this.Base.uploadImage("member", (ret) => { 
+   that.Base.setMyData({
+    ewmimg: ret
+   }); 
+ }, undefined);
+ }
 }
-
-
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
@@ -131,4 +139,6 @@ body.btn_add = content.btn_add;
 body.onChange = content.onChange;
 body.formSubmit = content.formSubmit;
 body.uploadimg = content.uploadimg;
+body.uploadewm = content.uploadewm;
+
 Page(body)

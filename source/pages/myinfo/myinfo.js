@@ -23,16 +23,32 @@ class Content extends AppBase {
       value: '女'
     }]
     let nickName = this.Base.options.nickName;
+    let mobile = this.Base.options.mobile;
     this.Base.setMyData({
       gender:list,
       avatarUrl:"",
-      nickName
+      nickName,
+      mobile
     });
     
   }
   onMyShow() {
   }
   getUserProfile(e){
+    let uu =this.Base.getMyData().avatarUrl||this.Base.getMyData().memberinfo.avatarUrl;
+    if(uu==null || uu==undefined){
+      this.Base.toast("请上传头像才能保存哦！");
+      return;
+    }
+      console.log(this.Base.getMyData().instinfo.switch==1)
+    if(this.Base.getMyData().mobile && this.Base.getMyData().instinfo.switch==0){
+      let ismobile = /^1[3|4|5|6|7|8|9][0-9]\d{8}$/.test(this.Base.getMyData().mobile);
+      if(!ismobile){
+        this.Base.toast("手机号码格式错误!")
+        return
+      }
+      console.log(ismobile)
+    }
     console.log(e.detail.value)
     var str = `是否确认修改`;
     var memberapi = new MemberApi();
@@ -44,6 +60,7 @@ class Content extends AppBase {
         console.log(res);
           if(res.confirm){
             memberapi.updateuser({
+              mobile:this.Base.getMyData().mobile||this.Base.getMyData().memberinfo.mobile,
               openid:this.Base.getMyData().UserInfo.openid,
               nickName:this.Base.getMyData().nickName||this.Base.getMyData().memberinfo.nickName,
               avatarUrl:this.Base.getMyData().avatarUrl||this.Base.getMyData().memberinfo.avatarUrl,
@@ -85,7 +102,7 @@ class Content extends AppBase {
       this.Base.uploadAvatarUrl("member",avatarUrl, (ret) => { 
         console.log(ret)
         that.Base.setMyData({
-          avatarUrl: uploadpath+ret
+          avatarUrl: ret
         }); 
       }, undefined);
 
@@ -96,6 +113,12 @@ class Content extends AppBase {
     console.log(e)
     this.Base.setMyData({
       nickName:e.detail.value
+    })
+  }
+  bin_inp_mb(e){
+    console.log(e)
+    this.Base.setMyData({
+      mobile:e.detail.value
     })
   }
 
@@ -109,4 +132,5 @@ body.onMyShow = content.onMyShow;
 body.getUserProfile = content.getUserProfile;
 body.bindpic = content.bindpic;
 body.bin_inp = content.bin_inp;
+body.bin_inp_mb = content.bin_inp_mb;
 Page(body)

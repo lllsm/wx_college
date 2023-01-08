@@ -119,9 +119,10 @@ class Content extends AppBase {
 
     let imglists = [];
     for(let i=0;i<imglist.length;i++){
-      imglists.push(uploadpath+imglist[0]);
+      imglists.push(uploadpath+imglist[i]);
     }
     console.log(imglists[idx])
+    console.log(imglists)
     wx.previewImage({
       current:imglists[idx],//当前点击的图片链接
       urls: imglists//图片数组

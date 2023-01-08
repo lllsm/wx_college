@@ -157,16 +157,7 @@ export class AppBase {
   log() {
     console.log("yeah!");
   }
-  search(){
-    wx.navigateTo({
-      url: '/pages/search/search',
-    })
-  }
-  xuanzechenshi() {
-    wx.navigateTo({
-      url: '/pages/xuanzechenshi/xuanzechenshi',
-    })
-  }
+
   BackPage() {
     wx.navigateBack({
       delta: 1
@@ -182,12 +173,11 @@ export class AppBase {
     this.Base.options = options;
     console.log(options);
     console.log("onload");
-    this.start();
+    // this.start();
     this.Base.setBasicInfo();
     this.Base.setMyData({
       options: options,
     });
-
     ApiConfig.SetUnicode(this.Base.unicode);
   }
 
@@ -222,10 +212,8 @@ export class AppBase {
   
   onShow() {
     var that = this;
-    
     var memberapi = new MemberApi();
-
-
+    //加载素材
     // instapi.resources({}, (res) => {
     //   this.Base.setMyData({
     //     res
@@ -274,6 +262,9 @@ export class AppBase {
                 // ApiConfig.SetToken(data.data.openid);
                 console.log("goto update info");
                 //this.loadtabtype();
+                wx.showLoading({
+                  title: '加载中',
+                })
                 memberapi.login(AppBase.UserInfo, (data) => {
                   console.log(data.data)
                   ApiConfig.SetToken(data.data);
@@ -281,14 +272,52 @@ export class AppBase {
                   that.Base.setMyData({
                     UserInfo: AppBase.UserInfo
                   });
+                  wx.hideLoading();
                   that.checkPermission();
                 });
-                // that.onMyShow();
+                that.onMyShow();
                 // that.Base.getAddress();
               });
-          
+        },
+        fail:userloginres=>{
+          console.log("auth fail");
+          console.log(userloginres);
+          console.log(res);
 
+          var memberapi = new MemberApi();
+          memberapi.getuserinfo({
+            code: res.code,
+            grant_type: "authorization_code"
+          }, data => {
+            console.log("here");
+            console.log(data.data.openid);
+            AppBase.UserInfo.openid = data.data.openid;
+            AppBase.UserInfo.session_key = data.data.session_key;
+            console.log(AppBase.UserInfo);
+            // ApiConfig.SetToken(data.data.openid);
+            console.log("goto update info");
+            //this.loadtabtype();
+            memberapi.login(AppBase.UserInfo, (data) => {
+              console.log(data.data)
+              ApiConfig.SetToken(data.data);
+              console.log(AppBase.UserInfo);
+              that.Base.setMyData({
+                UserInfo: AppBase.UserInfo
+              });
+              if (this.Base.needauth == true) {
+                // wx.redirectTo({
+                //   url: '/pages/auth/auth',
+                // })
+              } else {
+                that.onMyShow();
+              }
+            });
+            that.onMyShow();
+            // that.Base.getAddress();
+          });
         }
+
+
       })
 
       return false;
@@ -309,7 +338,7 @@ export class AppBase {
       });
 
       that.onMyShow();
-      // that.checkPermission();
+      that.checkPermission();
     }
     that.checkPermission();
   }
@@ -462,9 +491,11 @@ export class AppBase {
       name: 'file',
       formData: {
         'module': modul,
-        "field": "file"
+        "field": "file",
       },
-
+      header: {
+        'token': ApiConfig.TOKEN
+      },
       success: function(res) {
         console.log(res);
         var data = JSON.parse(res.data)
@@ -641,6 +672,9 @@ export class AppBase {
               'module': modul,
               "field": "file"
             },
+            header: {
+              'token': ApiConfig.TOKEN
+            },
             success: function(res) {
               console.log(res);
               var data = res.data
@@ -689,6 +723,9 @@ export class AppBase {
               'module': modul,
               "field": "file"
             },
+            header: {
+              'token': ApiConfig.TOKEN
+            },
             success: function(res) {
               console.log(res);
               var data = res.data
@@ -735,6 +772,9 @@ export class AppBase {
             formData: {
               'module': modul,
               "field": "file"
+            },
+            header: {
+              'token': ApiConfig.TOKEN
             },
             success: function(res) {
               console.log(res);
@@ -785,11 +825,7 @@ export class AppBase {
       url: '/pages/home/home',
     })
   }
-  logout() {
-    wx.redirectTo({
-      url: '/pages/signin/signin',
-    })
-  }
+
   gotoPage(e) {
     console.log(e);
     var dataset = e.currentTarget.dataset;
@@ -1070,19 +1106,7 @@ export class AppBase {
   }
 
 
-  goarticle(e) {
-    //bindtap="goarticle" data-iszn="{{item.iszn_value}}" data-url="{{item.url}}" 
-    console.log(e);
-    var iszn = e.currentTarget.dataset.iszn;
-    var url = e.currentTarget.dataset.url;
-    if (iszn != "Y") {
-      url = "https://uat6.helpfooter.com/articleload/index.php?url=" + url;
-    }
-    url = encodeURIComponent(url);
-    wx.navigateTo({
-      url: '/pages/article/article?url=' + url,
-    })
-  }
+
 
   btnClickTo() {
     this.Base.setMyData({popup:true});
@@ -1186,19 +1210,6 @@ export class AppBase {
   preventTouchMove() {
     //阻止触摸
   }
-  ketai(e){
-    var id = e.currentTarget.id;
-    wx.navigateTo({
-      url: '/pages/playtate/playtate?id='+id,
-    })
-  }
-  ketai1(e){
-    var id = e.currentTarget.id;
-    wx.navigateTo({
-      url: '/pages/gueststate/gueststate?id='+id,
-    })
-  }
-
 
    withData(param){
     return param < 10 ? '0' + param : '' + param;

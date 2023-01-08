@@ -1,6 +1,6 @@
 /* pages/audit/audit.wxss */
 .van-tabs__line{
-   background: linear-gradient(90deg,#FFA8A8, #FFE985, #FAB2FF);
+  background: linear-gradient(90deg,#fbfa6a, #f1cd5b);
 }
 .img_class{
   /* border-radius: 20rpx; */

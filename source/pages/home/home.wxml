@@ -1,6 +1,6 @@
 <!--pages/home/home.wxml-->
 <view>
-  <view class="vtop">
+  <view class="vtop" style="height:{{funcrowheight+60}}px ;">
   <view class="search border-box2" style="height:{{funcrowheight}}px;margin-top:{{margintop}}px;">
     <input class="input_search" bindconfirm="search" placeholder="搜索你想要的内容" />
   </view>
@@ -12,7 +12,7 @@
 
 
 
-<view class="" style="margin-top: 17%;">
+<view class="" style="margin-top:{{margintop+40}}px;">
 
 
   <swiper class="" style="margin:15rpx;" indicator-color="rgba(255, 255, 255, 0.6 )" indicator-active-color="rgba(255, 255, 255, 1)" indicator-dots='true' autoplay='false' interval='5000' duration='200' current="{{indexcurrent}}" circular='true'>
@@ -51,7 +51,7 @@
 
 
   <view>
-    <image mode="aspectFit" src="../../images/icons/issue.png" bindtap="navtoPage" data-page="addclass" class="icon-75 under2" style="z-index:1;"></image>
+    <image mode="aspectFit" src="../../images/icons/issue.png" bindtap="to_addclass"  class="icon-75 under2" style="z-index:1;"></image>
   </view>
 
   <!-- 自定义图标 -->
