@@ -1,2 +1,26 @@
 <!--pages/memberlist/memberlist.wxml-->
-<text>pages/memberlist/memberlist.wxml</text>
+<view>
+
+  <view class="">
+    <view class="flex-row padding-20 border-box " wx:for="{{classdetails.memberlist}}" wx:key="index">
+      <view class="flex-shrink">
+        <van-image class="" fit="cover" radius="20rpx" alt="heightFix" width="120rpx" height="120rpx" src="{{uploadpath}}{{item.avatarUrl}}" />
+      </view>
+      <view class="flex-column margin-left-20 flex-wrap" style="width: 100%;">
+        <view class="flex-row flex-liangbian" style="width: 100%;">
+          <view>{{item.nickname}}</view>
+          <view>积分：{{item.score}}</view>
+        </view>
+        <view class="margin-top-20 h5 flex-liangbian">
+        <view>{{item.gender==1?"男":'女'}}</view>
+        
+        <view wx:if="{{memberinfo.id == classdetails.user_id}}" style="width:150rpx;  text-align: center; color: rgb(82, 81, 81);" class="border-none clear-button radius-40 button_mian" id='B' bindtap="join_exit" data-id="{{item.id}}">移出</view>
+        </view>
+      
+      </view>
+
+    </view>
+  </view>
+
+
+</view>

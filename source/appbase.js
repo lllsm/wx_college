@@ -336,11 +336,10 @@ export class AppBase {
       that.Base.setMyData({
         UserInfo: AppBase.UserInfo
       });
-
       that.onMyShow();
       that.checkPermission();
     }
-    that.checkPermission();
+    // that.checkPermission();
   }
   checkPermission() {
     console.log('checkPermission')

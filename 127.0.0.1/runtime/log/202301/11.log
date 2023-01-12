@@ -1,0 +1,8 @@
+---------------------------------------------------------------
+[ 2023-01-11T10:28:08+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/delclass
+[运行时间：0.117649s] [吞吐率：8.50req/s] [内存消耗：4,270.15kb] [文件加载：151]
+[ error ] [0]method not exist:think\db\Query->destroy[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2023-01-11T10:32:00+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/delclass
+[运行时间：0.065990s] [吞吐率：15.15req/s] [内存消耗：4,270.41kb] [文件加载：151]
+[ error ] [0]method not exist:think\db\Query->destroy[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Query.php:103]

@@ -108,6 +108,7 @@ class Content extends AppBase {
     }
 
     collegeapi.addclass({
+      id :this.Base.options.id || 0,
       class_name:class_list.class_name,
       college_name:class_list.college_name,
       class_intro:class_list.class_intro||'',
@@ -118,6 +119,13 @@ class Content extends AppBase {
       user_id:this.Base.getMyData().memberinfo.id,
       is_pas_switch
     },(addclass)=>{
+      if(addclass.msg=="修改成功！"){
+        this.Base.toast("修改成功！");
+        wx.navigateBack({
+          delta: 1
+        })
+        return;
+      }
       if(addclass.code==1){
         this.Base.toast("恭喜你，创建成功，请耐心等待审核！");
         wx.redirectTo({
@@ -145,6 +153,52 @@ class Content extends AppBase {
    }); 
  }, undefined);
  }
+ join_exit(e){
+   var that = this;
+   var text  ;
+   if(e.currentTarget.id=="A"){
+    text = "是否加入该班级？"
+   }else{
+     text = "确定退出该班级？"
+   }
+   wx.showModal({
+    title: '提示',
+    content: text,
+    success (res) {
+      if (res.confirm) {
+        console.log(e.currentTarget.id);
+        var collegeapi = new CollegeApi();
+        collegeapi.uptheir_class_id({collegeclass_id:that.Base.options.id,type:e.currentTarget.id,user_id:that.Base.getMyData().memberinfo.id},(uptheir_class_id)=>{
+          that.Base.toast(uptheir_class_id.msg)
+        })
+        wx.navigateBack({
+          delta: 1
+        })
+      } else if (res.cancel) {
+        console.log('用户点击取消')
+      }
+    }
+  })
+
+
+ }
+
+
+ class_submit(e){
+  var that = this;
+  console.log(e.currentTarget.dataset.id)
+  let id = e.currentTarget.dataset.id;
+  var collegeapi = new CollegeApi();
+  collegeapi.delclass({id}, (delclass) => {
+    if(delclass.code==1){
+      Notify({ type: 'success', message: '已删除' });
+      that.Base.toast("已删除");
+      wx.redirectTo({
+        url: 'pages/home/home',
+      })
+    }
+  })
+}
 }
 var content = new Content();
 var body = content.generateBodyJson();
@@ -155,5 +209,7 @@ body.onChange = content.onChange;
 body.formSubmit = content.formSubmit;
 body.uploadimg = content.uploadimg;
 body.uploadewm = content.uploadewm;
+body.class_submit = content.class_submit;
+body.join_exit = content.join_exit;
 
 Page(body)

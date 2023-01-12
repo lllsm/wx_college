@@ -168,6 +168,34 @@ class Content extends AppBase {
     })
     
   }
+  join_exit(e){
+    var that = this;
+    var text  ;
+    if(e.currentTarget.id=="A"){
+     text = "是否加入该班级？"
+    }else{
+      text = "确定退出该班级？"
+    }
+    wx.showModal({
+     title: '提示',
+     content: text,
+     success (res) {
+       if (res.confirm) {
+         console.log(e.currentTarget.id);
+         var collegeapi = new CollegeApi();
+         collegeapi.uptheir_class_id({collegeclass_id:that.Base.options.id,type:e.currentTarget.id,user_id:that.Base.getMyData().memberinfo.id},(uptheir_class_id)=>{
+           that.Base.toast(uptheir_class_id.msg)
+         })
+        //  console.log(AppBase.onShow())
+         that.onShow();
+       } else if (res.cancel) {
+         console.log('用户点击取消')
+       }
+     }
+   })
+ 
+ 
+  }
   bintext(e){
     console.log(e.detail.value)
     this.Base.setMyData({
@@ -194,4 +222,5 @@ body.uploadimg = content.uploadimg;
 body.deleteimg = content.deleteimg;
 body.msg_submit = content.msg_submit;
 body.bintext = content.bintext;
+body.join_exit = content.join_exit;
 Page(body)

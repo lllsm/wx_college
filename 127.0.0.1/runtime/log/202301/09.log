@@ -1,0 +1,12 @@
+---------------------------------------------------------------
+[ 2023-01-09T10:36:25+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/msglist
+[运行时间：0.089644s] [吞吐率：11.16req/s] [内存消耗：4,202.80kb] [文件加载：151]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-01-09T10:39:48+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/msglist
+[运行时间：0.093328s] [吞吐率：10.71req/s] [内存消耗：4,202.81kb] [文件加载：151]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-01-09T11:02:00+08:00 ] 127.0.0.1 POST 127.0.0.1/api/College/msglist
+[运行时间：0.167062s] [吞吐率：5.99req/s] [内存消耗：4,204.00kb] [文件加载：151]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3[D:\wwwroot\127.0.0.1\thinkphp\library\think\db\Connection.php:385]

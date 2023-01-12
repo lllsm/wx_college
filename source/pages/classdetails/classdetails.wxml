@@ -26,11 +26,12 @@
   <view class="box-bg bg-white">
 
 
-    <view class="border-box2 margin-top-40 margin-left-20 margin-right-20 margin-bottom-20" style="width: 100rpx;">
-      <view class="margin-left-30 margin-top-30">主要功能</view>
-      <view></view>
+    <!-- <view class="border-box2 margin-20 padding-20 margin-top-80 flex-center flex-row flex-xiandeng" style="width: 90%;">
+      <view wx:if="{{options.id !=null&&classdetails.user_id != memberinfo.id&&classdetails.id!=memberinfo.their_class_id}}" style="width:150rpx;  text-align: center; color: rgb(82, 81, 81);  font-size: 28rpx;" class="border-none clear-button radius-40 button_mian" id='A' bindtap="join_exit" data-id="{{item.id}}">加入班级</view>
+
+      <view style="width:150rpx;  text-align: center; color: rgb(82, 81, 81); font-size: 28rpx;" class="border-none clear-button radius-40 button_mian" id='B' bindtap="" data-id="{{item.id}}">邀请成员</view>
     
-    </view>
+    </view> -->
 
 
     <view class="border-box2 margin-top-40 margin-left-20 margin-right-20 margin-bottom-20">

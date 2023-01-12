@@ -73,14 +73,17 @@ class College extends Api{
 		$this->success('success',$list);
 
 
-        }
+    }
 
 
         public function delclass(){
             $id = $this ->request ->post("id");
             // $data = Db::table('tb_collegeclass')->where('id',$id)->delete();
             $data = model('admin/Collegeclass')->destroy($id);
-    
+            model('admin/Classimg')->destroy(['collegeclass_id'=>$id]);
+            model('admin/Message')->destroy(['collegeclass_id'=>$id]);
+            model('admin/Classfile')->destroy(['collegeclass_id'=>$id]);
+            
             if ($data) {
                 $this->success('已删除');
             } else {
@@ -88,11 +91,35 @@ class College extends Api{
             }
     
         }
+        public function uptheir_class_id()
+        {
+            $collegeclass_id = $this->request->post("collegeclass_id");
+            $type = $this->request->post("type");
+            $user_id = $this->request->post("user_id");
+            $u = model('admin/User')->where('id', $user_id)->find();
+            
+            if ($u) {
+                if($type=="A"){
+                    $this->auth->direct($u["id"]);
+                    $u->their_class_id = $collegeclass_id;
+                    $u->save();
+                    $this->success('加入成功~~', '');
+                }else if($type=="B"){
+                    $this->auth->direct($u["id"]);
+                    $u->their_class_id = 0;
+                    $u->save();
+                    $this->success('退出成功~~', '');
+                }
 
-        public function addclass($id=null){
+            } else {
+                $this->success('失败！', '');
+            }
+        }
+
+        public function addclass($id=0){
             $data = $this->request->post();
             $type = "新增";
-            if(empty($id)){
+            if($id==0){
                 $res=model('admin/Collegeclass')->allowField(true)->save($data);
 
             }else{
@@ -110,6 +137,7 @@ class College extends Api{
             $id = $this ->request ->post("id");
             $data = model('admin/Collegeclass')->find($id);
             $data['img']=model('admin/Classimg')->where('collegeclass_id',$id)->select();
+            $data['memberlist']=model('admin/User')->where('their_class_id',$id)->select();
             $this->success('success',$data);
         }
 

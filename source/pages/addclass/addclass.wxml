@@ -5,8 +5,8 @@
     <view class="border-box padding-30 bg-white ">
       <view class="img_box border-box bg-white">
         <image mode="aspectFit" src="../../images/icons/addimg.png" wx:if="{{headimg==''}}" bindtap="uploadimg" class="icon-75 addimg" style="z-index:1;"></image>
-        <image src="{{uploadpath}}{{headimg}}" wx:if="{{headimg!=''}}" mode="aspectFill" class="icon-75 addimg" bindtap="uploadimg"></image>
-        <image src="{{uploadpath}}{{headimg}}" wx:if="{{headimg!='' && classdetails.user_id != memberinfo.id}}" mode="aspectFill" class="icon-75 addimg" ></image>
+        <image src="{{uploadpath}}{{headimg}}" wx:if="{{headimg!='' && (classdetails.user_id == memberinfo.id || options.id == null)}}" mode="aspectFill" class="icon-75 addimg" bindtap="uploadimg"></image>
+        <image src="{{uploadpath}}{{headimg}}" wx:if="{{headimg!='' && classdetails.user_id != memberinfo.id && options.id != null}}" mode="aspectFill" class="icon-75 addimg" ></image>
       </view>
 
 
@@ -72,18 +72,30 @@
 
 
     </view>
-
-    <view class="margin-left-20 margin-right-20 margin-bottom-20" wx:if="{{options.id !=null&&classdetails.user_id != memberinfo.id}}">
-      <button class="border-none clear-button button_mian txt_mians" formType="submit">退出班级</button>
-    </view>
+    <van-transition>
+      <view class="margin-left-20 margin-right-20 margin-bottom-20" wx:if="{{options.id !=null&&classdetails.user_id != memberinfo.id&&classdetails.id==memberinfo.their_class_id}}">
+        <button class="border-none clear-button button_mian txt_mians" id='B' bindtap="join_exit">退出班级</button>
+      </view>
+  </van-transition>
+    <van-transition>
+      <view class="margin-left-20 margin-right-20 margin-bottom-20" wx:if="{{options.id !=null&&classdetails.user_id != memberinfo.id&&classdetails.id!=memberinfo.their_class_id}}">
+        <button class="border-none clear-button button_mian txt_mians" id='A' bindtap="join_exit">加入班级</button>
+      </view>
+  </van-transition>
+    <van-transition>
     <view class="margin-left-20 margin-right-20 margin-bottom-20" wx:if="{{options.id == null}}">
       <button class="border-none clear-button button_mian txt_mians" formType="submit">开始创建</button>
     </view>
+  </van-transition>
+    <van-transition>
     <view class="margin-left-20 margin-right-20 margin-bottom-20" wx:if="{{classdetails.user_id == memberinfo.id}}">
       <button class="border-none clear-button button_mian txt_mians" formType="submit">确认保存</button>
     </view>
-    <view class="margin-left-20 margin-right-20 margin-bottom-20" wx:if="{{classdetails.user_id == memberinfo.id}}">
-      <button class="border-none clear-button button_mian txt_mians" formType="submit">解散班级</button>
-    </view>
+  </van-transition>
+    <van-transition>
+      <view class="margin-left-20 margin-right-20 margin-bottom-20" wx:if="{{classdetails.user_id == memberinfo.id}}">
+        <button class="border-none clear-button button_mian txt_mians" data-id="{{options.id}}" bindtap="class_submit">解散班级</button>
+      </view>
+  </van-transition>
   </form>
 </view>
