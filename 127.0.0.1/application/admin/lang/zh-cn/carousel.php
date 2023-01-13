@@ -5,6 +5,8 @@ return [
     'Name_text'    => '名称',
     'Address_page' => '地址页',
     'Image'        => '图片',
+    'Switch'       => '是否跳转小程序',
+    'Appid'        => '小程序APPID',
     'Refreshtime'  => '刷新时间',
     'Createtime'   => '创建时间',
     'Updatetime'   => '更新时间',

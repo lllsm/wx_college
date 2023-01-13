@@ -22,6 +22,15 @@ class Content extends AppBase {
       funcrowheight: height
     })
 
+
+
+    var collegeapi = new CollegeApi();
+    collegeapi.indexbanner({},(indexbanner)=>{
+      this.Base.setMyData({
+        indexbanner:indexbanner.data
+      })
+    })
+
   }
   onMyShow() {
     var that = this;
@@ -65,6 +74,29 @@ class Content extends AppBase {
 
   onClose() {
     this.Base.setMyData({ show: false });
+  }
+  bin_indexbanner(e){
+    console.log(e)
+    let item = e.currentTarget.dataset.item;
+    if(item.switch==1){
+      wx.navigateToMiniProgram({
+        appId: item.appid,
+        path: item.address_page,
+        extraData: {
+          foo: 'bar'
+        },
+        envVersion: 'release',
+        success(res) {
+          // 打开成功
+        }
+      })
+    }else{
+      wx.navigateTo({
+        url: item.address_page,
+        success: function(res) {
+        }
+      })
+    }
   }
   btn_details(e){
     console.log(e.currentTarget.dataset.item);
@@ -147,4 +179,5 @@ body.onClose = content.onClose;
 body.btn_details = content.btn_details;
 body.bin_key = content.bin_key;
 body.to_addclass = content.to_addclass;
+body.bin_indexbanner = content.bin_indexbanner;
 Page(body)

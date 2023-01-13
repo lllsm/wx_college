@@ -44,6 +44,22 @@ class Content extends AppBase {
       })
     })
   }
+  onShareAppMessage() {
+    let imageUrl = this.Base.getMyData().uploadpath+this.Base.getMyData().classdetails.college_image
+    return {
+      title: '幸运是努力了好久发出的光，快快加入我们吧！',
+      path: '/pages/classdetails/classdetails?id='+this.Base.options.id+'&title='+this.options.title,
+      imageUrl:imageUrl 
+    }
+  }
+  onShareTimeline(){
+    let imageUrl = this.Base.getMyData().uploadpath+this.Base.getMyData().classdetails.college_image
+    return {
+      title: '幸运是努力了好久发出的光，快快加入我们吧！',
+      query: 'id='+this.Base.options.id+'&title='+this.options.title,
+      imageUrl:imageUrl 
+    }
+  }
   search(e){
     let keyword = e.detail.value;
     this.Base.toast(keyword)
@@ -186,8 +202,9 @@ class Content extends AppBase {
          collegeapi.uptheir_class_id({collegeclass_id:that.Base.options.id,type:e.currentTarget.id,user_id:that.Base.getMyData().memberinfo.id},(uptheir_class_id)=>{
            that.Base.toast(uptheir_class_id.msg)
          })
-        //  console.log(AppBase.onShow())
-         that.onShow();
+
+         that.checkPermission();
+        //  that.onMyShow();
        } else if (res.cancel) {
          console.log('用户点击取消')
        }

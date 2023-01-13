@@ -273,10 +273,14 @@ export class AppBase {
                     UserInfo: AppBase.UserInfo
                   });
                   wx.hideLoading();
-                  that.checkPermission();
+                  new Promise((resolve,reject) => {
+                      resolve("then是异步");
+                  }).then((res) => {
+                    that.checkPermission();
+                  }).then(()=>{
+                    that.onMyShow();
+                  })
                 });
-                that.onMyShow();
-                // that.Base.getAddress();
               });
         },
         fail:userloginres=>{
@@ -332,12 +336,17 @@ export class AppBase {
         });
       }
       //this.loadtabtype();
-
       that.Base.setMyData({
         UserInfo: AppBase.UserInfo
       });
-      that.onMyShow();
-      that.checkPermission();
+      new Promise((resolve,reject) => {
+          resolve("then是异步");
+      }).then((res) => {
+        that.checkPermission();
+      }).then(()=>{
+        that.onMyShow();
+      })
+
     }
     // that.checkPermission();
   }
@@ -362,6 +371,8 @@ export class AppBase {
 
   onMyShow() {
     console.log("onMyShow");
+    this.onShow();
+    wx.stopPullDownRefresh();
   }
   onHide() {
     console.log("onHide");

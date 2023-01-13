@@ -58,7 +58,7 @@ class Carousel extends Backend
                     ->paginate($limit);
 
             foreach ($list as $row) {
-                $row->visible(['id','name_text','address_page','image','weigh','status','state']);
+                $row->visible(['id','name_text','address_page','image','switch','appid','weigh','status','state']);
                 
             }
 
