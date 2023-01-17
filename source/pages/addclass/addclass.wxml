@@ -40,7 +40,7 @@
           <view class="">
             <image mode="aspectFit" src="../../images/icons/addimg.png" wx:if="{{ewmimg=='' && options.id == null}}" bindtap="uploadewm"   class="icon-25 " style="z-index:1;"></image>
 
-            <image mode="aspectFit" src="../../images/icons/addimg.png" wx:if="{{ewmimg==''}}" wx:if="{{classdetails.user_id != memberinfo.id && options.id != null}}"  class="icon-25 " style="z-index:1;"></image>
+            <image mode="aspectFit" src="../../images/icons/addimg.png"  wx:if="{{classdetails.user_id != memberinfo.id && options.id != null && ewmimg==''}}"  class="icon-25 " style="z-index:1;"></image>
 
             <image mode="aspectFit" src="../../images/icons/addimg.png" wx:if="{{ewmimg=='' && classdetails.user_id == memberinfo.id}}"  class="icon-25 " bindtap="uploadewm" style="z-index:1;"></image>
 

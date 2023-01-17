@@ -208,11 +208,11 @@ class College extends Api
                 if ($checkstate == 'all') {
                     $list = Db::query("select b.*,a.class_name from tb_collegeclass a 
                         INNER JOIN tb_message b ON a.id = b.collegeclass_id
-                        WHERE  b.state = '1' AND b.user_id = $this->uid ");
+                        WHERE  b.state = '1' AND b.user_id = $this->uid AND b.deletetime is null ");
                 } else {
                     $list = Db::query("select b.*,a.class_name from tb_collegeclass a 
                         INNER JOIN tb_message b ON a.id = b.collegeclass_id
-                        WHERE  b.checkstate=? AND b.state = '1' AND b.user_id = $this->uid ", [$checkstate]);
+                        WHERE  b.checkstate=? AND b.state = '1' AND b.deletetime is null  AND b.user_id = $this->uid ", [$checkstate]);
                 }
             }
 
@@ -507,11 +507,11 @@ class College extends Api
             if ($checkstate == 'all') {
                 $list = Db::query("select b.*,a.class_name from tb_collegeclass a 
                 INNER JOIN tb_classimg b ON a.id = b.collegeclass_id
-                WHERE  b.state = '1' AND b.user_id = $this->uid ");
+                WHERE  b.state = '1' AND b.user_id = $this->uid AND b.deletetime is null ");
             } else {
                 $list = Db::query("select b.*,a.class_name from tb_collegeclass a 
                 INNER JOIN tb_classimg b ON a.id = b.collegeclass_id
-                WHERE  b.checkstate=? AND b.state = '1' AND b.user_id = $this->uid ", [$checkstate]);
+                WHERE  b.checkstate=? AND b.state = '1' AND b.deletetime is null AND b.user_id = $this->uid ", [$checkstate]);
             }
         }
         $this->success('success', $list);

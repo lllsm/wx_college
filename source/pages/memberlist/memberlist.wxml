@@ -8,8 +8,8 @@
       </view>
       <view class="flex-column margin-left-20 flex-wrap" style="width: 100%;">
         <view class="flex-row flex-liangbian" style="width: 100%;">
-          <view>{{item.nickname}}</view>
-          <view>积分：{{item.score}}</view>
+          <view class="type-text-1 ">{{item.nickname}}</view>
+          <view class="flex-shrink">积分：{{item.score}}</view>
         </view>
         <view class="margin-top-20 h5 flex-liangbian">
         <view>{{item.gender==1?"男":'女'}}</view>
@@ -23,4 +23,8 @@
   </view>
 
 
+</view>
+
+<view wx:if="{{classdetails.memberlist.length==0}}">
+    <van-empty description="暂无数据" />
 </view>

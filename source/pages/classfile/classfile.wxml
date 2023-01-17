@@ -36,3 +36,9 @@
   </view>
 <!-- 在页面内添加对应的节点 -->
 <van-notify id="van-notify" />
+
+
+
+<view wx:if="{{filelist.length==0}}">
+    <van-empty description="暂无数据" />
+</view>

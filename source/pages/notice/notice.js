@@ -33,6 +33,7 @@ class Content extends AppBase {
     let cont = wx.getStorageSync("content")||this.Base.getMyData().instinfo.content;
    
    let content = ApiUtil.HtmlDecode(cont);
+   console.log(content)
     WxParse.wxParse('content', 'html',content, that, 10);
     this.Base.setMyData({})
   }

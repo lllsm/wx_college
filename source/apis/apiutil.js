@@ -15,8 +15,8 @@ export class ApiUtil {
 
 
     s = s.replace(new RegExp("</p>", "gm"), "</p><br />");
-    s = s.replace(new RegExp("\"/alucard263096/swimming/upload/", "gm"), "\"" + "https://cmsdev.app-link.org/alucard263096/swimming/upload/");
-
+    s = s.replace(new RegExp("\"/uploads/", "gm"), "\"" + "https://college.cllsm.top/uploads/");
+    console.log(s,"--------------")
 
     return s;
   }

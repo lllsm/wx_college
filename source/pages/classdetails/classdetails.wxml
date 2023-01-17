@@ -89,7 +89,7 @@
               </view>
             </view>
           </view>
-          <view style="width: 200prx; height: 200rpx;" wx:if="{{msglist.length==0}}">
+          <view wx:if="{{msglist.length==0}}">
             <van-empty description="暂无数据" />
           </view>
         </view>

@@ -13,6 +13,18 @@ class Wxuser extends Api
     protected $noNeedLogin = ['login', 'getuserinfo', 'inst'];
     // 无需鉴权的接口,*表示全部
     protected $noNeedRight = ['Userinfo', 'updateuser', 'inst','getPhone'];
+
+    protected $appid = null;
+
+    protected $appsecret = null;
+    public function _initialize()
+    {
+        parent::_initialize();
+        $inst = model('admin/Inst')->where('id', 1)->find();
+        $this->success('success', $inst);
+        $this->appid = $inst["appid"];
+        $this->appsecret = $inst["appsecret"];
+    }
     public function login()
     {
         $post = $this->request->param();
@@ -71,8 +83,8 @@ class Wxuser extends Api
         if ($grant_type == "") {
             $this->error('no grant_type request, sorry', '', -102);
         }
-        $appid = 'wxd2523f83d27e3690';
-        $appsecret = 'cb7118594a88771e2e73a42996f4aedc';
+        $appid = $this->appid;
+        $appsecret = $this->appsecret;
         $url = "https://api.weixin.qq.com/sns/jscode2session?appid=$appid&secret=$appsecret&js_code=$code&grant_type=$grant_type";
         $authinfo = file_get_contents($url);
         // print_r($authinfo);
@@ -157,8 +169,8 @@ class Wxuser extends Api
      */
     public function getPhone()
     {
-        $appid = 'wxd2523f83d27e3690';
-        $appsecret = 'cb7118594a88771e2e73a42996f4aedc';
+        $appid = $this->appid;
+        $appsecret = $this->appsecret;
 
 
         $iv = $this->request->post("iv", '', 'trim');

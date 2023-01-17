@@ -32,7 +32,8 @@
       "van-dialog": "@vant/weapp/dialog/index",
       "van-tab": "@vant/weapp/tab/index",
       "van-tabs": "@vant/weapp/tabs/index",
-      "van-stepper": "@vant/weapp/stepper/index"
+      "van-stepper": "@vant/weapp/stepper/index",
+      "van-empty": "@vant/weapp/empty/index"
    },
     "permission": {
         "scope.userLocation": {

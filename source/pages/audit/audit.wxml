@@ -1,107 +1,121 @@
 <!--pages/audit/audit.wxml-->
 <!-- 在页面内添加对应的节点 -->
 <van-notify id="van-notify" />
-<van-tabs bind:click="tabbtn"  swipeable animated="true" sticky title-active-color="#fcd209" color="#fcd209">
-  <van-tab name="A" title="审核中"></van-tab>
-  <van-tab name="B" title="审核成功"></van-tab>
-  <van-tab name="C" title="审核失败"></van-tab>
-  <van-tab name="all" title="全部"></van-tab>
+<van-tabs bind:click="tabbtn" swipeable animated="true" sticky title-active-color="#fcd209" color="#fcd209">
+    <van-tab name="A" title="审核中"></van-tab>
+    <van-tab name="B" title="审核成功"></van-tab>
+    <van-tab name="C" title="审核失败"></van-tab>
+    <van-tab name="all" title="全部"></van-tab>
 </van-tabs>
 <view class="" wx:if="{{options.type=='A'}}">
-  <view wx:for="{{classlist}}" wx:key="index" style="z-index: 9999999;" bindtap="btn_details" data-item="{{item}}">
-    <view class="border-box margin-40 padding-30">
-      <view class="flex-row flex-center">
-        <van-image class="image-class" fit="cover" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{item.college_image}}" />
-        <view class="margin-left-30">
-          <view class="txt-bold type-text-1" style="color:#161616">{{item.class_name}}</view>
-          <view class="margin-top-30 type-text-1 h5">{{item.college_name}}</view>
+    <view wx:for="{{classlist}}" wx:key="index" style="z-index: 9999999;" bindtap="btn_details" data-item="{{item}}">
+        <view class="border-box margin-40 padding-30">
+            <view class="flex-row flex-center">
+                <van-image class="image-class" fit="cover" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{item.college_image}}" />
+                <view class="margin-left-30">
+                    <view class="txt-bold type-text-1" style="color:#161616">{{item.class_name}}</view>
+                    <view class="margin-top-30 type-text-1 h5">{{item.college_name}}</view>
+                </view>
+            </view>
+            <view class="margin-top-10">
+                <text class="h4-5">{{item.class_intro}}</text>
+            </view>
+            <van-divider hairline customStyle="border-color: #999;"></van-divider>
+            <view style="width: 100%;" class="flex-shrink">
+                <button style="width:180rpx; float:right; height: 60rpx;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" disabled="true" bindtap="class_submit">删除</button>
+            </view>
         </view>
-      </view>
-      <view class="margin-top-10">
-        <text class="h4-5">{{item.class_intro}}</text>
-      </view>
-      <van-divider hairline customStyle="border-color: #999;"></van-divider>
-      <view style="width: 100%;" class="flex-shrink">
-        <button style="width:180rpx; float:right; height: 60rpx;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" disabled="true" bindtap="class_submit">删除</button>
-      </view>
+        <van-divider />
     </view>
-    <van-divider />
-  </view>
+
+    <view wx:if="{{classlist.length==0 && options.type=='A'}}">
+        <van-empty description="暂无数据" />
+    </view>
 </view>
 <view wx:if="{{options.type=='B'}}">
-  <view class="flex-row margin-top-30" wx:for="{{msglist}}" wx:key="index">
-    <view class="margin-left-20" style="width:100%">
-      <view class="border-box2 margin-top-20 margin-right-20 padding-20" style="background-color: #F3F4F5;">
-        <view class="type-text-1">班级名称：{{item.class_name}}</view>
-        <van-divider  hairline dashed customStyle="border-color: #999;"></van-divider>
-        <view class="flex-row flex-liangbian">
-          <view>昵称：{{item.user.nickname}}</view>
-          <view class="margin-right-20 text-1 h6">{{item.refreshtime_text}}</view>
-        </view>
-        <van-divider  hairline dashed customStyle="border-color: #999;"></van-divider>
+    <view class="flex-row margin-top-30" wx:for="{{msglist}}" wx:key="index">
+        <view class="margin-left-20" style="width:100%">
+            <view class="border-box2 margin-top-20 margin-right-20 padding-20" style="background-color: #F3F4F5;">
+                <view class="type-text-1">班级名称：{{item.class_name}}</view>
+                <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
+                <view class="flex-row flex-liangbian">
+                    <view>昵称：{{item.user.nickname}}</view>
+                    <view class="margin-right-20 text-1 h6">{{item.refreshtime_text}}</view>
+                </view>
+                <van-divider hairline dashed customStyle="border-color: #999;"></van-divider>
 
-        <view>留言内容：{{item.msg_t}}</view>
-        <van-divider wx:if="{{item.img.length>0}}" hairline dashed customStyle="border-color: #999;"></van-divider>
+                <view>留言内容：{{item.msg_t}}</view>
+                <van-divider wx:if="{{item.img.length>0}}" hairline dashed customStyle="border-color: #999;"></van-divider>
 
-        <view class="flex-row flex-wrap">
-          <view wx:for="{{item.img}}" wx:for-item="img" data-url="{{img.msg_image}}" bindtap="previewImage">
-            <van-image class="margin-right-20" show-menu-by-longpress fit="cover" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{img.msg_image}}" />
-          </view>
+                <view class="flex-row flex-wrap">
+                    <view wx:for="{{item.img}}" wx:for-item="img" data-url="{{img.msg_image}}" bindtap="previewImage">
+                        <van-image class="margin-right-20" show-menu-by-longpress fit="cover" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{img.msg_image}}" />
+                    </view>
+                </view>
+                <van-divider hairline customStyle="border-color: #999;"></van-divider>
+                <view style="width: 100%;" class="flex-shrink">
+                    <button style="width:180rpx; float:right; height: 60rpx;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="msg_submit">删除</button>
+                </view>
+            </view>
         </view>
-        <van-divider hairline customStyle="border-color: #999;"></van-divider>
-        <view style="width: 100%;" class="flex-shrink">
-          <button style="width:180rpx; float:right; height: 60rpx;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="msg_submit">删除</button>
-        </view>
-      </view>
     </view>
-  </view>
+
+    <view wx:if="{{msglist.length==0 && options.type=='B'}}">
+        <van-empty description="暂无数据" />
+    </view>
 </view>
 <view wx:if="{{options.type=='C'}}">
-  <view class="" wx:for="{{filelist}}" wx:key="index" bindtap="downLoadfile" data-file="{{item}}">
-    <view class="padding-30 border-box2 bg-white margin-top-20 margin-left-30 margin-right-30 flex-row flex-center">
-      <image class="img_class" src="../../images/icons/file.png" />
-      <view class="flex-column" style="width:100%">
+    <view class="" wx:for="{{filelist}}" wx:key="index" bindtap="downLoadfile" data-file="{{item}}">
+        <view class="padding-30 border-box2 bg-white margin-top-20 margin-left-30 margin-right-30 flex-row flex-center">
+            <image class="img_class" src="../../images/icons/file.png" />
+            <view class="flex-column" style="width:100%">
 
-        <view class="flex-row flex-liangbian" style="width: 100%;">
-          <view class="txt-bold type-text-1 h5" style="color:#161616">{{item.file_name||"[未命名]"}}</view>
-          <view class="h5 margin-right-20" class="flex-shrink"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="file_submit">删除</button></view>
+                <view class="flex-row flex-liangbian" style="width: 100%;">
+                    <view class="txt-bold type-text-1 h5" style="color:#161616">{{item.file_name||"[未命名]"}}</view>
+                    <view class="h5 margin-right-20" class="flex-shrink"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="file_submit">删除</button></view>
+
+                </view>
+
+                <view class="flex-liangbian margin-top-10">
+                    <view class="h6 type-text-1">{{item.user.nickname}}</view>
+                    <view class="margin-right-20 text-1 h6 flex-row flex-shrink">{{item.pass_time}}</view>
+                </view>
+
+
+            </view>
 
         </view>
-
-        <view class="flex-liangbian margin-top-10">
-          <view class="h6 type-text-1">{{item.user.nickname}}</view>
-          <view class="margin-right-20 text-1 h6 flex-row flex-shrink">{{item.pass_time}}</view>
-        </view>
-
-
-      </view>
-
     </view>
-  </view>
+    <view wx:if="{{filelist.length==0 && options.type=='C'}}">
+        <van-empty description="暂无数据" />
+    </view>
 
 </view>
 <view wx:if="{{options.type=='D'}}">
-  <view class="flex-row margin-top-30" wx:for="{{classimglist}}" wx:key="index">
-    <view class="margin-left-20" style="width:100%">
-      <view class="border-box2 margin-top-20 margin-right-20 padding-20" style="background-color: #F3F4F5;">
-      <view class="type-text-1">班级名称：{{item.class_name}}</view>
-      <van-divider wx:if="{{item.classimglist.length>0}}" hairline customStyle="border-color: #999;"></van-divider>
-        <!-- <view class="flex-row flex-liangbian">
+    <view class="flex-row margin-top-30" wx:for="{{classimglist}}" wx:key="index">
+        <view class="margin-left-20" style="width:100%">
+            <view class="border-box2 margin-top-20 margin-right-20 padding-20" style="background-color: #F3F4F5;">
+                <view class="type-text-1">班级名称：{{item.class_name}}</view>
+                <van-divider wx:if="{{item.classimglist.length>0}}" hairline customStyle="border-color: #999;"></van-divider>
+                <!-- <view class="flex-row flex-liangbian">
           <view>{{item.user.nickname}}</view>
           <view class="margin-right-20 text-1 h6">{{item.refreshtime_text}}</view>
         </view>
         <van-divider hairline dashed customStyle="border-color: #999;"></van-divider> -->
-        <view class="flex-row flex-wrap">
-          <view wx:for="{{item.classimglist}}" wx:for-item="img" data-url="{{img}}" data-url="{{img}}" bindtap="previewImage">
-            <van-image class="margin-right-20" show-menu-by-longpress fit="cover" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{img}}" />
-          </view>
+                <view class="flex-row flex-wrap">
+                    <view wx:for="{{item.classimglist}}" wx:for-item="img" data-url="{{img}}" data-url="{{img}}" bindtap="previewImage">
+                        <van-image class="margin-right-20" show-menu-by-longpress fit="cover" radius="20rpx" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{img}}" />
+                    </view>
+                </view>
+                <van-divider wx:if="{{item.classimglist.length>0}}" hairline customStyle="border-color: #999;"></van-divider>
+                <view class="flex-row flex-liangbian flex-center">
+                    <view class="margin-right-20 text-1 h6">{{item.pass_time}}</view>
+                    <view class="h5 margin-right-20" class="flex-shrink"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="img_submit">删除</button></view>
+                </view>
+            </view>
         </view>
-        <van-divider wx:if="{{item.classimglist.length>0}}" hairline customStyle="border-color: #999;"></van-divider>
-        <view class="flex-row flex-liangbian flex-center">
-          <view class="margin-right-20 text-1 h6">{{item.pass_time}}</view>
-          <view class="h5 margin-right-20" class="flex-shrink"> <button style="width:180rpx; float:right; height: 60rpx; overflow: hidden;" class="border-none clear-button radius-40 button_mian" data-id="{{item.id}}" bindtap="img_submit">删除</button></view>
-        </view>
-      </view>
     </view>
-  </view>
+    <view wx:if="{{filelist.length==0 && options.type=='D'}}">
+        <van-empty description="暂无数据" />
+    </view>
 </view>

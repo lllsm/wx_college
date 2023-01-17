@@ -19,6 +19,11 @@
   </view>
 </van-popup>
 
+<view wx:if="{{classimglist.length==0}}">
+    <van-empty description="暂无数据" />
+</view>
+
+
 <view class="picture">
   <view wx:for="{{classimglist}}" class="item" bindtap="previewImage" wx:for-index="idx" >
         <image mode='widthFix' id="{{idx}}" src="{{uploadpath}}{{item}}" />
