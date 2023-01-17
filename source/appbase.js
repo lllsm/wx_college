@@ -283,43 +283,43 @@ export class AppBase {
                 });
               });
         },
-        fail:userloginres=>{
-          console.log("auth fail");
-          console.log(userloginres);
-          console.log(res);
+        // fail:userloginres=>{
+        //   console.log("auth fail");
+        //   console.log(userloginres);
 
-          var memberapi = new MemberApi();
-          memberapi.getuserinfo({
-            code: res.code,
-            grant_type: "authorization_code"
-          }, data => {
-            console.log("here");
-            console.log(data.data.openid);
-            AppBase.UserInfo.openid = data.data.openid;
-            AppBase.UserInfo.session_key = data.data.session_key;
-            console.log(AppBase.UserInfo);
-            // ApiConfig.SetToken(data.data.openid);
-            console.log("goto update info");
-            //this.loadtabtype();
-            memberapi.login(AppBase.UserInfo, (data) => {
-              console.log(data.data)
-              ApiConfig.SetToken(data.data);
-              console.log(AppBase.UserInfo);
-              that.Base.setMyData({
-                UserInfo: AppBase.UserInfo
-              });
-              if (this.Base.needauth == true) {
-                // wx.redirectTo({
-                //   url: '/pages/auth/auth',
-                // })
-              } else {
-                that.onMyShow();
-              }
-            });
-            that.onMyShow();
-            // that.Base.getAddress();
-          });
-        }
+
+        //   var memberapi = new MemberApi();
+        //   memberapi.getuserinfo({
+        //     code: res.code,
+        //     grant_type: "authorization_code"
+        //   }, data => {
+        //     console.log("here");
+        //     console.log(data.data.openid);
+        //     AppBase.UserInfo.openid = data.data.openid;
+        //     AppBase.UserInfo.session_key = data.data.session_key;
+        //     console.log(AppBase.UserInfo);
+        //     // ApiConfig.SetToken(data.data.openid);
+        //     console.log("goto update info");
+        //     //this.loadtabtype();
+        //     memberapi.login(AppBase.UserInfo, (data) => {
+        //       console.log(data.data)
+        //       ApiConfig.SetToken(data.data);
+        //       console.log(AppBase.UserInfo);
+        //       that.Base.setMyData({
+        //         UserInfo: AppBase.UserInfo
+        //       });
+        //       if (this.Base.needauth == true) {
+        //         // wx.redirectTo({
+        //         //   url: '/pages/auth/auth',
+        //         // })
+        //       } else {
+        //         that.onMyShow();
+        //       }
+        //     });
+        //     that.onMyShow();
+        //     // that.Base.getAddress();
+        //   });
+        // }
 
 
       })

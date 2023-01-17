@@ -37,6 +37,13 @@ class Content extends AppBase {
     WxParse.wxParse('content', 'html',content, that, 10);
     this.Base.setMyData({})
   }
+  onShareTimeline() {
+    let data ={};
+    data.imageUrl="https://college.cllsm.top/uploads/20221124/6542156492720249eb1cfba0ca64d803.png";
+    data.title=this.Base.getMyData().instinfo.slogen;
+    console.log(data)
+    return data;
+  }
   search(e){
     let keyword = e.detail.value;
     this.Base.toast(keyword)
@@ -54,4 +61,5 @@ var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
+body.onShareTimeline = content.onShareTimeline;
 Page(body)
