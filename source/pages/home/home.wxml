@@ -1,11 +1,11 @@
 <!--pages/home/home.wxml-->
 <view>
-    <view class="vtop" style="height:{{funcrowheight+60}}px ;">
-        <view class="search border-box2" style="height:{{funcrowheight}}px;margin-top:{{margintop}}px;">
-            <input class="input_search" bindconfirm="search" placeholder="搜索你想要的内容" />
-        </view>
+  <view class="vtop" style="height:{{funcrowheight+60}}px ;">
+    <view class="search border-box2" style="height:{{funcrowheight}}px;margin-top:{{margintop}}px;">
+      <input class="input_search" bindconfirm="search" placeholder="搜索你想要的内容" />
     </view>
-    <view></view>
+  </view>
+  <view></view>
 </view>
 
 
@@ -15,66 +15,86 @@
 <view class="" style="margin-top:{{margintop+40}}px;">
 
 
-    <swiper class="" style="margin:15rpx;" indicator-color="rgba(255, 255, 255, 0.6 )" indicator-active-color="rgba(255, 255, 255, 1)" indicator-dots='true' autoplay='false' interval='5000' duration='200' current="{{indexcurrent}}" circular='true'>
-        <swiper-item class="border-box2" wx:for="{{indexbanner}}" wx:key="k">
-            <image src='{{uploadpath}}{{item.image}}' mode="aspectFill" class="" style="margin-right: 10rpx; width:100%;height:100%; border-radius: 30rpx; " bindtap="bin_indexbanner" data-item="{{item}}"></image>
-        </swiper-item>
-    </swiper>
+  <swiper class="" style="margin:15rpx;" indicator-color="rgba(255, 255, 255, 0.6 )" indicator-active-color="rgba(255, 255, 255, 1)" indicator-dots='true' autoplay='false' interval='5000' duration='200' current="{{indexcurrent}}" circular='true'>
+    <swiper-item class="border-box2" wx:for="{{indexbanner}}" wx:key="k">
+      <image src='{{uploadpath}}{{item.image}}' mode="aspectFill" class="" style="margin-right: 10rpx; width:100%;height:100%; border-radius: 30rpx; " bindtap="bin_indexbanner" data-item="{{item}}"></image>
+    </swiper-item>
+  </swiper>
 
-    <view bindtap="navtoPage" data-page="notice" class="notice">
-        <van-notice-bar mode="link" text="{{instinfo.slogen}}" />
-    </view>
+  <view bindtap="navtoPage" data-page="notice" class="notice">
+    <van-notice-bar mode="link" text="{{instinfo.slogen}}" />
+  </view>
 
-    <!-- <view>
+  <!-- <view>
   <van-notice-bar
   left-icon="volume-o"
   text="三年四班最好用学院工具，开发中，开发中，开发中，开发中。"
 />
 </view> -->
+<view class="college_item">
+  <van-cell is-link title="文章资讯" link-type="navigateTo" value="更多" url="/pages/dashboard/index" />
+  <view wx:for="{{informationlist}}" class="flex-row padding-20 flex-center" wx:key="index" style="z-index: 9999999;" bindtap="btn_details" data-item="{{item}}">
+    <view class="flex-shrink">
+      <van-image class="image-class" fit="cover" alt="heightFix" width="200rpx" height="150rpx" src="{{uploadpath}}{{item.image}}" />
+    </view>
+    <view class="margin-left-20 flex-center " style="width: 100%;">
+      <view class="h5 type-text-2" style="color:#161616; font-weight: bold;">{{item.title}}</view>
+      <view class="flex-row flex-liangbian margin-top-40" style="width: 100%;">
+        <view class="text-2 h5  type-text-1">{{item.title}}</view>
+        <view class="text-2 h6 type-text-1">阅读量：{{item.readnum}}</view>
+      </view>
+    </view>
+  </view>
+</view>
 
+  <view class="college_item">
+    <van-cell is-link title="学院班级" link-type="navigateTo" value="更多" url="/pages/dashboard/index" />
 
     <view wx:for="{{classlist}}" wx:key="index" style="z-index: 9999999;" bindtap="btn_details" data-item="{{item}}">
-        <view class="border-box margin-40 padding-30">
-            <view class="flex-row flex-center flex-liangbian">
-                <view class="flex-row flex-center">
-                    <van-image class="image-class" fit="cover" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{item.college_image}}" />
-                    <view class="margin-left-30">
-                        <view class="txt-bold type-text-1" style="color:#161616">{{item.class_name}}</view>
-                        <view class="margin-top-30 type-text-1 h5">{{item.college_name}}</view>
-                    </view>
-                </view>
-
-                <view wx:if="{{item.is_pas_switch}}">
-                    <image mode="aspectFit" src="../../images/icons/lock.png" class="icon-25" style="z-index:1;"></image>
-                </view>
-
+      <view class="border-box margin-40 padding-30">
+        <view class="flex-row flex-center flex-liangbian">
+          <view class="flex-row flex-center">
+            <van-image class="image-class" fit="cover" alt="heightFix" width="150rpx" height="150rpx" src="{{uploadpath}}{{item.college_image}}" />
+            <view class="margin-left-30">
+              <view class="txt-bold type-text-1" style="color:#161616">{{item.class_name}}</view>
+              <view class="margin-top-30 type-text-1 h5">{{item.college_name}}</view>
             </view>
-            <view class="margin-top-10">
-                <text class="h4-5">{{item.class_intro}}</text>
-            </view>
+          </view>
+
+          <view wx:if="{{item.is_pas_switch}}">
+            <image mode="aspectFit" src="../../images/icons/lock.png" class="icon-25" style="z-index:1;"></image>
+          </view>
+
         </view>
-        <van-divider />
-    </view>
-    <view wx:if="{{cclasslist.length==0}}">
-        <van-empty description="暂无数据" />
-    </view>
-
-
-    <view>
-        <image mode="aspectFit" src="../../images/icons/issue.png" bindtap="to_addclass" class="icon-75 under2" style="z-index:1;"></image>
+        <view class="margin-top-10">
+          <text class="h4-5">{{item.class_intro}}</text>
+        </view>
+      </view>
+      <van-divider />
     </view>
 
-    <!-- 自定义图标 -->
-    <view>
-        <van-popup show="{{ show }}" closeable close-icon="close" position="bottom" custom-style="height: 20%" bind:close="onClose">
-            <view class="margin-top-80 margin-left-30" style="overflow-x: hidden; overflow-y: hidden;">
-                <input confirm-type="done" class="inp_key" bindconfirm="bin_key" placeholder="请输入班级口令" placeholder-class="pla_st"></input>
-            </view>
-        </van-popup>
-    </view>
-    <view wx:if="{{classlist.length==0}}">
-        <van-empty description="暂无数据" />
-    </view>
-    <!-- 在页面内添加对应的节点 -->
-    <van-notify id="van-notify" />
+  </view>
+
+  <view wx:if="{{cclasslist.length==0}}">
+    <van-empty description="暂无数据" />
+  </view>
+
+
+  <view>
+    <image mode="aspectFit" src="../../images/icons/issue.png" bindtap="to_addclass" class="icon-75 under2" style="z-index:1;"></image>
+  </view>
+
+  <!-- 自定义图标 -->
+  <view>
+    <van-popup show="{{ show }}" closeable close-icon="close" position="bottom" custom-style="height: 20%" bind:close="onClose">
+      <view class="margin-top-80 margin-left-30" style="overflow-x: hidden; overflow-y: hidden;">
+        <input confirm-type="done" class="inp_key" bindconfirm="bin_key" placeholder="请输入班级口令" placeholder-class="pla_st"></input>
+      </view>
+    </van-popup>
+  </view>
+  <view wx:if="{{classlist.length==0}}">
+    <van-empty description="暂无数据" />
+  </view>
+  <!-- 在页面内添加对应的节点 -->
+  <van-notify id="van-notify" />
 </view>

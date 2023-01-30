@@ -522,4 +522,19 @@ class College extends Api
         $list = model('admin/Carousel')->select();
         $this->success('success', $list);
     }
+    public function information()
+    {   
+        $type = input('type'); 
+        if($type){
+            $where = [
+                "state"=>$type,
+            ];
+        } else {
+            $where = [
+                // "state"=>$type,
+            ];
+        }
+        $list = model('admin/Information')->where($where)->select();
+        $this->success('success', $list);
+    }
 }

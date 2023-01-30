@@ -18,11 +18,13 @@ App({
   autoUpdate: function () {
     console.log("-----------------------------------")
     let _this = this
+    let startParamObj = wx.getLaunchOptionsSync();
     // 获取小程序更新机制的兼容，由于更新的功能基础库要1.9.90以上版本才支持，所以此处要做低版本的兼容处理
-    if (wx.canIUse('getUpdateManager')) {
+    if (wx.canIUse('getUpdateManager')&& startParamObj.scene!=1154) {
       // wx.getUpdateManager接口，可以获知是否有新版本的小程序、新版本是否下载好以及应用新版本的能力，会返回一个UpdateManager实例
       const updateManager = wx.getUpdateManager()
       // 检查小程序是否有新版本发布，onCheckForUpdate：当小程序向后台请求完新版本信息，会通知这个版本告知检查结果
+ 
       updateManager.onCheckForUpdate(function (res) {
         // 请求完新版本信息的回调
         if (res.hasUpdate) {
@@ -59,6 +61,7 @@ App({
         title: '提示',
         content: '当前微信版本过低，无法使用该功能，请升级到最新微信版本后重试',
       })
+      return
     }
   },
 

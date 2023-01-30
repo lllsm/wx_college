@@ -44,14 +44,14 @@ class Content extends AppBase {
       })
     })
   }
-  onShareAppMessage() {
-    let imageUrl = this.Base.getMyData().uploadpath+this.Base.getMyData().classdetails.college_image
-    return {
-      title: '幸运是努力了好久发出的光，快快加入我们吧！',
-      path: '/pages/classdetails/classdetails?id='+this.Base.options.id+'&title='+this.options.title,
-      imageUrl:imageUrl 
-    }
-  }
+  // onShareAppMessage() {
+  //   let imageUrl = this.Base.getMyData().uploadpath+this.Base.getMyData().classdetails.college_image
+  //   return {
+  //     title: '幸运是努力了好久发出的光，快快加入我们吧！',
+  //     path: '/pages/classdetails/classdetails?id='+this.Base.options.id+'&title='+this.options.title,
+  //     imageUrl:imageUrl 
+  //   }
+  // }
   onShareTimeline(){
     let imageUrl = this.Base.getMyData().uploadpath+this.Base.getMyData().classdetails.college_image
     return {
@@ -60,6 +60,7 @@ class Content extends AppBase {
       imageUrl:imageUrl 
     }
   }
+
   search(e){
     let keyword = e.detail.value;
     this.Base.toast(keyword)
@@ -240,4 +241,5 @@ body.deleteimg = content.deleteimg;
 body.msg_submit = content.msg_submit;
 body.bintext = content.bintext;
 body.join_exit = content.join_exit;
+body.onShareTimeline = content.onShareTimeline;
 Page(body)

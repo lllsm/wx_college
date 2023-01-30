@@ -41,6 +41,12 @@ class Content extends AppBase {
         classlist:classlist.data
       })
     })
+
+    collegeapi.information({type:"2"},(informationlist)=>{
+      this.Base.setMyData({
+        informationlist:informationlist.data
+      })
+    })
   }
   onReady() {
     var that = this;

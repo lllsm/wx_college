@@ -1,3 +1,13 @@
+
+
+Page{
+  background-color: #f4f7fc;
+}
+.college_item{
+  background-color: #ffffff;
+  margin: 20rpx;
+  border-radius: 15rpx;
+}
 .contanit{
   width: 100%;
   height: 100%;

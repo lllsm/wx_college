@@ -33,7 +33,7 @@ export class AppBase {
   static CITYID = 440300;
   static CITYNAME = "深圳市";
   static CITYSET = false;
-  unicode = "swimming";
+  unicode = "wx_college";
   needauth = false;
   phone = null;
   pagetitle = null;

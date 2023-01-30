@@ -21,7 +21,7 @@ class Wxuser extends Api
     {
         parent::_initialize();
         $inst = model('admin/Inst')->where('id', 1)->find();
-        $this->success('success', $inst);
+        // $this->success('success', $inst);
         $this->appid = $inst["appid"];
         $this->appsecret = $inst["appsecret"];
     }
@@ -75,6 +75,7 @@ class Wxuser extends Api
     }
     public function getuserinfo()
     {
+        // echo 11111;
         $code = $this->request->post("code");
         $grant_type = $this->request->post("grant_type");
         if ($code == "") {
