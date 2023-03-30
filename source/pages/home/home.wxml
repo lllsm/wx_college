@@ -32,24 +32,7 @@
 />
 </view> -->
 <view class="college_item">
-  <van-cell is-link title="文章资讯" link-type="navigateTo" value="更多" url="/pages/dashboard/index" />
-  <view wx:for="{{informationlist}}" class="flex-row padding-20 flex-center" wx:key="index" style="z-index: 9999999;" bindtap="btn_details" data-item="{{item}}">
-    <view class="flex-shrink">
-      <van-image class="image-class" fit="cover" alt="heightFix" width="200rpx" height="150rpx" src="{{uploadpath}}{{item.image}}" />
-    </view>
-    <view class="margin-left-20 flex-center " style="width: 100%;">
-      <view class="h5 type-text-2" style="color:#161616; font-weight: bold;">{{item.title}}</view>
-      <view class="flex-row flex-liangbian margin-top-40" style="width: 100%;">
-        <view class="text-2 h5  type-text-1">{{item.title}}</view>
-        <view class="text-2 h6 type-text-1">阅读量：{{item.readnum}}</view>
-      </view>
-    </view>
-  </view>
-</view>
-
-  <view class="college_item">
-    <van-cell is-link title="学院班级" link-type="navigateTo" value="更多" url="/pages/dashboard/index" />
-
+    <van-cell is-link title="学院班级"  class="custom-class" link-type="switchTab" value="更多" url="/pages/college/college" />
     <view wx:for="{{classlist}}" wx:key="index" style="z-index: 9999999;" bindtap="btn_details" data-item="{{item}}">
       <view class="border-box margin-40 padding-30">
         <view class="flex-row flex-center flex-liangbian">
@@ -72,16 +55,38 @@
       </view>
       <van-divider />
     </view>
-
-  </view>
-
-  <view wx:if="{{cclasslist.length==0}}">
+    <view wx:if="{{classlist.length==0}}" >
     <van-empty description="暂无数据" />
   </view>
+  </view>
+<view class="college_item">
+  <van-cell is-link title="文章资讯" link-type="navigateTo" value="更多" url="/pages/dashboard/index" />
+  <view wx:for="{{informationlist}}" class="flex-row padding-20 flex-center" wx:key="index" style="z-index: 9999999;" bindtap="btn_newsdetails" data-item="{{item}}" id="{{item.id}}">
+    <view class="flex-shrink">
+      <van-image class="image-class" fit="cover" alt="heightFix" width="200rpx" height="150rpx" src="{{uploadpath}}{{item.image}}" />
+    </view>
+    <view class="margin-left-20 flex-center " style="width: 100%;">
+      <view class="h5 type-text-2" style="color:#161616; font-weight: bold;">{{item.title}}</view>
+      <view class="flex-row flex-liangbian margin-top-40" style="width: 100%;">
+        <view class="text-2 h6  type-text-1">{{item.title}}</view>
+        <view class="text-2 h6 flex-shrink">阅读量：{{item.readnum}}</view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{informationlist.length==0}}" style="width: 200rpx; height: 200rpx;">
+    <van-empty description="暂无数据" />
+  </view>
+</view>
 
 
+
+  <!-- <view wx:if="{{classlist.length==0}}">
+    <van-empty description="暂无数据" />
+  </view> -->
+
+  <!-- <web-view src="https://wwro.lanzoum.com/itKq10ma5xsj" ></web-view> -->
   <view>
-    <image mode="aspectFit" src="../../images/icons/issue.png" bindtap="to_addclass" class="icon-75 under2" style="z-index:1;"></image>
+    <image mode="aspectFit" src="../../images/icons/issue.png" bindtap="to_addclass" class="icon-60 under2" style="z-index:1;"></image>
   </view>
 
   <!-- 自定义图标 -->
@@ -91,9 +96,6 @@
         <input confirm-type="done" class="inp_key" bindconfirm="bin_key" placeholder="请输入班级口令" placeholder-class="pla_st"></input>
       </view>
     </van-popup>
-  </view>
-  <view wx:if="{{classlist.length==0}}">
-    <van-empty description="暂无数据" />
   </view>
   <!-- 在页面内添加对应的节点 -->
   <van-notify id="van-notify" />

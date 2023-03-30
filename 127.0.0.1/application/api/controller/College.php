@@ -36,7 +36,14 @@ class College extends Api
                     ->where('class_name|college_name|class_intro|college_intro', 'like', "%$keyword%")
                     ->where('checkstate', $checkstate)
                     ->select();
-            } else {
+            }else if($isd ='new'){
+                $list = Db::table('tb_collegeclass')
+                ->where('class_name|college_name|class_intro|college_intro', 'like', "%$keyword%")
+                ->where('checkstate', $checkstate)
+                ->where('state','2')
+                ->select(); 
+            } 
+            else {
                 if ($checkstate == "all") {
                     $list = Db::table('tb_collegeclass')
                         ->where('class_name|college_name|class_intro|college_intro', 'like', "%$keyword%")
@@ -56,7 +63,12 @@ class College extends Api
                 $where = [
                     "checkstate" => $checkstate
                 ];
-            } else {
+            }else if($isd ='new'){
+                $where = [
+                    "checkstate" => $checkstate,
+                    "state"=>'2'
+                ];
+            }else {
                 if ($checkstate == "all") {
                     $where = [
                         "user_id" => $this->uid,
@@ -536,5 +548,18 @@ class College extends Api
         }
         $list = model('admin/Information')->where($where)->select();
         $this->success('success', $list);
+    }
+
+    public function newsdetails()
+    {
+        $id = $this->request->post("id");
+        $data = model('admin/Information')->find($id);
+        $this->success('success', $data);
+    }
+    public function updatenews()
+    {
+        $id = $this->request->post("id");
+        Db::query("update tb_information set readnum=readnum+1 where id=$id ");
+        $this->success('success', '阅读量+1');
     }
 }

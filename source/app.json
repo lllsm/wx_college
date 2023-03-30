@@ -12,7 +12,9 @@
         "pages/myinfo/myinfo",
         "pages/notice/notice",
         "pages/course/course",
-        "pages/memberlist/memberlist"
+        "pages/memberlist/memberlist",
+        "pages/college/college",
+        "pages/newsdetails/newsdetails"
 
     ],
     "usingComponents": {
@@ -21,8 +23,6 @@
       "van-popup": "@vant/weapp/popup/index",
       "van-field": "@vant/weapp/field/index",
       "van-datetime-picker": "@vant/weapp/datetime-picker/index",
-      "van-cell": "@vant/weapp/cell/index",
-      "van-cell-group": "@vant/weapp/cell-group/index",
       "van-nav-bar": "@vant/weapp/nav-bar/index",
       "van-image": "@vant/weapp/image/index",
       "van-divider": "@vant/weapp/divider/index",
@@ -33,7 +33,9 @@
       "van-tab": "@vant/weapp/tab/index",
       "van-tabs": "@vant/weapp/tabs/index",
       "van-stepper": "@vant/weapp/stepper/index",
-      "van-empty": "@vant/weapp/empty/index"
+      "van-empty": "@vant/weapp/empty/index",
+      "van-cell": "@vant/weapp/cell/index",
+      "van-cell-group": "@vant/weapp/cell-group/index"
    },
     "permission": {
         "scope.userLocation": {
@@ -55,6 +57,12 @@
                 "text": "首页",
                 "iconPath": "./images/icons/home2.png",
                 "selectedIconPath": "./images/icons/home.png"
+            },
+            {
+              "pagePath": "pages/college/college",
+              "text": "班级",
+              "iconPath": "./images/icons/college.png",
+              "selectedIconPath": "./images/icons/college2.png"
             },
             {
               "pagePath": "pages/course/course",

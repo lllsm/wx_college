@@ -1,3 +1,4 @@
+// pages/content/content.js
 import { AppBase } from "../../appbase";
 import {CollegeApi} from "../../apis/college.api.js";
 import Notify from '@vant/weapp/notify/notify';
@@ -6,7 +7,6 @@ class Content extends AppBase {
     super();
   }
   onLoad(options) {
-    console.log(this.Base.Page,'--------------------')
     this.Base.Page = this;
     super.onLoad(options);
     this.Base.setMyData({
@@ -21,6 +21,9 @@ class Content extends AppBase {
       margintop: top,
       funcrowheight: height
     })
+
+
+
     var collegeapi = new CollegeApi();
     collegeapi.indexbanner({},(indexbanner)=>{
       this.Base.setMyData({
@@ -33,11 +36,12 @@ class Content extends AppBase {
     var that = this;
     let keyword = this.Base.getMyData().keyword;
     var collegeapi = new CollegeApi();
-    collegeapi.collegeclass({keyword:keyword||"",checkstate:'B',isd:"new"},(classlist)=>{
+    collegeapi.collegeclass({keyword:keyword||"",checkstate:'B',isd:"all"},(classlist)=>{
       this.Base.setMyData({
         classlist:classlist.data
       })
     })
+
     collegeapi.information({type:"2"},(informationlist)=>{
       this.Base.setMyData({
         informationlist:informationlist.data
@@ -62,14 +66,6 @@ class Content extends AppBase {
       }
     });
   }
-  onShareTimeline(){
-    let imageUrl = 'https://college.cllsm.top/uploads/20221124/6542156492720249eb1cfba0ca64d803.png';
-    return {
-      title: '幸运是努力了好久发出的光，快快加入我们吧！',
-      // query: 'id='+this.Base.options.id+'&title='+this.options.title,
-      imageUrl:imageUrl 
-    }
-  }
   search(e){
     let keyword = e.detail.value;
     this.Base.toast(keyword)
@@ -81,6 +77,7 @@ class Content extends AppBase {
   showPopup() {
     this.Base.setMyData({ show: true });
   }
+
   onClose() {
     this.Base.setMyData({ show: false });
   }
@@ -175,19 +172,13 @@ class Content extends AppBase {
        })
     }
   }
-  btn_newsdetails(e){
-    console.log(e.currentTarget.id)
-    // return
-    wx.navigateTo({
-      url: '/pages/newsdetails/newsdetails?id='+e.currentTarget.id,
-     })
-  }
 }
+
+
 var content = new Content();
 var body = content.generateBodyJson();
 body.onLoad = content.onLoad;
 body.onMyShow = content.onMyShow;
-body.onReady = content.onReady;
 body.search = content.search;
 body.showPopup = content.showPopup;
 body.onClose = content.onClose;
@@ -195,6 +186,4 @@ body.btn_details = content.btn_details;
 body.bin_key = content.bin_key;
 body.to_addclass = content.to_addclass;
 body.bin_indexbanner = content.bin_indexbanner;
-body.btn_newsdetails= content.btn_newsdetails;
-body.onShareTimeline = content.onShareTimeline;
 Page(body)

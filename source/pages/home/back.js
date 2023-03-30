@@ -1,3 +1,4 @@
+// pages/content/content.js
 import { AppBase } from "../../appbase";
 import {CollegeApi} from "../../apis/college.api.js";
 import Notify from '@vant/weapp/notify/notify';
@@ -6,7 +7,6 @@ class Content extends AppBase {
     super();
   }
   onLoad(options) {
-    console.log(this.Base.Page,'--------------------')
     this.Base.Page = this;
     super.onLoad(options);
     this.Base.setMyData({
@@ -21,6 +21,7 @@ class Content extends AppBase {
       margintop: top,
       funcrowheight: height
     })
+
     var collegeapi = new CollegeApi();
     collegeapi.indexbanner({},(indexbanner)=>{
       this.Base.setMyData({
@@ -38,6 +39,7 @@ class Content extends AppBase {
         classlist:classlist.data
       })
     })
+
     collegeapi.information({type:"2"},(informationlist)=>{
       this.Base.setMyData({
         informationlist:informationlist.data
@@ -61,14 +63,6 @@ class Content extends AppBase {
         });
       }
     });
-  }
-  onShareTimeline(){
-    let imageUrl = 'https://college.cllsm.top/uploads/20221124/6542156492720249eb1cfba0ca64d803.png';
-    return {
-      title: '幸运是努力了好久发出的光，快快加入我们吧！',
-      // query: 'id='+this.Base.options.id+'&title='+this.options.title,
-      imageUrl:imageUrl 
-    }
   }
   search(e){
     let keyword = e.detail.value;
@@ -196,5 +190,4 @@ body.bin_key = content.bin_key;
 body.to_addclass = content.to_addclass;
 body.bin_indexbanner = content.bin_indexbanner;
 body.btn_newsdetails= content.btn_newsdetails;
-body.onShareTimeline = content.onShareTimeline;
 Page(body)
